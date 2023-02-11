@@ -164,7 +164,7 @@ namespace PVF
 
         private void downBoxTipo_Enter(object sender, EventArgs e)
         {
-            //downBoxTipo.ActiveControl= this;
+            MessageBox.Show("Commit 2 prueba");
         }
     }
 }
