@@ -164,7 +164,14 @@ namespace PVF
 
         private void downBoxTipo_Enter(object sender, EventArgs e)
         {
-            MessageBox.Show("Commit 2 prueba");
+            if (LicenseManager.UsageMode == LicenseUsageMode.Designtime)
+            {
+                downBoxTipo.Visible = false;
+            }
+            else
+            {
+                downBoxTipo.Visible = true;
+            }
         }
     }
 }

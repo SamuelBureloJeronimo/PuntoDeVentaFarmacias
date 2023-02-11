@@ -63,7 +63,7 @@
     <Compile Include="ConsultaDeIngresos.Designer.cs">
       <DependentUpon>ConsultaDeIngresos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Medicamento.cs" />
+    <Compile Include="Medicamentos.cs" />
     <Compile Include="SubMenusItems.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,13 +71,12 @@
       <DependentUpon>SubMenusItems.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs" />
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs" />
     <Compile Include="Empleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,8 +100,8 @@
     <EmbeddedResource Include="SubMenusItems.resx">
       <DependentUpon>SubMenusItems.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleado.resx">
       <DependentUpon>Empleado.cs</DependentUpon>

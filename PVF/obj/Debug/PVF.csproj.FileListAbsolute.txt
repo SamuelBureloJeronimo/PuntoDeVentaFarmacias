@@ -127,7 +127,6 @@ D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.csproj.SuggestedBindingR
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.AltaProductos.resources
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.ConsultaDeIngresos.resources
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.SubMenusItems.resources
-D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.LoginForm.resources
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.Empleado.resources
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.menuPrincipal.resources
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.Properties.Resources.resources
@@ -136,3 +135,4 @@ D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.csproj.CoreCompileInputs
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.csproj.CopyComplete
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.exe
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.pdb
+D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.Login.resources

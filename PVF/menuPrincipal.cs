@@ -25,29 +25,27 @@ namespace PVF
     {
         //Variables y objetos necesarios
         private Usuario user;
-        public TabPage pd;
-        private AltaProductos atpd;
+        
         private string datetime = DateTime.Now.ToString("hh:mm tt");
         private Stopwatch timeMeasure = new Stopwatch();
         private AltaProductos altaProductos= new AltaProductos();
         private SubMenusItems subMenus = new SubMenusItems();
-        private ArrayList BDmedicamentos = new ArrayList();
+        private AltaProductos atpd;
+        private Medicamentos BDM = new Medicamentos();
+
         /**
          *  Contructor de la clase menuPrincipal
-         *  @param us El parametro us es el nombre de usuario
-         *  @param clv Es la clave de acceso del usuario
-         *  @param tipo Es tipo de usuario que es usuario (Empleado, Gerente, Administrador)
+         *  <param name="user1">Es un objeto tipo Usuario que contiene nombre, clave y tipo</param>
          */
-        public menuPrincipal()
+        public menuPrincipal(Usuario user1)
         {
-            
-        }
-        public menuPrincipal(string us, string clv, string tipo)
-        {
-            user = new Usuario(us, clv, tipo);
+            user = user1;
             InitializeComponent();//Se inicializan los componentes del proyecto
-            myInitializateComponents();//Se inicializan los componentes traidos de otra clase/form
-
+            InicializarMisComponentes();//Se inicializan los componentes traidos de otra clase/form
+            controlAcceso();
+        }
+        private void controlAcceso()
+        {
             //Control de acceso
             switch (user.Tipo)
             {
@@ -64,18 +62,15 @@ namespace PVF
                     this.Show();
                     break;
                 case "Admin":
-                    MessageBox.Show("Bienvenido Administrador "+user.Nombre+".\nUltima vez conectado: "+ datetime, "¡Bienvenido Administrador!", MessageBoxButtons.OK);
-                    label2.Text = "     "+user.Nombre+" [Administrador]";
+                    MessageBox.Show("Bienvenido Administrador " + user.Nombre + ".\nUltima vez conectado: " + datetime, "¡Bienvenido Administrador!", MessageBoxButtons.OK);
+                    label2.Text = "     " + user.Nombre + " [Administrador]";
                     this.Show();
                     break;
-                default: 
+                default:
                     break;
-            } 
+            }
         }
-        /**
-         *  Este metodo incializa los componentes extenernos e internos del proyecto fuera de la vista previa [Design]
-         */
-        public void myInitializateComponents()
+        public void InicializarMisComponentes()
         {
             //Se incializan agrega los subMenus para tenerlos a la mano
             panelSubMenu.Controls.Add(subMenus.panelProductos);
@@ -124,10 +119,11 @@ namespace PVF
                 }
             }
             ConsultaDeIngresos at = new ConsultaDeIngresos();
-            for(int i=0;i<BDmedicamentos.Count;i++)
+            for(int i=0;i<BDM.ListMedicamentos.Count;i++)
             {
                 at.bdMedic.Rows.Add();
-                Medicamento md = (Medicamento)BDmedicamentos[i];
+                Medicamentos md = (Medicamentos)BDM.ListMedicamentos[i];
+
                 double inversion = md.PrecioCompra * md.Cantidad;
                 double ganancias = md.PrecioVenta * md.Cantidad;
 
@@ -143,8 +139,7 @@ namespace PVF
                 at.bdMedic[9, i].Value = ganancias.ToString();
             }
             at.bttonClose.Click += new System.EventHandler(btnClose_Click);
-
-            pd = new TabPage();
+            TabPage pd = new TabPage();
             pd.Text = "Consulta de Ingresos";
             tabControl.TabPages.Add(pd);
 
@@ -172,8 +167,7 @@ namespace PVF
             double iva      = Convert.ToDouble(atpd.boxIva.Text);
             string fechCadu = atpd.fechCaducidad.Value.ToLongDateString();
             string url      = atpd.FileName;
-            Medicamento med = new Medicamento(codigo,nombre,precioC,precioV,tipo,cantidad,iva,fechCadu,url);
-            BDmedicamentos.Add(med);
+            BDM.Registrar(codigo, nombre, precioC, precioV, tipo, cantidad, iva, fechCadu, url);
             MessageBox.Show("Se registro correctamente.");
 
             atpd.boxCodigo.Text = string.Empty;
@@ -238,8 +232,12 @@ namespace PVF
             bttonMin.Visible = false;
         }
         /**
+         * <summary>
          * Método para borrar la config de los componentes del menu y solo modificar el que se selecciono
-         * @param btn1 es un BunifuFlatButton y es el boton que sera modificado, los demas se resetean por default
+         * </summary>
+         * <param name="btn1">
+         * Es un BunifuFlatButton y es el boton que sera modificado, los demas se resetean por default
+         * </param> 
          */
         private void selectMenu(BunifuFlatButton btn1)
         {
@@ -282,12 +280,16 @@ namespace PVF
             btn1.OnHovercolor   = Color.DarkCyan;
         }
         /**
-         * Este metodo muestra el panel del SubMenu de la clase SubMenuItems,
+         * <summary>
+         *      Este metodo muestra el panel del SubMenu de la clase SubMenuItems,
          * el cual contiene los submenus de cada una de las secciones como:
          * productos, clientes, compras, ventas, etc. Las demás las oculta
-         * @param subP Es de tipo Panel y es el que se muestra
+         * </summary>
+         * <param name="subP">
+         *      Es de tipo Panel y es el que se muestra
+         * </param>
          */
-        public void showItemSubmenu(Panel subP)
+        private void showItemSubmenu(Panel subP)
         {
             subMenus.panelProductos.Hide();
             subMenus.panelClientes.Hide();
@@ -332,7 +334,7 @@ namespace PVF
             atpd.bttonClose.Click += new System.EventHandler(btnClose_Click);
             atpd.btnRegistrar.Click += new System.EventHandler(btnRegister_Click);
 
-            pd = new TabPage();
+            TabPage pd = new TabPage();
             pd.Text = "Alta/Edición";
             tabControl.TabPages.Add(pd);
 

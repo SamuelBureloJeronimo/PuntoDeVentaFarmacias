@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PVF
 {
-    internal class Usuario
+    public class Usuario
     {
         //Variables de clase
         private string nombre, clave, tipo;
@@ -21,10 +21,5 @@ namespace PVF
         public string Nombre { get { return nombre; } }
         public string Clave { get { return clave; } }
         public string Tipo { get { return tipo; } }
-
-        public static implicit operator string(Usuario v)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
