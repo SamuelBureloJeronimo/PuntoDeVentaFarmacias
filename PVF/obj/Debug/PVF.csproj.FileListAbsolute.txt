@@ -1,0 +1,120 @@
+D:\TECNOLOGICO ITSM\4to Semestre\C#\VEGESIS\VEGESIS\bin\Debug\VEGESIS.exe.config
+D:\TECNOLOGICO ITSM\4to Semestre\C#\VEGESIS\VEGESIS\bin\Debug\VEGESIS.exe
+D:\TECNOLOGICO ITSM\4to Semestre\C#\VEGESIS\VEGESIS\bin\Debug\VEGESIS.pdb
+D:\TECNOLOGICO ITSM\4to Semestre\C#\VEGESIS\VEGESIS\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\TECNOLOGICO ITSM\4to Semestre\C#\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.AssemblyReference.cache
+D:\TECNOLOGICO ITSM\4to Semestre\C#\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.SuggestedBindingRedirects.cache
+D:\TECNOLOGICO ITSM\4to Semestre\C#\VEGESIS\VEGESIS\obj\Debug\VEGESIS.Properties.Resources.resources
+D:\TECNOLOGICO ITSM\4to Semestre\C#\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.GenerateResource.cache
+D:\TECNOLOGICO ITSM\4to Semestre\C#\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.CoreCompileInputs.cache
+D:\TECNOLOGICO ITSM\4to Semestre\C#\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.CopyComplete
+D:\TECNOLOGICO ITSM\4to Semestre\C#\VEGESIS\VEGESIS\obj\Debug\VEGESIS.exe
+D:\TECNOLOGICO ITSM\4to Semestre\C#\VEGESIS\VEGESIS\obj\Debug\VEGESIS.pdb
+D:\TECNOLOGICO ITSM\4to Semestre\C#\VEGESIS\VEGESIS\obj\Debug\VEGESIS.LoginForm.resources
+D:\TECNOLOGICO ITSM\4to Semestre\C#\VEGESIS\VEGESIS\obj\Debug\VEGESIS.Empleado.resources
+D:\TECNOLOGICO ITSM\4to Semestre\C#\VEGESIS\VEGESIS\obj\Debug\VEGESIS.menuPrincipal.resources
+C:\Users\SamuelBurelos\Downloads\VEGESIS\VEGESIS\bin\Debug\VEGESIS.exe.config
+C:\Users\SamuelBurelos\Downloads\VEGESIS\VEGESIS\bin\Debug\VEGESIS.exe
+C:\Users\SamuelBurelos\Downloads\VEGESIS\VEGESIS\bin\Debug\VEGESIS.pdb
+C:\Users\SamuelBurelos\Downloads\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.AssemblyReference.cache
+C:\Users\SamuelBurelos\Downloads\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.SuggestedBindingRedirects.cache
+C:\Users\SamuelBurelos\Downloads\VEGESIS\VEGESIS\obj\Debug\VEGESIS.LoginForm.resources
+C:\Users\SamuelBurelos\Downloads\VEGESIS\VEGESIS\obj\Debug\VEGESIS.Empleado.resources
+C:\Users\SamuelBurelos\Downloads\VEGESIS\VEGESIS\obj\Debug\VEGESIS.menuPrincipal.resources
+C:\Users\SamuelBurelos\Downloads\VEGESIS\VEGESIS\obj\Debug\VEGESIS.Properties.Resources.resources
+C:\Users\SamuelBurelos\Downloads\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.GenerateResource.cache
+C:\Users\SamuelBurelos\Downloads\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.CoreCompileInputs.cache
+C:\Users\SamuelBurelos\Downloads\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.CopyComplete
+C:\Users\SamuelBurelos\Downloads\VEGESIS\VEGESIS\obj\Debug\VEGESIS.exe
+C:\Users\SamuelBurelos\Downloads\VEGESIS\VEGESIS\obj\Debug\VEGESIS.pdb
+C:\Users\SamuelBurelos\Downloads\VEGESIS\VEGESIS\obj\Debug\VEGESIS.NuevoProducto.resources
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\bin\Debug\VEGESIS.exe.config
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\bin\Debug\VEGESIS.exe
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\bin\Debug\VEGESIS.pdb
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.AssemblyReference.cache
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.SuggestedBindingRedirects.cache
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\obj\Debug\VEGESIS.LoginForm.resources
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\obj\Debug\VEGESIS.Empleado.resources
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\obj\Debug\VEGESIS.menuPrincipal.resources
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\obj\Debug\VEGESIS.Properties.Resources.resources
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.GenerateResource.cache
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.CoreCompileInputs.cache
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.CopyComplete
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\obj\Debug\VEGESIS.exe
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\obj\Debug\VEGESIS.pdb
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\obj\Debug\VEGESIS.newProduct.resources
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\obj\Debug\VEGESIS.SubMenusItems.resources
+D:\TECNOLOGICO ITSM\VEGESIS\VEGESIS\obj\Debug\VEGESIS.AltaProductos.resources
+C:\Users\SamuelBurelos\Documents\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.AssemblyReference.cache
+C:\Users\SamuelBurelos\Documents\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.SuggestedBindingRedirects.cache
+C:\Users\SamuelBurelos\Documents\VEGESIS\VEGESIS\obj\Debug\VEGESIS.AltaProductos.resources
+C:\Users\SamuelBurelos\Documents\VEGESIS\VEGESIS\obj\Debug\VEGESIS.SubMenusItems.resources
+C:\Users\SamuelBurelos\Documents\VEGESIS\VEGESIS\obj\Debug\VEGESIS.LoginForm.resources
+C:\Users\SamuelBurelos\Documents\VEGESIS\VEGESIS\obj\Debug\VEGESIS.Empleado.resources
+C:\Users\SamuelBurelos\Documents\VEGESIS\VEGESIS\obj\Debug\VEGESIS.menuPrincipal.resources
+C:\Users\SamuelBurelos\Documents\VEGESIS\VEGESIS\obj\Debug\VEGESIS.newProduct.resources
+C:\Users\SamuelBurelos\Documents\VEGESIS\VEGESIS\obj\Debug\VEGESIS.Properties.Resources.resources
+C:\Users\SamuelBurelos\Documents\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.GenerateResource.cache
+C:\Users\SamuelBurelos\Documents\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.CoreCompileInputs.cache
+C:\Users\SamuelBurelos\Documents\VEGESIS\VEGESIS\obj\Debug\VEGESIS.exe
+C:\Users\SamuelBurelos\Documents\VEGESIS\VEGESIS\obj\Debug\VEGESIS.pdb
+C:\Users\SamuelBurelos\Documents\VEGESIS\VEGESIS\bin\Debug\VEGESIS.exe.config
+C:\Users\SamuelBurelos\Documents\VEGESIS\VEGESIS\bin\Debug\VEGESIS.exe
+C:\Users\SamuelBurelos\Documents\VEGESIS\VEGESIS\bin\Debug\VEGESIS.pdb
+C:\Users\SamuelBurelos\Documents\VEGESIS\VEGESIS\obj\Debug\VEGESIS.csproj.CopyComplete
+D:\Vídeos\Documentos\VEGESIS\bin\Debug\VEGESIS.exe.config
+D:\Vídeos\Documentos\VEGESIS\bin\Debug\VEGESIS.exe
+D:\Vídeos\Documentos\VEGESIS\bin\Debug\VEGESIS.pdb
+D:\Vídeos\Documentos\VEGESIS\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\Vídeos\Documentos\VEGESIS\obj\Debug\VEGESIS.csproj.AssemblyReference.cache
+D:\Vídeos\Documentos\VEGESIS\obj\Debug\VEGESIS.csproj.SuggestedBindingRedirects.cache
+D:\Vídeos\Documentos\VEGESIS\obj\Debug\VEGESIS.AltaProductos.resources
+D:\Vídeos\Documentos\VEGESIS\obj\Debug\VEGESIS.SubMenusItems.resources
+D:\Vídeos\Documentos\VEGESIS\obj\Debug\VEGESIS.LoginForm.resources
+D:\Vídeos\Documentos\VEGESIS\obj\Debug\VEGESIS.Empleado.resources
+D:\Vídeos\Documentos\VEGESIS\obj\Debug\VEGESIS.menuPrincipal.resources
+D:\Vídeos\Documentos\VEGESIS\obj\Debug\VEGESIS.newProduct.resources
+D:\Vídeos\Documentos\VEGESIS\obj\Debug\VEGESIS.Properties.Resources.resources
+D:\Vídeos\Documentos\VEGESIS\obj\Debug\VEGESIS.csproj.GenerateResource.cache
+D:\Vídeos\Documentos\VEGESIS\obj\Debug\VEGESIS.csproj.CoreCompileInputs.cache
+D:\Vídeos\Documentos\VEGESIS\obj\Debug\VEGESIS.csproj.CopyComplete
+D:\Vídeos\Documentos\VEGESIS\obj\Debug\VEGESIS.exe
+D:\Vídeos\Documentos\VEGESIS\obj\Debug\VEGESIS.pdb
+D:\Vídeos\Documentos\VEGESIS\obj\Debug\VEGESIS.ConsultaDeIngresos.resources
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\bin\Debug\VEGESIS.exe.config
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\bin\Debug\VEGESIS.exe
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\bin\Debug\VEGESIS.pdb
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\obj\Debug\VEGESIS.csproj.AssemblyReference.cache
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\obj\Debug\VEGESIS.csproj.SuggestedBindingRedirects.cache
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\obj\Debug\VEGESIS.AltaProductos.resources
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\obj\Debug\VEGESIS.ConsultaDeIngresos.resources
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\obj\Debug\VEGESIS.SubMenusItems.resources
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\obj\Debug\VEGESIS.LoginForm.resources
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\obj\Debug\VEGESIS.Empleado.resources
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\obj\Debug\VEGESIS.menuPrincipal.resources
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\obj\Debug\VEGESIS.newProduct.resources
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\obj\Debug\VEGESIS.Properties.Resources.resources
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\obj\Debug\VEGESIS.csproj.GenerateResource.cache
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\obj\Debug\VEGESIS.csproj.CoreCompileInputs.cache
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\obj\Debug\VEGESIS.csproj.CopyComplete
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\obj\Debug\VEGESIS.exe
+C:\Users\SamuelBurelos\Documents\Documentos\VEGESIS\obj\Debug\VEGESIS.pdb
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\bin\Debug\PVF.exe.config
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\bin\Debug\PVF.exe
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\bin\Debug\PVF.pdb
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\obj\Debug\PVF.csproj.AssemblyReference.cache
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\obj\Debug\PVF.csproj.SuggestedBindingRedirects.cache
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\obj\Debug\PVF.AltaProductos.resources
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\obj\Debug\PVF.ConsultaDeIngresos.resources
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\obj\Debug\PVF.SubMenusItems.resources
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\obj\Debug\PVF.LoginForm.resources
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\obj\Debug\PVF.Empleado.resources
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\obj\Debug\PVF.menuPrincipal.resources
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\obj\Debug\PVF.Properties.Resources.resources
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\obj\Debug\PVF.csproj.GenerateResource.cache
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\obj\Debug\PVF.csproj.CoreCompileInputs.cache
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\obj\Debug\PVF.csproj.CopyComplete
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\obj\Debug\PVF.exe
+D:\TECNOLOGICO ITSM\4to Semestre\C#\PVF\PVF\obj\Debug\PVF.pdb
