@@ -124,9 +124,6 @@ D:\TECNOLOGICO ITSM\GitHub Repository\PVF\bin\Debug\PVF.pdb
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\bin\Debug\Bunifu_UI_v1.5.3.dll
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.csproj.AssemblyReference.cache
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.csproj.SuggestedBindingRedirects.cache
-D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.AltaProductos.resources
-D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.ConsultaDeIngresos.resources
-D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.SubMenusItems.resources
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.Empleado.resources
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.menuPrincipal.resources
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.Properties.Resources.resources
@@ -136,3 +133,10 @@ D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.csproj.CopyComplete
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.exe
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.pdb
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.Login.resources
+D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.CatalogoProductos.resources
+D:\TECNOLOGICO ITSM\GitHub Repository\PVF\bin\Debug\BarraNavegacion.dll
+D:\TECNOLOGICO ITSM\GitHub Repository\PVF\bin\Debug\BarraNavegacion.pdb
+D:\TECNOLOGICO ITSM\GitHub Repository\PVF\bin\Debug\Inventario.pdb
+D:\TECNOLOGICO ITSM\GitHub Repository\PVF\bin\Debug\ControlUsuario.dll
+D:\TECNOLOGICO ITSM\GitHub Repository\PVF\bin\Debug\ControlUsuario.pdb
+D:\TECNOLOGICO ITSM\GitHub Repository\PVF\bin\Debug\Inventario.dll

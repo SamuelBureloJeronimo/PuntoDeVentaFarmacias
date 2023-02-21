@@ -11,19 +11,12 @@ namespace PVF
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        public static Login mp;
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(mp = new Login());
-            /*
-            LoginForm main = new LoginForm();
-            menuPrincipal mp = new menuPrincipal();
-            main.Show();
-            Application.Run();
-            */
+            Application.SetCompatibleTextRenderingDefault(true);
+            Application.Run(new Login());
         }
     }
 }

@@ -227,13 +227,13 @@
             // toolStripStatusLabel
             // 
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(47, 17);
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(56, 17);
             this.toolStripStatusLabel.Text = "Estatus:";
             // 
             // labelStatus1
             // 
             this.labelStatus1.Name = "labelStatus1";
-            this.labelStatus1.Size = new System.Drawing.Size(118, 17);
+            this.labelStatus1.Size = new System.Drawing.Size(134, 17);
             this.labelStatus1.Text = "toolStripStatusLabel2";
             // 
             // panel3
@@ -474,7 +474,7 @@
             this.btnfuAyuda.IconZoom = 90D;
             this.btnfuAyuda.IsTab = false;
             this.btnfuAyuda.Location = new System.Drawing.Point(756, 0);
-            this.btnfuAyuda.Margin = new System.Windows.Forms.Padding(4);
+            this.btnfuAyuda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnfuAyuda.Name = "btnfuAyuda";
             this.btnfuAyuda.Normalcolor = System.Drawing.Color.Transparent;
             this.btnfuAyuda.OnHovercolor = System.Drawing.Color.PaleTurquoise;
@@ -512,7 +512,7 @@
             this.btnfuAdministracion.IconZoom = 90D;
             this.btnfuAdministracion.IsTab = false;
             this.btnfuAdministracion.Location = new System.Drawing.Point(654, 0);
-            this.btnfuAdministracion.Margin = new System.Windows.Forms.Padding(4);
+            this.btnfuAdministracion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnfuAdministracion.Name = "btnfuAdministracion";
             this.btnfuAdministracion.Normalcolor = System.Drawing.Color.Transparent;
             this.btnfuAdministracion.OnHovercolor = System.Drawing.Color.PaleTurquoise;
@@ -550,7 +550,7 @@
             this.btnfuReportes.IconZoom = 90D;
             this.btnfuReportes.IsTab = false;
             this.btnfuReportes.Location = new System.Drawing.Point(583, 0);
-            this.btnfuReportes.Margin = new System.Windows.Forms.Padding(4);
+            this.btnfuReportes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnfuReportes.Name = "btnfuReportes";
             this.btnfuReportes.Normalcolor = System.Drawing.Color.Transparent;
             this.btnfuReportes.OnHovercolor = System.Drawing.Color.PaleTurquoise;
@@ -588,7 +588,7 @@
             this.btnfuCaja.IconZoom = 90D;
             this.btnfuCaja.IsTab = false;
             this.btnfuCaja.Location = new System.Drawing.Point(517, 0);
-            this.btnfuCaja.Margin = new System.Windows.Forms.Padding(4);
+            this.btnfuCaja.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnfuCaja.Name = "btnfuCaja";
             this.btnfuCaja.Normalcolor = System.Drawing.Color.Transparent;
             this.btnfuCaja.OnHovercolor = System.Drawing.Color.PaleTurquoise;
@@ -626,7 +626,7 @@
             this.btnfuEmpleados.IconZoom = 90D;
             this.btnfuEmpleados.IsTab = false;
             this.btnfuEmpleados.Location = new System.Drawing.Point(434, 0);
-            this.btnfuEmpleados.Margin = new System.Windows.Forms.Padding(4);
+            this.btnfuEmpleados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnfuEmpleados.Name = "btnfuEmpleados";
             this.btnfuEmpleados.Normalcolor = System.Drawing.Color.Transparent;
             this.btnfuEmpleados.OnHovercolor = System.Drawing.Color.PaleTurquoise;
@@ -664,7 +664,7 @@
             this.btnfuProveedores.IconZoom = 90D;
             this.btnfuProveedores.IsTab = false;
             this.btnfuProveedores.Location = new System.Drawing.Point(338, 0);
-            this.btnfuProveedores.Margin = new System.Windows.Forms.Padding(4);
+            this.btnfuProveedores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnfuProveedores.Name = "btnfuProveedores";
             this.btnfuProveedores.Normalcolor = System.Drawing.Color.Transparent;
             this.btnfuProveedores.OnHovercolor = System.Drawing.Color.PaleTurquoise;
@@ -702,7 +702,7 @@
             this.btnfuVentas.IconZoom = 90D;
             this.btnfuVentas.IsTab = false;
             this.btnfuVentas.Location = new System.Drawing.Point(272, 0);
-            this.btnfuVentas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnfuVentas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnfuVentas.Name = "btnfuVentas";
             this.btnfuVentas.Normalcolor = System.Drawing.Color.Transparent;
             this.btnfuVentas.OnHovercolor = System.Drawing.Color.PaleTurquoise;
@@ -740,7 +740,7 @@
             this.btnfuCompras.IconZoom = 90D;
             this.btnfuCompras.IsTab = false;
             this.btnfuCompras.Location = new System.Drawing.Point(206, 0);
-            this.btnfuCompras.Margin = new System.Windows.Forms.Padding(4);
+            this.btnfuCompras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnfuCompras.Name = "btnfuCompras";
             this.btnfuCompras.Normalcolor = System.Drawing.Color.Transparent;
             this.btnfuCompras.OnHovercolor = System.Drawing.Color.PaleTurquoise;
@@ -778,7 +778,7 @@
             this.btnfuClientes.IconZoom = 90D;
             this.btnfuClientes.IsTab = false;
             this.btnfuClientes.Location = new System.Drawing.Point(140, 0);
-            this.btnfuClientes.Margin = new System.Windows.Forms.Padding(4);
+            this.btnfuClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnfuClientes.Name = "btnfuClientes";
             this.btnfuClientes.Normalcolor = System.Drawing.Color.Transparent;
             this.btnfuClientes.OnHovercolor = System.Drawing.Color.PaleTurquoise;
@@ -816,7 +816,7 @@
             this.btnfuProductos.IconZoom = 90D;
             this.btnfuProductos.IsTab = false;
             this.btnfuProductos.Location = new System.Drawing.Point(66, 0);
-            this.btnfuProductos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnfuProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnfuProductos.Name = "btnfuProductos";
             this.btnfuProductos.Normalcolor = System.Drawing.Color.DarkCyan;
             this.btnfuProductos.OnHovercolor = System.Drawing.Color.DarkCyan;
@@ -854,7 +854,7 @@
             this.btnfuArchivo.IconZoom = 90D;
             this.btnfuArchivo.IsTab = false;
             this.btnfuArchivo.Location = new System.Drawing.Point(0, 0);
-            this.btnfuArchivo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnfuArchivo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnfuArchivo.Name = "btnfuArchivo";
             this.btnfuArchivo.Normalcolor = System.Drawing.Color.Indigo;
             this.btnfuArchivo.OnHovercolor = System.Drawing.Color.Black;

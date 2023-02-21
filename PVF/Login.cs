@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Inventario;
+using ControlUsuario;
 
 namespace PVF
 {
     public partial class Login : Form
     {
-        private Usuario user1;
         public Login()
         {
             InitializeComponent();
@@ -29,14 +30,17 @@ namespace PVF
         {
             string nam = txtBoxUser.Text;
             string pas = txtBoxPass.Text;
-            user1 = new Usuario(nam,pas,"Admin");
-
-            if(!user1.Nombre.Equals("Samuel") & !user1.Clave.Equals("123"))
+            Usuario user1 = new Usuario(nam, pas, "Admin");
+            IniciarSesion(user1);
+        }
+        public void IniciarSesion(Usuario usu)
+        {
+            if (!usu.Nombre.Equals("Samuel") & !usu.Clave.Equals("123"))
             {
                 MessageBox.Show("Usuario/Contraseña incorrecta!");
                 return;
             }
-            menuPrincipal pri = new menuPrincipal(user1);
+            menuPrincipal pri = new menuPrincipal(usu);
             this.Hide();
         }
     }

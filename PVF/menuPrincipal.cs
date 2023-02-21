@@ -11,7 +11,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
+using Inventario;
+using BarraNavegacion;
+using ControlUsuario;
+
 
 namespace PVF
 {
@@ -25,13 +28,21 @@ namespace PVF
     {
         //Variables y objetos necesarios
         private Usuario user;
-        
-        private string datetime = DateTime.Now.ToString("hh:mm tt");
-        private Stopwatch timeMeasure = new Stopwatch();
-        private AltaProductos altaProductos= new AltaProductos();
-        private SubMenusItems subMenus = new SubMenusItems();
-        private AltaProductos atpd;
-        private Medicamentos BDM = new Medicamentos();
+
+        private Productos   productos;
+        private Clientes    client;
+        private Compras     compras;
+        private Ventas      ventas;
+        private Proveedores proveedores;
+        private Empleados   empleados;
+        private Caja            caja;
+        private Reportes        reportes;
+        private Administracion  Administracion;
+        private Ayuda           ayuda;
+
+        private string datetime;
+        private Stopwatch timeMeasure;
+        private InventarioMed inventario;
 
         /**
          *  Contructor de la clase menuPrincipal
@@ -72,121 +83,54 @@ namespace PVF
         }
         public void InicializarMisComponentes()
         {
+            datetime = DateTime.Now.ToString("hh:mm tt");
+            timeMeasure = new Stopwatch();
+            inventario = new InventarioMed();
+
+            productos = new Productos(tabControl, inventario);
+            client = new Clientes();
+            compras = new Compras();
+            ventas = new Ventas();
+            proveedores = new Proveedores();
+            empleados = new Empleados();
+            caja = new Caja();
+            reportes = new Reportes();
+            Administracion = new Administracion();
+            ayuda = new Ayuda();
+
             //Se incializan agrega los subMenus para tenerlos a la mano
-            panelSubMenu.Controls.Add(subMenus.panelProductos);
-            panelSubMenu.Controls.Add(subMenus.panelClientes);
-            panelSubMenu.Controls.Add(subMenus.panelCompras);
-            panelSubMenu.Controls.Add(subMenus.panelVentas);
-            panelSubMenu.Controls.Add(subMenus.panelProveedores);
-            panelSubMenu.Controls.Add(subMenus.panelEmpleados);
-            panelSubMenu.Controls.Add(subMenus.panelReportes);
-            panelSubMenu.Controls.Add(subMenus.panelCaja);
-            panelSubMenu.Controls.Add(subMenus.panelAdministracion);
-            panelSubMenu.Controls.Add(subMenus.panelAyuda);
+            panelSubMenu.Controls.Add(productos.panelProductos);
+            panelSubMenu.Controls.Add(client.panelClientes);
+            panelSubMenu.Controls.Add(compras.panelCompras);
+            panelSubMenu.Controls.Add(ventas.panelVentas);
+            panelSubMenu.Controls.Add(proveedores.panelProveedores);
+            panelSubMenu.Controls.Add(empleados.panelEmpleados);
+            panelSubMenu.Controls.Add(caja.panelCaja);
+            panelSubMenu.Controls.Add(reportes.panelReportes);            
+            panelSubMenu.Controls.Add(Administracion.panelAdministracion);
+            panelSubMenu.Controls.Add(ayuda.panelAyuda);
 
             //Agrego los metodos al dar click en los botones
-            subMenus.btnAltaEdicion_Producto.Click += new System.EventHandler(this.btnAltaEdicion_Producto_Click);
-            subMenus.btnConsultIngre_Producto.Click += new System.EventHandler(this.btnConsultIngre_Producto_Click);
+            //subMenus.btnAltaEdicion_Producto.Click += new System.EventHandler(this.btnAltaEdicion_Producto_Click);
+            //subMenus.btnConsultIngre_Producto.Click += new System.EventHandler(this.btnConsultIngre_Producto_Click);
 
 
             //Modifico el dock para que ocupe todo el espacio asignado
-            subMenus.panelClientes.Dock = DockStyle.Fill;
-            subMenus.panelProductos.Dock = DockStyle.Fill;
-            subMenus.panelCompras.Dock = DockStyle.Fill;
-            subMenus.panelVentas.Dock= DockStyle.Fill;
-            subMenus.panelProveedores.Dock= DockStyle.Fill;
-            subMenus.panelEmpleados.Dock= DockStyle.Fill;
-            subMenus.panelReportes.Dock= DockStyle.Fill;
-            subMenus.panelCaja.Dock= DockStyle.Fill;
-            subMenus.panelAdministracion.Dock= DockStyle.Fill;
-            subMenus.panelAyuda.Dock= DockStyle.Fill;
+            productos.panelProductos.Dock = DockStyle.Fill;
+            client.panelClientes.Dock = DockStyle.Fill;
+            compras.panelCompras.Dock = DockStyle.Fill;
+            ventas.panelVentas.Dock= DockStyle.Fill;
+            proveedores.panelProveedores.Dock= DockStyle.Fill;
+            empleados.panelEmpleados.Dock= DockStyle.Fill;
+            caja.panelCaja.Dock= DockStyle.Fill;
+            reportes.panelReportes.Dock = DockStyle.Fill;
+            Administracion.panelAdministracion.Dock= DockStyle.Fill;
+            ayuda.panelAyuda.Dock= DockStyle.Fill;
 
             timeMeasure.Start();//Inicia el timer de la Barra de estado
             timer1.Enabled = true;
             labelStatus1.Text = DateTime.Now.ToString("hh:mm tt");//Se agrega el timer al label de la barra
 
-        }
-        private void btnConsultIngre_Producto_Click(object sender, EventArgs e)
-        {
-            int pageIndex = tabControl.TabCount;
-            for (int i = 0; i < tabControl.TabCount; i++)
-            {
-                if (tabControl.TabPages[i].Text.Equals("Consulta de Ingresos"))
-                {
-                    tabControl.SelectedIndex = i;
-                    //MessageBox.Show("La pagina ya existe.");
-                    return;
-                }
-            }
-            ConsultaDeIngresos at = new ConsultaDeIngresos();
-            for(int i=0;i<BDM.ListMedicamentos.Count;i++)
-            {
-                at.bdMedic.Rows.Add();
-                Medicamentos md = (Medicamentos)BDM.ListMedicamentos[i];
-
-                double inversion = md.PrecioCompra * md.Cantidad;
-                double ganancias = md.PrecioVenta * md.Cantidad;
-
-                at.bdMedic[0, i].Value = md.Codigo;
-                at.bdMedic[1, i].Value = md.Nombre;
-                at.bdMedic[2, i].Value = md.PrecioCompra.ToString();
-                at.bdMedic[3, i].Value = md.PrecioVenta.ToString();
-                at.bdMedic[4, i].Value = md.Tipo;
-                at.bdMedic[5, i].Value = md.Cantidad.ToString();
-                at.bdMedic[6, i].Value = (md.Iva*100).ToString();
-                at.bdMedic[7, i].Value = md.Caducidad;
-                at.bdMedic[8, i].Value = inversion.ToString();
-                at.bdMedic[9, i].Value = ganancias.ToString();
-            }
-            at.bttonClose.Click += new System.EventHandler(btnClose_Click);
-            TabPage pd = new TabPage();
-            pd.Text = "Consulta de Ingresos";
-            tabControl.TabPages.Add(pd);
-
-            pd.Controls.Add(at.panelForm);
-            at.panelForm.Dock = DockStyle.Fill;
-            at.panelForm.Show();
-            tabControl.SelectedIndex= pageIndex;
-        }
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-            if(atpd.boxCodigo.Text.Equals("") || atpd.boxName.Text.Equals("") || atpd.boxPrecioCompra.Text.Equals("") || atpd.boxPrecioVenta.Text.Equals("")){
-                MessageBox.Show("Debes rellenar todos los campos.");
-                return;
-            }
-            if(atpd.downBoxTipo.selectedIndex == 0 || atpd.boxLote.Text.Equals("") || atpd.boxIva.Text.Equals("") || atpd.FileName == null){
-                MessageBox.Show("Debes rellenar todos los campos.");
-                return;
-            }
-            string codigo   = atpd.boxCodigo.Text;
-            string nombre   = atpd.boxName.Text;
-            double precioC  = Convert.ToDouble(atpd.boxPrecioCompra.Text);
-            double precioV  = Convert.ToDouble(atpd.boxPrecioVenta.Text);
-            string tipo     = atpd.downBoxTipo.selectedValue;
-            int cantidad    = Int32.Parse(atpd.boxLote.Text);
-            double iva      = Convert.ToDouble(atpd.boxIva.Text);
-            string fechCadu = atpd.fechCaducidad.Value.ToLongDateString();
-            string url      = atpd.FileName;
-            BDM.Registrar(codigo, nombre, precioC, precioV, tipo, cantidad, iva, fechCadu, url);
-            MessageBox.Show("Se registro correctamente.");
-
-            atpd.boxCodigo.Text = string.Empty;
-            atpd.boxName.Text = string.Empty;
-            atpd.boxPrecioCompra.Text = string.Empty;
-            atpd.boxPrecioVenta.Text = string.Empty;
-            atpd.boxLote.Text = string.Empty;
-            atpd.boxIva.Text = string.Empty;
-
-            atpd.lblCodigo.Visible = false;
-            atpd.lblName.Visible = false;
-            atpd.lblPrecioCompra.Visible = false;
-            atpd.lblPrecioVenta.Visible = false;
-            atpd.lblLote.Visible = false;
-            atpd.lblIVA.Visible = false;
-
-            atpd.downBoxTipo.selectedIndex = 0;
-            atpd.pictureBox1.Image= null;
-            atpd.FileName= string.Empty;
         }
 
         // BunifuFlatButton     bttonClose
@@ -291,16 +235,16 @@ namespace PVF
          */
         private void showItemSubmenu(Panel subP)
         {
-            subMenus.panelProductos.Hide();
-            subMenus.panelClientes.Hide();
-            subMenus.panelCompras.Hide();
-            subMenus.panelVentas.Hide();
-            subMenus.panelProveedores.Hide();
-            subMenus.panelEmpleados.Hide();
-            subMenus.panelReportes.Hide();
-            subMenus.panelCaja.Hide();
-            subMenus.panelAdministracion.Hide();
-            subMenus.panelAyuda.Hide();
+            productos.panelProductos.Hide();
+            client.panelClientes.Hide();
+            compras.panelCompras.Hide();
+            ventas.panelVentas.Hide();
+            proveedores.panelProveedores.Hide();
+            empleados.panelEmpleados.Hide();
+            reportes.panelReportes.Hide();
+            caja.panelCaja.Hide();
+            Administracion.panelAdministracion.Hide();
+            ayuda.panelAyuda.Hide();
             subP.Show();
         }
         // MENU
@@ -309,40 +253,8 @@ namespace PVF
         private void btnfuProductos_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuProductos);
-            showItemSubmenu(subMenus.panelProductos);
-            subMenus.panelProductos.Show();
-        }
-        public void btnClose_Click(object sender, EventArgs e)
-        {
-            tabControl.TabPages.Remove(tabControl.TabPages[tabControl.SelectedIndex]);
-            //tabControl.TabPages[0].Visible = false;
-        }
-        private void btnAltaEdicion_Producto_Click(object sender, EventArgs e)
-        {
-            int pageIndex = tabControl.TabCount;
-            for(int i=0; i<tabControl.TabCount;i++)
-            {
-                if (tabControl.TabPages[i].Text.Equals("Alta/Edición"))
-                {
-                    tabControl.SelectedIndex = i;
-                    //MessageBox.Show("La pagina ya existe.");
-                    return;
-                }
-                
-            }
-            atpd = new AltaProductos();
-            atpd.bttonClose.Click += new System.EventHandler(btnClose_Click);
-            atpd.btnRegistrar.Click += new System.EventHandler(btnRegister_Click);
-
-            TabPage pd = new TabPage();
-            pd.Text = "Alta/Edición";
-            tabControl.TabPages.Add(pd);
-
-            pd.Controls.Add(atpd.panelForm);
-            atpd.panelForm.Dock= DockStyle.Fill;
-            atpd.panelForm.Show();
-            tabControl.SelectedIndex=pageIndex;
-            
+            showItemSubmenu(productos.panelProductos);
+            productos.panelProductos.Show();
         }
         //
         // BunifuFlatButton     btnfuClientes
@@ -350,8 +262,8 @@ namespace PVF
         private void btnfuClientes_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuClientes);
-            showItemSubmenu(subMenus.panelClientes);
-            subMenus.panelClientes.Show();
+            showItemSubmenu(client.panelClientes);
+            client.panelClientes.Show();
         }
         //
         // BunifuFlatButton     btnfuCompras
@@ -359,8 +271,8 @@ namespace PVF
         private void btnfuCompras_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuCompras);
-            showItemSubmenu(subMenus.panelCompras);
-            subMenus.panelCompras.Show();
+            showItemSubmenu(compras.panelCompras);
+            compras.panelCompras.Show();
         }
         //
         // BunifuFlatButton     btnfuVentas
@@ -368,8 +280,8 @@ namespace PVF
         private void btnfuVentas_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuVentas);
-            showItemSubmenu(subMenus.panelVentas);
-            subMenus.panelVentas.Show();
+            showItemSubmenu(ventas.panelVentas);
+            ventas.panelVentas.Show();
         }
         //
         // BunifuFlatButton     btnfuProveedores
@@ -377,8 +289,8 @@ namespace PVF
         private void btnfuProveedores_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuProveedores);
-            showItemSubmenu(subMenus.panelProveedores);
-            subMenus.panelProveedores.Show();
+            showItemSubmenu(proveedores.panelProveedores);
+            proveedores.panelProveedores.Show();
         }
         //
         // BunifuFlatButton     btnfuEmpleados
@@ -386,8 +298,8 @@ namespace PVF
         private void btnfuEmpleados_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuEmpleados);
-            showItemSubmenu(subMenus.panelEmpleados);
-            subMenus.panelEmpleados.Show();
+            showItemSubmenu(empleados.panelEmpleados);
+            empleados.panelEmpleados.Show();
         }
         //
         // BunifuFlatButton     btnfuCaja
@@ -395,8 +307,8 @@ namespace PVF
         private void btnfuCaja_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuCaja);
-            showItemSubmenu(subMenus.panelCaja);
-            subMenus.panelCaja.Show();
+            showItemSubmenu(caja.panelCaja);
+            caja.panelCaja.Show();
         }
         //
         // BunifuFlatButton     btnfuReportes
@@ -404,8 +316,8 @@ namespace PVF
         private void btnfuReportes_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuReportes);
-            showItemSubmenu(subMenus.panelReportes);
-            subMenus.panelReportes.Show();
+            showItemSubmenu(reportes.panelReportes);
+            reportes.panelReportes.Show();
         }
         //
         // BunifuFlatButton     btnfuAdministracion
@@ -413,8 +325,8 @@ namespace PVF
         private void btnfuAdministracion_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuAdministracion);
-            showItemSubmenu(subMenus.panelAdministracion);
-            subMenus.panelAdministracion.Show();
+            showItemSubmenu(Administracion.panelAdministracion);
+            Administracion.panelAdministracion.Show();
         }
         //
         // BunifuFlatButton     btnfuAyuda
@@ -422,8 +334,8 @@ namespace PVF
         private void btnfuAyuda_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuAyuda);
-            showItemSubmenu(subMenus.panelAyuda);
-            subMenus.panelAyuda.Show();
+            showItemSubmenu(ayuda.panelAyuda);
+            ayuda.panelAyuda.Show();
         }
         //
         // BunifuFlatButton     btnfuArchivo

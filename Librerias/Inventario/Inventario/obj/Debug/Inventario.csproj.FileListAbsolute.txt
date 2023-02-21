@@ -1,0 +1,6 @@
+D:\TECNOLOGICO ITSM\GitHub Repository\Librerias\Inventario2\Inventario\Inventario\bin\Debug\Inventario.dll
+D:\TECNOLOGICO ITSM\GitHub Repository\Librerias\Inventario2\Inventario\Inventario\bin\Debug\Inventario.pdb
+D:\TECNOLOGICO ITSM\GitHub Repository\Librerias\Inventario2\Inventario\Inventario\obj\Debug\Inventario.csproj.AssemblyReference.cache
+D:\TECNOLOGICO ITSM\GitHub Repository\Librerias\Inventario2\Inventario\Inventario\obj\Debug\Inventario.csproj.CoreCompileInputs.cache
+D:\TECNOLOGICO ITSM\GitHub Repository\Librerias\Inventario2\Inventario\Inventario\obj\Debug\Inventario.dll
+D:\TECNOLOGICO ITSM\GitHub Repository\Librerias\Inventario2\Inventario\Inventario\obj\Debug\Inventario.pdb
