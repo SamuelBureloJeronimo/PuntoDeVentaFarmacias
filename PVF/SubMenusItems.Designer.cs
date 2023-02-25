@@ -29,32 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubMenusItems));
-            this.panelProductos = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.btnConsultOut_Producto = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnConsultIngre_Producto = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnAjustCost_Producto = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnAjustStock_Producto = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnLotCadu_Producto = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnVerifPrice_Producto = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnAltaEdicion_Producto = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelClientes = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnConsultCompr_Cliente = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnHistorial_Cliente = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnModificar_Cliente = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnSerch_Cliente = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnAlta_Cliente = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.label6 = new System.Windows.Forms.Label();
             this.panelCompras = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnConsult_Compras = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -118,14 +92,32 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.bunifuFlatButton22 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label17 = new System.Windows.Forms.Label();
-            this.panelProductos.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panelClientes.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnLotCadu_Producto = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnVerifPrice_Producto = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnAltaEdicion_Producto = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnAjustCost_Producto = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnAjustStock_Producto = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.btnConsultOut_Producto = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnConsultIngre_Producto = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panelProductos = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnSerch_Cliente = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnAlta_Cliente = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnModificar_Cliente = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnConsultCompr_Cliente = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnHistorial_Cliente = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panelClientes = new System.Windows.Forms.Panel();
             this.panelCompras.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -145,602 +137,25 @@
             this.panel17.SuspendLayout();
             this.panelAyuda.SuspendLayout();
             this.panel18.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panelProductos.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panelClientes.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panelProductos
-            // 
-            this.panelProductos.BackColor = System.Drawing.Color.DarkCyan;
-            this.panelProductos.Controls.Add(this.panel8);
-            this.panelProductos.Controls.Add(this.panel7);
-            this.panelProductos.Controls.Add(this.panel4);
-            this.panelProductos.Location = new System.Drawing.Point(12, 12);
-            this.panelProductos.Name = "panelProductos";
-            this.panelProductos.Size = new System.Drawing.Size(1037, 86);
-            this.panelProductos.TabIndex = 0;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Transparent;
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel8.Controls.Add(this.btnConsultOut_Producto);
-            this.panel8.Controls.Add(this.btnConsultIngre_Producto);
-            this.panel8.Controls.Add(this.label4);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel8.Location = new System.Drawing.Point(704, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(280, 86);
-            this.panel8.TabIndex = 6;
-            // 
-            // btnConsultOut_Producto
-            // 
-            this.btnConsultOut_Producto.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnConsultOut_Producto.BackColor = System.Drawing.Color.Transparent;
-            this.btnConsultOut_Producto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnConsultOut_Producto.BorderRadius = 0;
-            this.btnConsultOut_Producto.ButtonText = "Consulta de salida";
-            this.btnConsultOut_Producto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnConsultOut_Producto.DisabledColor = System.Drawing.Color.Gray;
-            this.btnConsultOut_Producto.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnConsultOut_Producto.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnConsultOut_Producto.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnConsultOut_Producto.Iconimage")));
-            this.btnConsultOut_Producto.Iconimage_right = null;
-            this.btnConsultOut_Producto.Iconimage_right_Selected = null;
-            this.btnConsultOut_Producto.Iconimage_Selected = null;
-            this.btnConsultOut_Producto.IconMarginLeft = 0;
-            this.btnConsultOut_Producto.IconMarginRight = 0;
-            this.btnConsultOut_Producto.IconRightVisible = true;
-            this.btnConsultOut_Producto.IconRightZoom = 0D;
-            this.btnConsultOut_Producto.IconVisible = true;
-            this.btnConsultOut_Producto.IconZoom = 90D;
-            this.btnConsultOut_Producto.IsTab = false;
-            this.btnConsultOut_Producto.Location = new System.Drawing.Point(138, 0);
-            this.btnConsultOut_Producto.Name = "btnConsultOut_Producto";
-            this.btnConsultOut_Producto.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnConsultOut_Producto.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnConsultOut_Producto.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnConsultOut_Producto.selected = false;
-            this.btnConsultOut_Producto.Size = new System.Drawing.Size(143, 59);
-            this.btnConsultOut_Producto.TabIndex = 3;
-            this.btnConsultOut_Producto.Text = "Consulta de salida";
-            this.btnConsultOut_Producto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnConsultOut_Producto.Textcolor = System.Drawing.Color.White;
-            this.btnConsultOut_Producto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnConsultIngre_Producto
-            // 
-            this.btnConsultIngre_Producto.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnConsultIngre_Producto.BackColor = System.Drawing.Color.Transparent;
-            this.btnConsultIngre_Producto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnConsultIngre_Producto.BorderRadius = 0;
-            this.btnConsultIngre_Producto.ButtonText = "Consulta de ingresos";
-            this.btnConsultIngre_Producto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnConsultIngre_Producto.DisabledColor = System.Drawing.Color.Gray;
-            this.btnConsultIngre_Producto.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnConsultIngre_Producto.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnConsultIngre_Producto.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnConsultIngre_Producto.Iconimage")));
-            this.btnConsultIngre_Producto.Iconimage_right = null;
-            this.btnConsultIngre_Producto.Iconimage_right_Selected = null;
-            this.btnConsultIngre_Producto.Iconimage_Selected = null;
-            this.btnConsultIngre_Producto.IconMarginLeft = 0;
-            this.btnConsultIngre_Producto.IconMarginRight = 0;
-            this.btnConsultIngre_Producto.IconRightVisible = true;
-            this.btnConsultIngre_Producto.IconRightZoom = 0D;
-            this.btnConsultIngre_Producto.IconVisible = true;
-            this.btnConsultIngre_Producto.IconZoom = 90D;
-            this.btnConsultIngre_Producto.IsTab = false;
-            this.btnConsultIngre_Producto.Location = new System.Drawing.Point(0, 0);
-            this.btnConsultIngre_Producto.Name = "btnConsultIngre_Producto";
-            this.btnConsultIngre_Producto.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnConsultIngre_Producto.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnConsultIngre_Producto.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnConsultIngre_Producto.selected = false;
-            this.btnConsultIngre_Producto.Size = new System.Drawing.Size(138, 59);
-            this.btnConsultIngre_Producto.TabIndex = 2;
-            this.btnConsultIngre_Producto.Text = "Consulta de ingresos";
-            this.btnConsultIngre_Producto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnConsultIngre_Producto.Textcolor = System.Drawing.Color.White;
-            this.btnConsultIngre_Producto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // label4
-            // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label4.ForeColor = System.Drawing.Color.Aquamarine;
-            this.label4.Location = new System.Drawing.Point(0, 59);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(276, 23);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Consultas";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Transparent;
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel7.Controls.Add(this.btnAjustCost_Producto);
-            this.panel7.Controls.Add(this.btnAjustStock_Producto);
-            this.panel7.Controls.Add(this.label3);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(425, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(279, 86);
-            this.panel7.TabIndex = 5;
-            // 
-            // btnAjustCost_Producto
-            // 
-            this.btnAjustCost_Producto.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnAjustCost_Producto.BackColor = System.Drawing.Color.Transparent;
-            this.btnAjustCost_Producto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAjustCost_Producto.BorderRadius = 0;
-            this.btnAjustCost_Producto.ButtonText = "Ajustes de costos";
-            this.btnAjustCost_Producto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAjustCost_Producto.DisabledColor = System.Drawing.Color.Gray;
-            this.btnAjustCost_Producto.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnAjustCost_Producto.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnAjustCost_Producto.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAjustCost_Producto.Iconimage")));
-            this.btnAjustCost_Producto.Iconimage_right = null;
-            this.btnAjustCost_Producto.Iconimage_right_Selected = null;
-            this.btnAjustCost_Producto.Iconimage_Selected = null;
-            this.btnAjustCost_Producto.IconMarginLeft = 0;
-            this.btnAjustCost_Producto.IconMarginRight = 0;
-            this.btnAjustCost_Producto.IconRightVisible = true;
-            this.btnAjustCost_Producto.IconRightZoom = 0D;
-            this.btnAjustCost_Producto.IconVisible = true;
-            this.btnAjustCost_Producto.IconZoom = 90D;
-            this.btnAjustCost_Producto.IsTab = false;
-            this.btnAjustCost_Producto.Location = new System.Drawing.Point(138, 0);
-            this.btnAjustCost_Producto.Name = "btnAjustCost_Producto";
-            this.btnAjustCost_Producto.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnAjustCost_Producto.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnAjustCost_Producto.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnAjustCost_Producto.selected = false;
-            this.btnAjustCost_Producto.Size = new System.Drawing.Size(145, 59);
-            this.btnAjustCost_Producto.TabIndex = 3;
-            this.btnAjustCost_Producto.Text = "Ajustes de costos";
-            this.btnAjustCost_Producto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAjustCost_Producto.Textcolor = System.Drawing.Color.White;
-            this.btnAjustCost_Producto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnAjustStock_Producto
-            // 
-            this.btnAjustStock_Producto.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnAjustStock_Producto.BackColor = System.Drawing.Color.Transparent;
-            this.btnAjustStock_Producto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAjustStock_Producto.BorderRadius = 0;
-            this.btnAjustStock_Producto.ButtonText = "Ajustes de Stock";
-            this.btnAjustStock_Producto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAjustStock_Producto.DisabledColor = System.Drawing.Color.Gray;
-            this.btnAjustStock_Producto.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnAjustStock_Producto.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnAjustStock_Producto.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAjustStock_Producto.Iconimage")));
-            this.btnAjustStock_Producto.Iconimage_right = null;
-            this.btnAjustStock_Producto.Iconimage_right_Selected = null;
-            this.btnAjustStock_Producto.Iconimage_Selected = null;
-            this.btnAjustStock_Producto.IconMarginLeft = 0;
-            this.btnAjustStock_Producto.IconMarginRight = 0;
-            this.btnAjustStock_Producto.IconRightVisible = true;
-            this.btnAjustStock_Producto.IconRightZoom = 0D;
-            this.btnAjustStock_Producto.IconVisible = true;
-            this.btnAjustStock_Producto.IconZoom = 90D;
-            this.btnAjustStock_Producto.IsTab = false;
-            this.btnAjustStock_Producto.Location = new System.Drawing.Point(0, 0);
-            this.btnAjustStock_Producto.Name = "btnAjustStock_Producto";
-            this.btnAjustStock_Producto.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnAjustStock_Producto.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnAjustStock_Producto.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnAjustStock_Producto.selected = false;
-            this.btnAjustStock_Producto.Size = new System.Drawing.Size(138, 59);
-            this.btnAjustStock_Producto.TabIndex = 2;
-            this.btnAjustStock_Producto.Text = "Ajustes de Stock";
-            this.btnAjustStock_Producto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAjustStock_Producto.Textcolor = System.Drawing.Color.White;
-            this.btnAjustStock_Producto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // label3
-            // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label3.ForeColor = System.Drawing.Color.Aquamarine;
-            this.label3.Location = new System.Drawing.Point(0, 59);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(275, 23);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Ajustes";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Controls.Add(this.btnLotCadu_Producto);
-            this.panel4.Controls.Add(this.btnVerifPrice_Producto);
-            this.panel4.Controls.Add(this.btnAltaEdicion_Producto);
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(425, 86);
-            this.panel4.TabIndex = 4;
-            // 
-            // btnLotCadu_Producto
-            // 
-            this.btnLotCadu_Producto.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnLotCadu_Producto.BackColor = System.Drawing.Color.Transparent;
-            this.btnLotCadu_Producto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLotCadu_Producto.BorderRadius = 0;
-            this.btnLotCadu_Producto.ButtonText = "Lotes y caducidad";
-            this.btnLotCadu_Producto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLotCadu_Producto.DisabledColor = System.Drawing.Color.Gray;
-            this.btnLotCadu_Producto.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnLotCadu_Producto.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnLotCadu_Producto.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLotCadu_Producto.Iconimage")));
-            this.btnLotCadu_Producto.Iconimage_right = null;
-            this.btnLotCadu_Producto.Iconimage_right_Selected = null;
-            this.btnLotCadu_Producto.Iconimage_Selected = null;
-            this.btnLotCadu_Producto.IconMarginLeft = 0;
-            this.btnLotCadu_Producto.IconMarginRight = 0;
-            this.btnLotCadu_Producto.IconRightVisible = true;
-            this.btnLotCadu_Producto.IconRightZoom = 0D;
-            this.btnLotCadu_Producto.IconVisible = true;
-            this.btnLotCadu_Producto.IconZoom = 90D;
-            this.btnLotCadu_Producto.IsTab = false;
-            this.btnLotCadu_Producto.Location = new System.Drawing.Point(289, 0);
-            this.btnLotCadu_Producto.Name = "btnLotCadu_Producto";
-            this.btnLotCadu_Producto.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnLotCadu_Producto.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnLotCadu_Producto.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnLotCadu_Producto.selected = false;
-            this.btnLotCadu_Producto.Size = new System.Drawing.Size(143, 59);
-            this.btnLotCadu_Producto.TabIndex = 4;
-            this.btnLotCadu_Producto.Text = "Lotes y caducidad";
-            this.btnLotCadu_Producto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnLotCadu_Producto.Textcolor = System.Drawing.Color.White;
-            this.btnLotCadu_Producto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnVerifPrice_Producto
-            // 
-            this.btnVerifPrice_Producto.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnVerifPrice_Producto.BackColor = System.Drawing.Color.Transparent;
-            this.btnVerifPrice_Producto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnVerifPrice_Producto.BorderRadius = 0;
-            this.btnVerifPrice_Producto.ButtonText = "Verificar precios";
-            this.btnVerifPrice_Producto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVerifPrice_Producto.DisabledColor = System.Drawing.Color.Gray;
-            this.btnVerifPrice_Producto.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnVerifPrice_Producto.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnVerifPrice_Producto.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnVerifPrice_Producto.Iconimage")));
-            this.btnVerifPrice_Producto.Iconimage_right = null;
-            this.btnVerifPrice_Producto.Iconimage_right_Selected = null;
-            this.btnVerifPrice_Producto.Iconimage_Selected = null;
-            this.btnVerifPrice_Producto.IconMarginLeft = 0;
-            this.btnVerifPrice_Producto.IconMarginRight = 0;
-            this.btnVerifPrice_Producto.IconRightVisible = true;
-            this.btnVerifPrice_Producto.IconRightZoom = 0D;
-            this.btnVerifPrice_Producto.IconVisible = true;
-            this.btnVerifPrice_Producto.IconZoom = 90D;
-            this.btnVerifPrice_Producto.IsTab = false;
-            this.btnVerifPrice_Producto.Location = new System.Drawing.Point(144, 0);
-            this.btnVerifPrice_Producto.Name = "btnVerifPrice_Producto";
-            this.btnVerifPrice_Producto.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnVerifPrice_Producto.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnVerifPrice_Producto.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnVerifPrice_Producto.selected = false;
-            this.btnVerifPrice_Producto.Size = new System.Drawing.Size(145, 59);
-            this.btnVerifPrice_Producto.TabIndex = 3;
-            this.btnVerifPrice_Producto.Text = "Verificar precios";
-            this.btnVerifPrice_Producto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnVerifPrice_Producto.Textcolor = System.Drawing.Color.White;
-            this.btnVerifPrice_Producto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnAltaEdicion_Producto
-            // 
-            this.btnAltaEdicion_Producto.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnAltaEdicion_Producto.BackColor = System.Drawing.Color.Transparent;
-            this.btnAltaEdicion_Producto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAltaEdicion_Producto.BorderRadius = 0;
-            this.btnAltaEdicion_Producto.ButtonText = "Alta/Edición";
-            this.btnAltaEdicion_Producto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAltaEdicion_Producto.DisabledColor = System.Drawing.Color.Gray;
-            this.btnAltaEdicion_Producto.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnAltaEdicion_Producto.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnAltaEdicion_Producto.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAltaEdicion_Producto.Iconimage")));
-            this.btnAltaEdicion_Producto.Iconimage_right = null;
-            this.btnAltaEdicion_Producto.Iconimage_right_Selected = null;
-            this.btnAltaEdicion_Producto.Iconimage_Selected = null;
-            this.btnAltaEdicion_Producto.IconMarginLeft = 0;
-            this.btnAltaEdicion_Producto.IconMarginRight = 0;
-            this.btnAltaEdicion_Producto.IconRightVisible = true;
-            this.btnAltaEdicion_Producto.IconRightZoom = 0D;
-            this.btnAltaEdicion_Producto.IconVisible = true;
-            this.btnAltaEdicion_Producto.IconZoom = 90D;
-            this.btnAltaEdicion_Producto.IsTab = false;
-            this.btnAltaEdicion_Producto.Location = new System.Drawing.Point(0, 0);
-            this.btnAltaEdicion_Producto.Name = "btnAltaEdicion_Producto";
-            this.btnAltaEdicion_Producto.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnAltaEdicion_Producto.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnAltaEdicion_Producto.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnAltaEdicion_Producto.selected = false;
-            this.btnAltaEdicion_Producto.Size = new System.Drawing.Size(144, 59);
-            this.btnAltaEdicion_Producto.TabIndex = 2;
-            this.btnAltaEdicion_Producto.Text = "Alta/Edición";
-            this.btnAltaEdicion_Producto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAltaEdicion_Producto.Textcolor = System.Drawing.Color.White;
-            this.btnAltaEdicion_Producto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label1.ForeColor = System.Drawing.Color.Aquamarine;
-            this.label1.Location = new System.Drawing.Point(0, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(421, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Producto";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panelClientes
-            // 
-            this.panelClientes.BackColor = System.Drawing.Color.DarkCyan;
-            this.panelClientes.Controls.Add(this.panel2);
-            this.panelClientes.Controls.Add(this.panel3);
-            this.panelClientes.Controls.Add(this.panel5);
-            this.panelClientes.Location = new System.Drawing.Point(10, 104);
-            this.panelClientes.Name = "panelClientes";
-            this.panelClientes.Size = new System.Drawing.Size(768, 86);
-            this.panelClientes.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.btnConsultCompr_Cliente);
-            this.panel2.Controls.Add(this.btnHistorial_Cliente);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(418, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(286, 86);
-            this.panel2.TabIndex = 6;
-            // 
-            // btnConsultCompr_Cliente
-            // 
-            this.btnConsultCompr_Cliente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnConsultCompr_Cliente.BackColor = System.Drawing.Color.Transparent;
-            this.btnConsultCompr_Cliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnConsultCompr_Cliente.BorderRadius = 0;
-            this.btnConsultCompr_Cliente.ButtonText = "Consulta de compra";
-            this.btnConsultCompr_Cliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnConsultCompr_Cliente.DisabledColor = System.Drawing.Color.Gray;
-            this.btnConsultCompr_Cliente.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnConsultCompr_Cliente.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnConsultCompr_Cliente.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnConsultCompr_Cliente.Iconimage")));
-            this.btnConsultCompr_Cliente.Iconimage_right = null;
-            this.btnConsultCompr_Cliente.Iconimage_right_Selected = null;
-            this.btnConsultCompr_Cliente.Iconimage_Selected = null;
-            this.btnConsultCompr_Cliente.IconMarginLeft = 0;
-            this.btnConsultCompr_Cliente.IconMarginRight = 0;
-            this.btnConsultCompr_Cliente.IconRightVisible = true;
-            this.btnConsultCompr_Cliente.IconRightZoom = 0D;
-            this.btnConsultCompr_Cliente.IconVisible = true;
-            this.btnConsultCompr_Cliente.IconZoom = 90D;
-            this.btnConsultCompr_Cliente.IsTab = false;
-            this.btnConsultCompr_Cliente.Location = new System.Drawing.Point(138, 0);
-            this.btnConsultCompr_Cliente.Name = "btnConsultCompr_Cliente";
-            this.btnConsultCompr_Cliente.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnConsultCompr_Cliente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnConsultCompr_Cliente.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnConsultCompr_Cliente.selected = false;
-            this.btnConsultCompr_Cliente.Size = new System.Drawing.Size(145, 59);
-            this.btnConsultCompr_Cliente.TabIndex = 3;
-            this.btnConsultCompr_Cliente.Text = "Consulta de compra";
-            this.btnConsultCompr_Cliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnConsultCompr_Cliente.Textcolor = System.Drawing.Color.White;
-            this.btnConsultCompr_Cliente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnHistorial_Cliente
-            // 
-            this.btnHistorial_Cliente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnHistorial_Cliente.BackColor = System.Drawing.Color.Transparent;
-            this.btnHistorial_Cliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnHistorial_Cliente.BorderRadius = 0;
-            this.btnHistorial_Cliente.ButtonText = "Historial de compras";
-            this.btnHistorial_Cliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHistorial_Cliente.DisabledColor = System.Drawing.Color.Gray;
-            this.btnHistorial_Cliente.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnHistorial_Cliente.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnHistorial_Cliente.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnHistorial_Cliente.Iconimage")));
-            this.btnHistorial_Cliente.Iconimage_right = null;
-            this.btnHistorial_Cliente.Iconimage_right_Selected = null;
-            this.btnHistorial_Cliente.Iconimage_Selected = null;
-            this.btnHistorial_Cliente.IconMarginLeft = 0;
-            this.btnHistorial_Cliente.IconMarginRight = 0;
-            this.btnHistorial_Cliente.IconRightVisible = true;
-            this.btnHistorial_Cliente.IconRightZoom = 0D;
-            this.btnHistorial_Cliente.IconVisible = true;
-            this.btnHistorial_Cliente.IconZoom = 90D;
-            this.btnHistorial_Cliente.IsTab = false;
-            this.btnHistorial_Cliente.Location = new System.Drawing.Point(0, 0);
-            this.btnHistorial_Cliente.Name = "btnHistorial_Cliente";
-            this.btnHistorial_Cliente.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnHistorial_Cliente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnHistorial_Cliente.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnHistorial_Cliente.selected = false;
-            this.btnHistorial_Cliente.Size = new System.Drawing.Size(138, 59);
-            this.btnHistorial_Cliente.TabIndex = 2;
-            this.btnHistorial_Cliente.Text = "Historial de compras";
-            this.btnHistorial_Cliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnHistorial_Cliente.Textcolor = System.Drawing.Color.White;
-            this.btnHistorial_Cliente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // label2
-            // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(0, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(282, 23);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Consultas";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.btnModificar_Cliente);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(285, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(133, 86);
-            this.panel3.TabIndex = 5;
-            // 
-            // btnModificar_Cliente
-            // 
-            this.btnModificar_Cliente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnModificar_Cliente.BackColor = System.Drawing.Color.Transparent;
-            this.btnModificar_Cliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnModificar_Cliente.BorderRadius = 0;
-            this.btnModificar_Cliente.ButtonText = "Modificar Datos";
-            this.btnModificar_Cliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnModificar_Cliente.DisabledColor = System.Drawing.Color.Gray;
-            this.btnModificar_Cliente.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnModificar_Cliente.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnModificar_Cliente.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnModificar_Cliente.Iconimage")));
-            this.btnModificar_Cliente.Iconimage_right = null;
-            this.btnModificar_Cliente.Iconimage_right_Selected = null;
-            this.btnModificar_Cliente.Iconimage_Selected = null;
-            this.btnModificar_Cliente.IconMarginLeft = 0;
-            this.btnModificar_Cliente.IconMarginRight = 0;
-            this.btnModificar_Cliente.IconRightVisible = true;
-            this.btnModificar_Cliente.IconRightZoom = 0D;
-            this.btnModificar_Cliente.IconVisible = true;
-            this.btnModificar_Cliente.IconZoom = 90D;
-            this.btnModificar_Cliente.IsTab = false;
-            this.btnModificar_Cliente.Location = new System.Drawing.Point(0, 0);
-            this.btnModificar_Cliente.Name = "btnModificar_Cliente";
-            this.btnModificar_Cliente.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnModificar_Cliente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnModificar_Cliente.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnModificar_Cliente.selected = false;
-            this.btnModificar_Cliente.Size = new System.Drawing.Size(138, 59);
-            this.btnModificar_Cliente.TabIndex = 2;
-            this.btnModificar_Cliente.Text = "Modificar Datos";
-            this.btnModificar_Cliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnModificar_Cliente.Textcolor = System.Drawing.Color.White;
-            this.btnModificar_Cliente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // label5
-            // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label5.ForeColor = System.Drawing.Color.Yellow;
-            this.label5.Location = new System.Drawing.Point(0, 59);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 23);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Ajustes";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel5.Controls.Add(this.btnSerch_Cliente);
-            this.panel5.Controls.Add(this.btnAlta_Cliente);
-            this.panel5.Controls.Add(this.label6);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(285, 86);
-            this.panel5.TabIndex = 4;
-            // 
-            // btnSerch_Cliente
-            // 
-            this.btnSerch_Cliente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnSerch_Cliente.BackColor = System.Drawing.Color.Transparent;
-            this.btnSerch_Cliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSerch_Cliente.BorderRadius = 0;
-            this.btnSerch_Cliente.ButtonText = "Buscar Clientes";
-            this.btnSerch_Cliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSerch_Cliente.DisabledColor = System.Drawing.Color.Gray;
-            this.btnSerch_Cliente.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnSerch_Cliente.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnSerch_Cliente.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSerch_Cliente.Iconimage")));
-            this.btnSerch_Cliente.Iconimage_right = null;
-            this.btnSerch_Cliente.Iconimage_right_Selected = null;
-            this.btnSerch_Cliente.Iconimage_Selected = null;
-            this.btnSerch_Cliente.IconMarginLeft = 0;
-            this.btnSerch_Cliente.IconMarginRight = 0;
-            this.btnSerch_Cliente.IconRightVisible = true;
-            this.btnSerch_Cliente.IconRightZoom = 0D;
-            this.btnSerch_Cliente.IconVisible = true;
-            this.btnSerch_Cliente.IconZoom = 90D;
-            this.btnSerch_Cliente.IsTab = false;
-            this.btnSerch_Cliente.Location = new System.Drawing.Point(138, 0);
-            this.btnSerch_Cliente.Name = "btnSerch_Cliente";
-            this.btnSerch_Cliente.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnSerch_Cliente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnSerch_Cliente.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnSerch_Cliente.selected = false;
-            this.btnSerch_Cliente.Size = new System.Drawing.Size(145, 59);
-            this.btnSerch_Cliente.TabIndex = 3;
-            this.btnSerch_Cliente.Text = "Buscar Clientes";
-            this.btnSerch_Cliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSerch_Cliente.Textcolor = System.Drawing.Color.White;
-            this.btnSerch_Cliente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnAlta_Cliente
-            // 
-            this.btnAlta_Cliente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnAlta_Cliente.BackColor = System.Drawing.Color.Transparent;
-            this.btnAlta_Cliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAlta_Cliente.BorderRadius = 0;
-            this.btnAlta_Cliente.ButtonText = "Dar de Alta";
-            this.btnAlta_Cliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAlta_Cliente.DisabledColor = System.Drawing.Color.Gray;
-            this.btnAlta_Cliente.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnAlta_Cliente.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnAlta_Cliente.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAlta_Cliente.Iconimage")));
-            this.btnAlta_Cliente.Iconimage_right = null;
-            this.btnAlta_Cliente.Iconimage_right_Selected = null;
-            this.btnAlta_Cliente.Iconimage_Selected = null;
-            this.btnAlta_Cliente.IconMarginLeft = 0;
-            this.btnAlta_Cliente.IconMarginRight = 0;
-            this.btnAlta_Cliente.IconRightVisible = true;
-            this.btnAlta_Cliente.IconRightZoom = 0D;
-            this.btnAlta_Cliente.IconVisible = true;
-            this.btnAlta_Cliente.IconZoom = 90D;
-            this.btnAlta_Cliente.IsTab = false;
-            this.btnAlta_Cliente.Location = new System.Drawing.Point(0, 0);
-            this.btnAlta_Cliente.Name = "btnAlta_Cliente";
-            this.btnAlta_Cliente.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnAlta_Cliente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnAlta_Cliente.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnAlta_Cliente.selected = false;
-            this.btnAlta_Cliente.Size = new System.Drawing.Size(138, 59);
-            this.btnAlta_Cliente.TabIndex = 2;
-            this.btnAlta_Cliente.Text = "Dar de Alta";
-            this.btnAlta_Cliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAlta_Cliente.Textcolor = System.Drawing.Color.White;
-            this.btnAlta_Cliente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // label6
-            // 
-            this.label6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label6.ForeColor = System.Drawing.Color.Yellow;
-            this.label6.Location = new System.Drawing.Point(0, 59);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(281, 23);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Clientes";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelCompras
             // 
             this.panelCompras.BackColor = System.Drawing.Color.DarkCyan;
             this.panelCompras.Controls.Add(this.panel6);
             this.panelCompras.Controls.Add(this.panel10);
-            this.panelCompras.Location = new System.Drawing.Point(10, 196);
+            this.panelCompras.Location = new System.Drawing.Point(20, 377);
+            this.panelCompras.Margin = new System.Windows.Forms.Padding(6);
             this.panelCompras.Name = "panelCompras";
-            this.panelCompras.Size = new System.Drawing.Size(656, 86);
+            this.panelCompras.Size = new System.Drawing.Size(1312, 165);
             this.panelCompras.TabIndex = 2;
             // 
             // panel6
@@ -751,9 +166,10 @@
             this.panel6.Controls.Add(this.btnHistorial_Compras);
             this.panel6.Controls.Add(this.label7);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(285, 0);
+            this.panel6.Location = new System.Drawing.Point(566, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(6);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(286, 86);
+            this.panel6.Size = new System.Drawing.Size(568, 165);
             this.panel6.TabIndex = 6;
             // 
             // btnConsult_Compras
@@ -778,13 +194,14 @@
             this.btnConsult_Compras.IconVisible = true;
             this.btnConsult_Compras.IconZoom = 90D;
             this.btnConsult_Compras.IsTab = false;
-            this.btnConsult_Compras.Location = new System.Drawing.Point(138, 0);
+            this.btnConsult_Compras.Location = new System.Drawing.Point(276, 0);
+            this.btnConsult_Compras.Margin = new System.Windows.Forms.Padding(12);
             this.btnConsult_Compras.Name = "btnConsult_Compras";
             this.btnConsult_Compras.Normalcolor = System.Drawing.Color.Transparent;
             this.btnConsult_Compras.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnConsult_Compras.OnHoverTextColor = System.Drawing.Color.White;
             this.btnConsult_Compras.selected = false;
-            this.btnConsult_Compras.Size = new System.Drawing.Size(145, 59);
+            this.btnConsult_Compras.Size = new System.Drawing.Size(290, 117);
             this.btnConsult_Compras.TabIndex = 3;
             this.btnConsult_Compras.Text = "Consultar compra";
             this.btnConsult_Compras.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -814,12 +231,13 @@
             this.btnHistorial_Compras.IconZoom = 90D;
             this.btnHistorial_Compras.IsTab = false;
             this.btnHistorial_Compras.Location = new System.Drawing.Point(0, 0);
+            this.btnHistorial_Compras.Margin = new System.Windows.Forms.Padding(12);
             this.btnHistorial_Compras.Name = "btnHistorial_Compras";
             this.btnHistorial_Compras.Normalcolor = System.Drawing.Color.Transparent;
             this.btnHistorial_Compras.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnHistorial_Compras.OnHoverTextColor = System.Drawing.Color.White;
             this.btnHistorial_Compras.selected = false;
-            this.btnHistorial_Compras.Size = new System.Drawing.Size(138, 59);
+            this.btnHistorial_Compras.Size = new System.Drawing.Size(276, 117);
             this.btnHistorial_Compras.TabIndex = 2;
             this.btnHistorial_Compras.Text = "Historial de compras";
             this.btnHistorial_Compras.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -830,9 +248,10 @@
             // 
             this.label7.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label7.ForeColor = System.Drawing.Color.Aquamarine;
-            this.label7.Location = new System.Drawing.Point(0, 59);
+            this.label7.Location = new System.Drawing.Point(0, 117);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(282, 23);
+            this.label7.Size = new System.Drawing.Size(564, 44);
             this.label7.TabIndex = 1;
             this.label7.Text = "Consultas";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -846,8 +265,9 @@
             this.panel10.Controls.Add(this.label9);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Margin = new System.Windows.Forms.Padding(6);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(285, 86);
+            this.panel10.Size = new System.Drawing.Size(566, 165);
             this.panel10.TabIndex = 4;
             // 
             // btnPagos_Compras
@@ -872,13 +292,14 @@
             this.btnPagos_Compras.IconVisible = true;
             this.btnPagos_Compras.IconZoom = 90D;
             this.btnPagos_Compras.IsTab = false;
-            this.btnPagos_Compras.Location = new System.Drawing.Point(138, 0);
+            this.btnPagos_Compras.Location = new System.Drawing.Point(276, 0);
+            this.btnPagos_Compras.Margin = new System.Windows.Forms.Padding(12);
             this.btnPagos_Compras.Name = "btnPagos_Compras";
             this.btnPagos_Compras.Normalcolor = System.Drawing.Color.Transparent;
             this.btnPagos_Compras.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnPagos_Compras.OnHoverTextColor = System.Drawing.Color.White;
             this.btnPagos_Compras.selected = false;
-            this.btnPagos_Compras.Size = new System.Drawing.Size(145, 59);
+            this.btnPagos_Compras.Size = new System.Drawing.Size(290, 117);
             this.btnPagos_Compras.TabIndex = 3;
             this.btnPagos_Compras.Text = "Pagos a proveedores";
             this.btnPagos_Compras.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -908,12 +329,13 @@
             this.btn_Compras.IconZoom = 90D;
             this.btn_Compras.IsTab = false;
             this.btn_Compras.Location = new System.Drawing.Point(0, 0);
+            this.btn_Compras.Margin = new System.Windows.Forms.Padding(12);
             this.btn_Compras.Name = "btn_Compras";
             this.btn_Compras.Normalcolor = System.Drawing.Color.Transparent;
             this.btn_Compras.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btn_Compras.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_Compras.selected = false;
-            this.btn_Compras.Size = new System.Drawing.Size(138, 59);
+            this.btn_Compras.Size = new System.Drawing.Size(276, 117);
             this.btn_Compras.TabIndex = 2;
             this.btn_Compras.Text = "Compra";
             this.btn_Compras.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -924,9 +346,10 @@
             // 
             this.label9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label9.ForeColor = System.Drawing.Color.Aquamarine;
-            this.label9.Location = new System.Drawing.Point(0, 59);
+            this.label9.Location = new System.Drawing.Point(0, 117);
+            this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(281, 23);
+            this.label9.Size = new System.Drawing.Size(562, 44);
             this.label9.TabIndex = 1;
             this.label9.Text = "Compras";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -936,9 +359,10 @@
             this.panelVentas.BackColor = System.Drawing.Color.DarkCyan;
             this.panelVentas.Controls.Add(this.panel9);
             this.panelVentas.Controls.Add(this.panel11);
-            this.panelVentas.Location = new System.Drawing.Point(10, 288);
+            this.panelVentas.Location = new System.Drawing.Point(20, 554);
+            this.panelVentas.Margin = new System.Windows.Forms.Padding(6);
             this.panelVentas.Name = "panelVentas";
-            this.panelVentas.Size = new System.Drawing.Size(866, 86);
+            this.panelVentas.Size = new System.Drawing.Size(1732, 165);
             this.panelVentas.TabIndex = 3;
             // 
             // panel9
@@ -950,9 +374,10 @@
             this.panel9.Controls.Add(this.btnHistorial_Ventas);
             this.panel9.Controls.Add(this.label8);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel9.Location = new System.Drawing.Point(311, 0);
+            this.panel9.Location = new System.Drawing.Point(618, 0);
+            this.panel9.Margin = new System.Windows.Forms.Padding(6);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(457, 86);
+            this.panel9.Size = new System.Drawing.Size(910, 165);
             this.panel9.TabIndex = 6;
             // 
             // btnConsultarDevol_Venta
@@ -977,13 +402,14 @@
             this.btnConsultarDevol_Venta.IconVisible = true;
             this.btnConsultarDevol_Venta.IconZoom = 90D;
             this.btnConsultarDevol_Venta.IsTab = false;
-            this.btnConsultarDevol_Venta.Location = new System.Drawing.Point(293, 0);
+            this.btnConsultarDevol_Venta.Location = new System.Drawing.Point(586, 0);
+            this.btnConsultarDevol_Venta.Margin = new System.Windows.Forms.Padding(12);
             this.btnConsultarDevol_Venta.Name = "btnConsultarDevol_Venta";
             this.btnConsultarDevol_Venta.Normalcolor = System.Drawing.Color.Transparent;
             this.btnConsultarDevol_Venta.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnConsultarDevol_Venta.OnHoverTextColor = System.Drawing.Color.White;
             this.btnConsultarDevol_Venta.selected = false;
-            this.btnConsultarDevol_Venta.Size = new System.Drawing.Size(155, 59);
+            this.btnConsultarDevol_Venta.Size = new System.Drawing.Size(310, 117);
             this.btnConsultarDevol_Venta.TabIndex = 4;
             this.btnConsultarDevol_Venta.Text = "Consultar devolución";
             this.btnConsultarDevol_Venta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1012,13 +438,14 @@
             this.btnConsultar_Ventas.IconVisible = true;
             this.btnConsultar_Ventas.IconZoom = 90D;
             this.btnConsultar_Ventas.IsTab = false;
-            this.btnConsultar_Ventas.Location = new System.Drawing.Point(138, 0);
+            this.btnConsultar_Ventas.Location = new System.Drawing.Point(276, 0);
+            this.btnConsultar_Ventas.Margin = new System.Windows.Forms.Padding(12);
             this.btnConsultar_Ventas.Name = "btnConsultar_Ventas";
             this.btnConsultar_Ventas.Normalcolor = System.Drawing.Color.Transparent;
             this.btnConsultar_Ventas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnConsultar_Ventas.OnHoverTextColor = System.Drawing.Color.White;
             this.btnConsultar_Ventas.selected = false;
-            this.btnConsultar_Ventas.Size = new System.Drawing.Size(155, 59);
+            this.btnConsultar_Ventas.Size = new System.Drawing.Size(310, 117);
             this.btnConsultar_Ventas.TabIndex = 3;
             this.btnConsultar_Ventas.Text = "Consultar venta";
             this.btnConsultar_Ventas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1048,12 +475,13 @@
             this.btnHistorial_Ventas.IconZoom = 90D;
             this.btnHistorial_Ventas.IsTab = false;
             this.btnHistorial_Ventas.Location = new System.Drawing.Point(0, 0);
+            this.btnHistorial_Ventas.Margin = new System.Windows.Forms.Padding(12);
             this.btnHistorial_Ventas.Name = "btnHistorial_Ventas";
             this.btnHistorial_Ventas.Normalcolor = System.Drawing.Color.Transparent;
             this.btnHistorial_Ventas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnHistorial_Ventas.OnHoverTextColor = System.Drawing.Color.White;
             this.btnHistorial_Ventas.selected = false;
-            this.btnHistorial_Ventas.Size = new System.Drawing.Size(138, 59);
+            this.btnHistorial_Ventas.Size = new System.Drawing.Size(276, 117);
             this.btnHistorial_Ventas.TabIndex = 2;
             this.btnHistorial_Ventas.Text = "Historial de ventas";
             this.btnHistorial_Ventas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1064,9 +492,10 @@
             // 
             this.label8.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label8.ForeColor = System.Drawing.Color.Aquamarine;
-            this.label8.Location = new System.Drawing.Point(0, 59);
+            this.label8.Location = new System.Drawing.Point(0, 117);
+            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(453, 23);
+            this.label8.Size = new System.Drawing.Size(906, 44);
             this.label8.TabIndex = 1;
             this.label8.Text = "Consultas";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1080,8 +509,9 @@
             this.panel11.Controls.Add(this.label10);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel11.Location = new System.Drawing.Point(0, 0);
+            this.panel11.Margin = new System.Windows.Forms.Padding(6);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(311, 86);
+            this.panel11.Size = new System.Drawing.Size(618, 165);
             this.panel11.TabIndex = 4;
             // 
             // btnDevolucion_Ventas
@@ -1106,13 +536,14 @@
             this.btnDevolucion_Ventas.IconVisible = true;
             this.btnDevolucion_Ventas.IconZoom = 90D;
             this.btnDevolucion_Ventas.IsTab = false;
-            this.btnDevolucion_Ventas.Location = new System.Drawing.Point(138, 0);
+            this.btnDevolucion_Ventas.Location = new System.Drawing.Point(276, 0);
+            this.btnDevolucion_Ventas.Margin = new System.Windows.Forms.Padding(12);
             this.btnDevolucion_Ventas.Name = "btnDevolucion_Ventas";
             this.btnDevolucion_Ventas.Normalcolor = System.Drawing.Color.Transparent;
             this.btnDevolucion_Ventas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnDevolucion_Ventas.OnHoverTextColor = System.Drawing.Color.White;
             this.btnDevolucion_Ventas.selected = false;
-            this.btnDevolucion_Ventas.Size = new System.Drawing.Size(151, 59);
+            this.btnDevolucion_Ventas.Size = new System.Drawing.Size(302, 117);
             this.btnDevolucion_Ventas.TabIndex = 3;
             this.btnDevolucion_Ventas.Text = "Devoluciones";
             this.btnDevolucion_Ventas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1142,12 +573,13 @@
             this.btn_Ventas.IconZoom = 90D;
             this.btn_Ventas.IsTab = false;
             this.btn_Ventas.Location = new System.Drawing.Point(0, 0);
+            this.btn_Ventas.Margin = new System.Windows.Forms.Padding(12);
             this.btn_Ventas.Name = "btn_Ventas";
             this.btn_Ventas.Normalcolor = System.Drawing.Color.Transparent;
             this.btn_Ventas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btn_Ventas.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_Ventas.selected = false;
-            this.btn_Ventas.Size = new System.Drawing.Size(138, 59);
+            this.btn_Ventas.Size = new System.Drawing.Size(276, 117);
             this.btn_Ventas.TabIndex = 2;
             this.btn_Ventas.Text = "Venta";
             this.btn_Ventas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1158,9 +590,10 @@
             // 
             this.label10.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label10.ForeColor = System.Drawing.Color.Aquamarine;
-            this.label10.Location = new System.Drawing.Point(0, 59);
+            this.label10.Location = new System.Drawing.Point(0, 117);
+            this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(307, 23);
+            this.label10.Size = new System.Drawing.Size(614, 44);
             this.label10.TabIndex = 1;
             this.label10.Text = "Compras";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1170,9 +603,10 @@
             this.panelProveedores.BackColor = System.Drawing.Color.DarkCyan;
             this.panelProveedores.Controls.Add(this.panel12);
             this.panelProveedores.Controls.Add(this.panel13);
-            this.panelProveedores.Location = new System.Drawing.Point(10, 380);
+            this.panelProveedores.Location = new System.Drawing.Point(20, 731);
+            this.panelProveedores.Margin = new System.Windows.Forms.Padding(6);
             this.panelProveedores.Name = "panelProveedores";
-            this.panelProveedores.Size = new System.Drawing.Size(656, 86);
+            this.panelProveedores.Size = new System.Drawing.Size(1312, 165);
             this.panelProveedores.TabIndex = 4;
             // 
             // panel12
@@ -1182,9 +616,10 @@
             this.panel12.Controls.Add(this.bunifuFlatButton2);
             this.panel12.Controls.Add(this.label11);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel12.Location = new System.Drawing.Point(451, 0);
+            this.panel12.Location = new System.Drawing.Point(898, 0);
+            this.panel12.Margin = new System.Windows.Forms.Padding(6);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(155, 86);
+            this.panel12.Size = new System.Drawing.Size(306, 165);
             this.panel12.TabIndex = 6;
             // 
             // bunifuFlatButton2
@@ -1210,12 +645,13 @@
             this.bunifuFlatButton2.IconZoom = 90D;
             this.bunifuFlatButton2.IsTab = false;
             this.bunifuFlatButton2.Location = new System.Drawing.Point(0, 0);
+            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(155, 59);
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(310, 117);
             this.bunifuFlatButton2.TabIndex = 3;
             this.bunifuFlatButton2.Text = "Consultar ordenes";
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1226,9 +662,10 @@
             // 
             this.label11.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label11.ForeColor = System.Drawing.Color.Aquamarine;
-            this.label11.Location = new System.Drawing.Point(0, 59);
+            this.label11.Location = new System.Drawing.Point(0, 117);
+            this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(151, 23);
+            this.label11.Size = new System.Drawing.Size(302, 44);
             this.label11.TabIndex = 1;
             this.label11.Text = "Consultas";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1243,8 +680,9 @@
             this.panel13.Controls.Add(this.label12);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel13.Location = new System.Drawing.Point(0, 0);
+            this.panel13.Margin = new System.Windows.Forms.Padding(6);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(451, 86);
+            this.panel13.Size = new System.Drawing.Size(898, 165);
             this.panel13.TabIndex = 4;
             // 
             // bunifuFlatButton1
@@ -1269,13 +707,14 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 90D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(299, 0);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(598, 0);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(151, 59);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(302, 117);
             this.bunifuFlatButton1.TabIndex = 4;
             this.bunifuFlatButton1.Text = "Crear nueva orden";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1304,13 +743,14 @@
             this.bunifuFlatButton4.IconVisible = true;
             this.bunifuFlatButton4.IconZoom = 90D;
             this.bunifuFlatButton4.IsTab = false;
-            this.bunifuFlatButton4.Location = new System.Drawing.Point(148, 0);
+            this.bunifuFlatButton4.Location = new System.Drawing.Point(296, 0);
+            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton4.Name = "bunifuFlatButton4";
             this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton4.selected = false;
-            this.bunifuFlatButton4.Size = new System.Drawing.Size(151, 59);
+            this.bunifuFlatButton4.Size = new System.Drawing.Size(302, 117);
             this.bunifuFlatButton4.TabIndex = 3;
             this.bunifuFlatButton4.Text = "Catálogo de proveedores";
             this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1340,12 +780,13 @@
             this.bunifuFlatButton5.IconZoom = 90D;
             this.bunifuFlatButton5.IsTab = false;
             this.bunifuFlatButton5.Location = new System.Drawing.Point(0, 0);
+            this.bunifuFlatButton5.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton5.Name = "bunifuFlatButton5";
             this.bunifuFlatButton5.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton5.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton5.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton5.selected = false;
-            this.bunifuFlatButton5.Size = new System.Drawing.Size(148, 59);
+            this.bunifuFlatButton5.Size = new System.Drawing.Size(296, 117);
             this.bunifuFlatButton5.TabIndex = 2;
             this.bunifuFlatButton5.Text = "Alta/Edición";
             this.bunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1356,9 +797,10 @@
             // 
             this.label12.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label12.ForeColor = System.Drawing.Color.Aquamarine;
-            this.label12.Location = new System.Drawing.Point(0, 59);
+            this.label12.Location = new System.Drawing.Point(0, 117);
+            this.label12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(447, 23);
+            this.label12.Size = new System.Drawing.Size(894, 44);
             this.label12.TabIndex = 1;
             this.label12.Text = "Proveedores";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1367,9 +809,10 @@
             // 
             this.panelEmpleados.BackColor = System.Drawing.Color.DarkCyan;
             this.panelEmpleados.Controls.Add(this.panel15);
-            this.panelEmpleados.Location = new System.Drawing.Point(10, 472);
+            this.panelEmpleados.Location = new System.Drawing.Point(20, 908);
+            this.panelEmpleados.Margin = new System.Windows.Forms.Padding(6);
             this.panelEmpleados.Name = "panelEmpleados";
-            this.panelEmpleados.Size = new System.Drawing.Size(497, 86);
+            this.panelEmpleados.Size = new System.Drawing.Size(994, 165);
             this.panelEmpleados.TabIndex = 5;
             // 
             // panel15
@@ -1382,8 +825,9 @@
             this.panel15.Controls.Add(this.label14);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel15.Location = new System.Drawing.Point(0, 0);
+            this.panel15.Margin = new System.Windows.Forms.Padding(6);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(427, 86);
+            this.panel15.Size = new System.Drawing.Size(850, 165);
             this.panel15.TabIndex = 4;
             // 
             // bunifuFlatButton6
@@ -1408,13 +852,14 @@
             this.bunifuFlatButton6.IconVisible = true;
             this.bunifuFlatButton6.IconZoom = 90D;
             this.bunifuFlatButton6.IsTab = false;
-            this.bunifuFlatButton6.Location = new System.Drawing.Point(256, 0);
+            this.bunifuFlatButton6.Location = new System.Drawing.Point(512, 0);
+            this.bunifuFlatButton6.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton6.Name = "bunifuFlatButton6";
             this.bunifuFlatButton6.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton6.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton6.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton6.selected = false;
-            this.bunifuFlatButton6.Size = new System.Drawing.Size(158, 59);
+            this.bunifuFlatButton6.Size = new System.Drawing.Size(316, 117);
             this.bunifuFlatButton6.TabIndex = 4;
             this.bunifuFlatButton6.Text = "Lista de Empleados";
             this.bunifuFlatButton6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1443,13 +888,14 @@
             this.bunifuFlatButton7.IconVisible = true;
             this.bunifuFlatButton7.IconZoom = 90D;
             this.bunifuFlatButton7.IsTab = false;
-            this.bunifuFlatButton7.Location = new System.Drawing.Point(138, 0);
+            this.bunifuFlatButton7.Location = new System.Drawing.Point(276, 0);
+            this.bunifuFlatButton7.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton7.Name = "bunifuFlatButton7";
             this.bunifuFlatButton7.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton7.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton7.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton7.selected = false;
-            this.bunifuFlatButton7.Size = new System.Drawing.Size(118, 59);
+            this.bunifuFlatButton7.Size = new System.Drawing.Size(236, 117);
             this.bunifuFlatButton7.TabIndex = 3;
             this.bunifuFlatButton7.Text = "Editar";
             this.bunifuFlatButton7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1479,12 +925,13 @@
             this.bunifuFlatButton8.IconZoom = 90D;
             this.bunifuFlatButton8.IsTab = false;
             this.bunifuFlatButton8.Location = new System.Drawing.Point(0, 0);
+            this.bunifuFlatButton8.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton8.Name = "bunifuFlatButton8";
             this.bunifuFlatButton8.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton8.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton8.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton8.selected = false;
-            this.bunifuFlatButton8.Size = new System.Drawing.Size(138, 59);
+            this.bunifuFlatButton8.Size = new System.Drawing.Size(276, 117);
             this.bunifuFlatButton8.TabIndex = 2;
             this.bunifuFlatButton8.Text = "Dar de Alta";
             this.bunifuFlatButton8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1495,9 +942,10 @@
             // 
             this.label14.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label14.ForeColor = System.Drawing.Color.Aquamarine;
-            this.label14.Location = new System.Drawing.Point(0, 59);
+            this.label14.Location = new System.Drawing.Point(0, 117);
+            this.label14.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(423, 23);
+            this.label14.Size = new System.Drawing.Size(846, 44);
             this.label14.TabIndex = 1;
             this.label14.Text = "Empleado";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1506,9 +954,10 @@
             // 
             this.panelReportes.BackColor = System.Drawing.Color.DarkCyan;
             this.panelReportes.Controls.Add(this.panel14);
-            this.panelReportes.Location = new System.Drawing.Point(10, 656);
+            this.panelReportes.Location = new System.Drawing.Point(20, 1262);
+            this.panelReportes.Margin = new System.Windows.Forms.Padding(6);
             this.panelReportes.Name = "panelReportes";
-            this.panelReportes.Size = new System.Drawing.Size(1007, 86);
+            this.panelReportes.Size = new System.Drawing.Size(2014, 165);
             this.panelReportes.TabIndex = 6;
             // 
             // panel14
@@ -1525,8 +974,9 @@
             this.panel14.Controls.Add(this.label13);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel14.Location = new System.Drawing.Point(0, 0);
+            this.panel14.Margin = new System.Windows.Forms.Padding(6);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(958, 86);
+            this.panel14.Size = new System.Drawing.Size(1912, 165);
             this.panel14.TabIndex = 4;
             // 
             // bunifuFlatButton14
@@ -1551,13 +1001,14 @@
             this.bunifuFlatButton14.IconVisible = true;
             this.bunifuFlatButton14.IconZoom = 90D;
             this.bunifuFlatButton14.IsTab = false;
-            this.bunifuFlatButton14.Location = new System.Drawing.Point(828, 0);
+            this.bunifuFlatButton14.Location = new System.Drawing.Point(1656, 0);
+            this.bunifuFlatButton14.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton14.Name = "bunifuFlatButton14";
             this.bunifuFlatButton14.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton14.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton14.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton14.selected = false;
-            this.bunifuFlatButton14.Size = new System.Drawing.Size(129, 59);
+            this.bunifuFlatButton14.Size = new System.Drawing.Size(258, 117);
             this.bunifuFlatButton14.TabIndex = 8;
             this.bunifuFlatButton14.Text = "Caja";
             this.bunifuFlatButton14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1586,13 +1037,14 @@
             this.bunifuFlatButton13.IconVisible = true;
             this.bunifuFlatButton13.IconZoom = 90D;
             this.bunifuFlatButton13.IsTab = false;
-            this.bunifuFlatButton13.Location = new System.Drawing.Point(678, 0);
+            this.bunifuFlatButton13.Location = new System.Drawing.Point(1356, 0);
+            this.bunifuFlatButton13.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton13.Name = "bunifuFlatButton13";
             this.bunifuFlatButton13.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton13.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton13.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton13.selected = false;
-            this.bunifuFlatButton13.Size = new System.Drawing.Size(150, 59);
+            this.bunifuFlatButton13.Size = new System.Drawing.Size(300, 117);
             this.bunifuFlatButton13.TabIndex = 7;
             this.bunifuFlatButton13.Text = "Presupuestos";
             this.bunifuFlatButton13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1621,13 +1073,14 @@
             this.bunifuFlatButton12.IconVisible = true;
             this.bunifuFlatButton12.IconZoom = 90D;
             this.bunifuFlatButton12.IsTab = false;
-            this.bunifuFlatButton12.Location = new System.Drawing.Point(520, 0);
+            this.bunifuFlatButton12.Location = new System.Drawing.Point(1040, 0);
+            this.bunifuFlatButton12.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton12.Name = "bunifuFlatButton12";
             this.bunifuFlatButton12.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton12.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton12.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton12.selected = false;
-            this.bunifuFlatButton12.Size = new System.Drawing.Size(158, 59);
+            this.bunifuFlatButton12.Size = new System.Drawing.Size(316, 117);
             this.bunifuFlatButton12.TabIndex = 6;
             this.bunifuFlatButton12.Text = "Pago a proveedores";
             this.bunifuFlatButton12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1656,13 +1109,14 @@
             this.bunifuFlatButton11.IconVisible = true;
             this.bunifuFlatButton11.IconZoom = 90D;
             this.bunifuFlatButton11.IsTab = false;
-            this.bunifuFlatButton11.Location = new System.Drawing.Point(392, 0);
+            this.bunifuFlatButton11.Location = new System.Drawing.Point(784, 0);
+            this.bunifuFlatButton11.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton11.Name = "bunifuFlatButton11";
             this.bunifuFlatButton11.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton11.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton11.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton11.selected = false;
-            this.bunifuFlatButton11.Size = new System.Drawing.Size(128, 59);
+            this.bunifuFlatButton11.Size = new System.Drawing.Size(256, 117);
             this.bunifuFlatButton11.TabIndex = 5;
             this.bunifuFlatButton11.Text = "Compras";
             this.bunifuFlatButton11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1691,13 +1145,14 @@
             this.bunifuFlatButton3.IconVisible = true;
             this.bunifuFlatButton3.IconZoom = 90D;
             this.bunifuFlatButton3.IsTab = false;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(266, 0);
+            this.bunifuFlatButton3.Location = new System.Drawing.Point(532, 0);
+            this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton3.Name = "bunifuFlatButton3";
             this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton3.selected = false;
-            this.bunifuFlatButton3.Size = new System.Drawing.Size(126, 59);
+            this.bunifuFlatButton3.Size = new System.Drawing.Size(252, 117);
             this.bunifuFlatButton3.TabIndex = 4;
             this.bunifuFlatButton3.Text = "Cobranza";
             this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1726,13 +1181,14 @@
             this.bunifuFlatButton9.IconVisible = true;
             this.bunifuFlatButton9.IconZoom = 90D;
             this.bunifuFlatButton9.IsTab = false;
-            this.bunifuFlatButton9.Location = new System.Drawing.Point(113, 0);
+            this.bunifuFlatButton9.Location = new System.Drawing.Point(226, 0);
+            this.bunifuFlatButton9.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton9.Name = "bunifuFlatButton9";
             this.bunifuFlatButton9.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton9.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton9.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton9.selected = false;
-            this.bunifuFlatButton9.Size = new System.Drawing.Size(153, 59);
+            this.bunifuFlatButton9.Size = new System.Drawing.Size(306, 117);
             this.bunifuFlatButton9.TabIndex = 3;
             this.bunifuFlatButton9.Text = "Devoluciones";
             this.bunifuFlatButton9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1762,12 +1218,13 @@
             this.bunifuFlatButton10.IconZoom = 90D;
             this.bunifuFlatButton10.IsTab = false;
             this.bunifuFlatButton10.Location = new System.Drawing.Point(0, 0);
+            this.bunifuFlatButton10.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton10.Name = "bunifuFlatButton10";
             this.bunifuFlatButton10.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton10.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton10.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton10.selected = false;
-            this.bunifuFlatButton10.Size = new System.Drawing.Size(113, 59);
+            this.bunifuFlatButton10.Size = new System.Drawing.Size(226, 117);
             this.bunifuFlatButton10.TabIndex = 2;
             this.bunifuFlatButton10.Text = "Venta";
             this.bunifuFlatButton10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1778,9 +1235,10 @@
             // 
             this.label13.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label13.ForeColor = System.Drawing.Color.Aquamarine;
-            this.label13.Location = new System.Drawing.Point(0, 59);
+            this.label13.Location = new System.Drawing.Point(0, 117);
+            this.label13.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(954, 23);
+            this.label13.Size = new System.Drawing.Size(1908, 44);
             this.label13.TabIndex = 1;
             this.label13.Text = "Reportes";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1789,9 +1247,10 @@
             // 
             this.panelCaja.BackColor = System.Drawing.Color.DarkCyan;
             this.panelCaja.Controls.Add(this.panel16);
-            this.panelCaja.Location = new System.Drawing.Point(10, 564);
+            this.panelCaja.Location = new System.Drawing.Point(20, 1085);
+            this.panelCaja.Margin = new System.Windows.Forms.Padding(6);
             this.panelCaja.Name = "panelCaja";
-            this.panelCaja.Size = new System.Drawing.Size(1007, 86);
+            this.panelCaja.Size = new System.Drawing.Size(2014, 165);
             this.panelCaja.TabIndex = 7;
             // 
             // panel16
@@ -1806,8 +1265,9 @@
             this.panel16.Controls.Add(this.label15);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel16.Location = new System.Drawing.Point(0, 0);
+            this.panel16.Margin = new System.Windows.Forms.Padding(6);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(795, 86);
+            this.panel16.Size = new System.Drawing.Size(1586, 165);
             this.panel16.TabIndex = 4;
             // 
             // bunifuFlatButton18
@@ -1832,13 +1292,14 @@
             this.bunifuFlatButton18.IconVisible = true;
             this.bunifuFlatButton18.IconZoom = 90D;
             this.bunifuFlatButton18.IsTab = false;
-            this.bunifuFlatButton18.Location = new System.Drawing.Point(568, 0);
+            this.bunifuFlatButton18.Location = new System.Drawing.Point(1136, 0);
+            this.bunifuFlatButton18.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton18.Name = "bunifuFlatButton18";
             this.bunifuFlatButton18.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton18.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton18.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton18.selected = false;
-            this.bunifuFlatButton18.Size = new System.Drawing.Size(150, 59);
+            this.bunifuFlatButton18.Size = new System.Drawing.Size(300, 117);
             this.bunifuFlatButton18.TabIndex = 6;
             this.bunifuFlatButton18.Text = "Caja del dia";
             this.bunifuFlatButton18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1867,13 +1328,14 @@
             this.bunifuFlatButton17.IconVisible = true;
             this.bunifuFlatButton17.IconZoom = 90D;
             this.bunifuFlatButton17.IsTab = false;
-            this.bunifuFlatButton17.Location = new System.Drawing.Point(440, 0);
+            this.bunifuFlatButton17.Location = new System.Drawing.Point(880, 0);
+            this.bunifuFlatButton17.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton17.Name = "bunifuFlatButton17";
             this.bunifuFlatButton17.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton17.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton17.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton17.selected = false;
-            this.bunifuFlatButton17.Size = new System.Drawing.Size(128, 59);
+            this.bunifuFlatButton17.Size = new System.Drawing.Size(256, 117);
             this.bunifuFlatButton17.TabIndex = 5;
             this.bunifuFlatButton17.Text = "Retiros";
             this.bunifuFlatButton17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1902,13 +1364,14 @@
             this.bunifuFlatButton15.IconVisible = true;
             this.bunifuFlatButton15.IconZoom = 90D;
             this.bunifuFlatButton15.IsTab = false;
-            this.bunifuFlatButton15.Location = new System.Drawing.Point(283, 0);
+            this.bunifuFlatButton15.Location = new System.Drawing.Point(566, 0);
+            this.bunifuFlatButton15.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton15.Name = "bunifuFlatButton15";
             this.bunifuFlatButton15.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton15.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton15.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton15.selected = false;
-            this.bunifuFlatButton15.Size = new System.Drawing.Size(157, 59);
+            this.bunifuFlatButton15.Size = new System.Drawing.Size(314, 117);
             this.bunifuFlatButton15.TabIndex = 4;
             this.bunifuFlatButton15.Text = "Gastos varios";
             this.bunifuFlatButton15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1937,13 +1400,14 @@
             this.bunifuFlatButton16.IconVisible = true;
             this.bunifuFlatButton16.IconZoom = 90D;
             this.bunifuFlatButton16.IsTab = false;
-            this.bunifuFlatButton16.Location = new System.Drawing.Point(146, 0);
+            this.bunifuFlatButton16.Location = new System.Drawing.Point(292, 0);
+            this.bunifuFlatButton16.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton16.Name = "bunifuFlatButton16";
             this.bunifuFlatButton16.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton16.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton16.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton16.selected = false;
-            this.bunifuFlatButton16.Size = new System.Drawing.Size(137, 59);
+            this.bunifuFlatButton16.Size = new System.Drawing.Size(274, 117);
             this.bunifuFlatButton16.TabIndex = 3;
             this.bunifuFlatButton16.Text = "Ingresos varios";
             this.bunifuFlatButton16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1973,12 +1437,13 @@
             this.btnIngresos_Caja.IconZoom = 90D;
             this.btnIngresos_Caja.IsTab = false;
             this.btnIngresos_Caja.Location = new System.Drawing.Point(0, 0);
+            this.btnIngresos_Caja.Margin = new System.Windows.Forms.Padding(12);
             this.btnIngresos_Caja.Name = "btnIngresos_Caja";
             this.btnIngresos_Caja.Normalcolor = System.Drawing.Color.Transparent;
             this.btnIngresos_Caja.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnIngresos_Caja.OnHoverTextColor = System.Drawing.Color.White;
             this.btnIngresos_Caja.selected = false;
-            this.btnIngresos_Caja.Size = new System.Drawing.Size(146, 59);
+            this.btnIngresos_Caja.Size = new System.Drawing.Size(292, 117);
             this.btnIngresos_Caja.TabIndex = 2;
             this.btnIngresos_Caja.Text = "Ingreso caja inicial";
             this.btnIngresos_Caja.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1989,9 +1454,10 @@
             // 
             this.label15.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label15.ForeColor = System.Drawing.Color.Aquamarine;
-            this.label15.Location = new System.Drawing.Point(0, 59);
+            this.label15.Location = new System.Drawing.Point(0, 117);
+            this.label15.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(791, 23);
+            this.label15.Size = new System.Drawing.Size(1582, 44);
             this.label15.TabIndex = 1;
             this.label15.Text = "Empleado";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2000,9 +1466,10 @@
             // 
             this.panelAdministracion.BackColor = System.Drawing.Color.DarkCyan;
             this.panelAdministracion.Controls.Add(this.panel17);
-            this.panelAdministracion.Location = new System.Drawing.Point(10, 748);
+            this.panelAdministracion.Location = new System.Drawing.Point(20, 1438);
+            this.panelAdministracion.Margin = new System.Windows.Forms.Padding(6);
             this.panelAdministracion.Name = "panelAdministracion";
-            this.panelAdministracion.Size = new System.Drawing.Size(641, 86);
+            this.panelAdministracion.Size = new System.Drawing.Size(1282, 165);
             this.panelAdministracion.TabIndex = 8;
             // 
             // panel17
@@ -2016,8 +1483,9 @@
             this.panel17.Controls.Add(this.label16);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel17.Location = new System.Drawing.Point(0, 0);
+            this.panel17.Margin = new System.Windows.Forms.Padding(6);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(570, 86);
+            this.panel17.Size = new System.Drawing.Size(1136, 165);
             this.panel17.TabIndex = 4;
             // 
             // bunifuFlatButton25
@@ -2042,13 +1510,14 @@
             this.bunifuFlatButton25.IconVisible = true;
             this.bunifuFlatButton25.IconZoom = 90D;
             this.bunifuFlatButton25.IsTab = false;
-            this.bunifuFlatButton25.Location = new System.Drawing.Point(427, 0);
+            this.bunifuFlatButton25.Location = new System.Drawing.Point(854, 0);
+            this.bunifuFlatButton25.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton25.Name = "bunifuFlatButton25";
             this.bunifuFlatButton25.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton25.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton25.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton25.selected = false;
-            this.bunifuFlatButton25.Size = new System.Drawing.Size(129, 59);
+            this.bunifuFlatButton25.Size = new System.Drawing.Size(258, 117);
             this.bunifuFlatButton25.TabIndex = 9;
             this.bunifuFlatButton25.Text = "Permisos usuarios";
             this.bunifuFlatButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2077,13 +1546,14 @@
             this.bunifuFlatButton23.IconVisible = true;
             this.bunifuFlatButton23.IconZoom = 90D;
             this.bunifuFlatButton23.IsTab = false;
-            this.bunifuFlatButton23.Location = new System.Drawing.Point(301, 0);
+            this.bunifuFlatButton23.Location = new System.Drawing.Point(602, 0);
+            this.bunifuFlatButton23.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton23.Name = "bunifuFlatButton23";
             this.bunifuFlatButton23.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton23.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton23.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton23.selected = false;
-            this.bunifuFlatButton23.Size = new System.Drawing.Size(126, 59);
+            this.bunifuFlatButton23.Size = new System.Drawing.Size(252, 117);
             this.bunifuFlatButton23.TabIndex = 8;
             this.bunifuFlatButton23.Text = "Roles";
             this.bunifuFlatButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2112,13 +1582,14 @@
             this.bunifuFlatButton24.IconVisible = true;
             this.bunifuFlatButton24.IconZoom = 90D;
             this.bunifuFlatButton24.IsTab = false;
-            this.bunifuFlatButton24.Location = new System.Drawing.Point(148, 0);
+            this.bunifuFlatButton24.Location = new System.Drawing.Point(296, 0);
+            this.bunifuFlatButton24.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton24.Name = "bunifuFlatButton24";
             this.bunifuFlatButton24.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton24.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton24.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton24.selected = false;
-            this.bunifuFlatButton24.Size = new System.Drawing.Size(153, 59);
+            this.bunifuFlatButton24.Size = new System.Drawing.Size(306, 117);
             this.bunifuFlatButton24.TabIndex = 7;
             this.bunifuFlatButton24.Text = "Lista de usuarios";
             this.bunifuFlatButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2149,12 +1620,13 @@
             this.bunifuFlatButton19.IconZoom = 90D;
             this.bunifuFlatButton19.IsTab = false;
             this.bunifuFlatButton19.Location = new System.Drawing.Point(0, 0);
+            this.bunifuFlatButton19.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton19.Name = "bunifuFlatButton19";
             this.bunifuFlatButton19.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton19.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton19.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton19.selected = false;
-            this.bunifuFlatButton19.Size = new System.Drawing.Size(148, 59);
+            this.bunifuFlatButton19.Size = new System.Drawing.Size(296, 117);
             this.bunifuFlatButton19.TabIndex = 5;
             this.bunifuFlatButton19.Text = "Subir nuevo usuario";
             this.bunifuFlatButton19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2165,9 +1637,10 @@
             // 
             this.label16.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label16.ForeColor = System.Drawing.Color.Aquamarine;
-            this.label16.Location = new System.Drawing.Point(0, 59);
+            this.label16.Location = new System.Drawing.Point(0, 117);
+            this.label16.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(566, 23);
+            this.label16.Size = new System.Drawing.Size(1132, 44);
             this.label16.TabIndex = 1;
             this.label16.Text = "Administración";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2176,9 +1649,10 @@
             // 
             this.panelAyuda.BackColor = System.Drawing.Color.DarkCyan;
             this.panelAyuda.Controls.Add(this.panel18);
-            this.panelAyuda.Location = new System.Drawing.Point(12, 840);
+            this.panelAyuda.Location = new System.Drawing.Point(24, 1615);
+            this.panelAyuda.Margin = new System.Windows.Forms.Padding(6);
             this.panelAyuda.Name = "panelAyuda";
-            this.panelAyuda.Size = new System.Drawing.Size(266, 86);
+            this.panelAyuda.Size = new System.Drawing.Size(532, 165);
             this.panelAyuda.TabIndex = 9;
             // 
             // panel18
@@ -2189,8 +1663,9 @@
             this.panel18.Controls.Add(this.label17);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel18.Location = new System.Drawing.Point(0, 0);
+            this.panel18.Margin = new System.Windows.Forms.Padding(6);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(188, 86);
+            this.panel18.Size = new System.Drawing.Size(372, 165);
             this.panel18.TabIndex = 4;
             // 
             // bunifuFlatButton22
@@ -2216,12 +1691,13 @@
             this.bunifuFlatButton22.IconZoom = 90D;
             this.bunifuFlatButton22.IsTab = false;
             this.bunifuFlatButton22.Location = new System.Drawing.Point(0, 0);
+            this.bunifuFlatButton22.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuFlatButton22.Name = "bunifuFlatButton22";
             this.bunifuFlatButton22.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton22.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton22.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton22.selected = false;
-            this.bunifuFlatButton22.Size = new System.Drawing.Size(176, 59);
+            this.bunifuFlatButton22.Size = new System.Drawing.Size(352, 117);
             this.bunifuFlatButton22.TabIndex = 7;
             this.bunifuFlatButton22.Text = "Ayuda online ->";
             this.bunifuFlatButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2232,18 +1708,631 @@
             // 
             this.label17.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label17.ForeColor = System.Drawing.Color.Aquamarine;
-            this.label17.Location = new System.Drawing.Point(0, 59);
+            this.label17.Location = new System.Drawing.Point(0, 117);
+            this.label17.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(184, 23);
+            this.label17.Size = new System.Drawing.Size(368, 44);
             this.label17.TabIndex = 1;
             this.label17.Text = "Ayuda";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.btnLotCadu_Producto);
+            this.panel4.Controls.Add(this.btnVerifPrice_Producto);
+            this.panel4.Controls.Add(this.btnAltaEdicion_Producto);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(6);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(846, 165);
+            this.panel4.TabIndex = 4;
+            // 
+            // btnLotCadu_Producto
+            // 
+            this.btnLotCadu_Producto.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnLotCadu_Producto.BackColor = System.Drawing.Color.Transparent;
+            this.btnLotCadu_Producto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLotCadu_Producto.BorderRadius = 0;
+            this.btnLotCadu_Producto.ButtonText = "Lotes y caducidad";
+            this.btnLotCadu_Producto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLotCadu_Producto.DisabledColor = System.Drawing.Color.Gray;
+            this.btnLotCadu_Producto.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnLotCadu_Producto.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnLotCadu_Producto.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLotCadu_Producto.Iconimage")));
+            this.btnLotCadu_Producto.Iconimage_right = null;
+            this.btnLotCadu_Producto.Iconimage_right_Selected = null;
+            this.btnLotCadu_Producto.Iconimage_Selected = null;
+            this.btnLotCadu_Producto.IconMarginLeft = 0;
+            this.btnLotCadu_Producto.IconMarginRight = 0;
+            this.btnLotCadu_Producto.IconRightVisible = true;
+            this.btnLotCadu_Producto.IconRightZoom = 0D;
+            this.btnLotCadu_Producto.IconVisible = true;
+            this.btnLotCadu_Producto.IconZoom = 90D;
+            this.btnLotCadu_Producto.IsTab = false;
+            this.btnLotCadu_Producto.Location = new System.Drawing.Point(578, 0);
+            this.btnLotCadu_Producto.Margin = new System.Windows.Forms.Padding(12);
+            this.btnLotCadu_Producto.Name = "btnLotCadu_Producto";
+            this.btnLotCadu_Producto.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnLotCadu_Producto.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnLotCadu_Producto.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnLotCadu_Producto.selected = false;
+            this.btnLotCadu_Producto.Size = new System.Drawing.Size(286, 117);
+            this.btnLotCadu_Producto.TabIndex = 4;
+            this.btnLotCadu_Producto.Text = "Lotes y caducidad";
+            this.btnLotCadu_Producto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLotCadu_Producto.Textcolor = System.Drawing.Color.White;
+            this.btnLotCadu_Producto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnVerifPrice_Producto
+            // 
+            this.btnVerifPrice_Producto.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnVerifPrice_Producto.BackColor = System.Drawing.Color.Transparent;
+            this.btnVerifPrice_Producto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnVerifPrice_Producto.BorderRadius = 0;
+            this.btnVerifPrice_Producto.ButtonText = "Verificar precios";
+            this.btnVerifPrice_Producto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVerifPrice_Producto.DisabledColor = System.Drawing.Color.Gray;
+            this.btnVerifPrice_Producto.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnVerifPrice_Producto.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnVerifPrice_Producto.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnVerifPrice_Producto.Iconimage")));
+            this.btnVerifPrice_Producto.Iconimage_right = null;
+            this.btnVerifPrice_Producto.Iconimage_right_Selected = null;
+            this.btnVerifPrice_Producto.Iconimage_Selected = null;
+            this.btnVerifPrice_Producto.IconMarginLeft = 0;
+            this.btnVerifPrice_Producto.IconMarginRight = 0;
+            this.btnVerifPrice_Producto.IconRightVisible = true;
+            this.btnVerifPrice_Producto.IconRightZoom = 0D;
+            this.btnVerifPrice_Producto.IconVisible = true;
+            this.btnVerifPrice_Producto.IconZoom = 90D;
+            this.btnVerifPrice_Producto.IsTab = false;
+            this.btnVerifPrice_Producto.Location = new System.Drawing.Point(288, 0);
+            this.btnVerifPrice_Producto.Margin = new System.Windows.Forms.Padding(12);
+            this.btnVerifPrice_Producto.Name = "btnVerifPrice_Producto";
+            this.btnVerifPrice_Producto.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnVerifPrice_Producto.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnVerifPrice_Producto.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnVerifPrice_Producto.selected = false;
+            this.btnVerifPrice_Producto.Size = new System.Drawing.Size(290, 117);
+            this.btnVerifPrice_Producto.TabIndex = 3;
+            this.btnVerifPrice_Producto.Text = "Verificar precios";
+            this.btnVerifPrice_Producto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnVerifPrice_Producto.Textcolor = System.Drawing.Color.White;
+            this.btnVerifPrice_Producto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnAltaEdicion_Producto
+            // 
+            this.btnAltaEdicion_Producto.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnAltaEdicion_Producto.BackColor = System.Drawing.Color.Transparent;
+            this.btnAltaEdicion_Producto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAltaEdicion_Producto.BorderRadius = 0;
+            this.btnAltaEdicion_Producto.ButtonText = "Alta/Edición";
+            this.btnAltaEdicion_Producto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAltaEdicion_Producto.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAltaEdicion_Producto.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnAltaEdicion_Producto.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAltaEdicion_Producto.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAltaEdicion_Producto.Iconimage")));
+            this.btnAltaEdicion_Producto.Iconimage_right = null;
+            this.btnAltaEdicion_Producto.Iconimage_right_Selected = null;
+            this.btnAltaEdicion_Producto.Iconimage_Selected = null;
+            this.btnAltaEdicion_Producto.IconMarginLeft = 0;
+            this.btnAltaEdicion_Producto.IconMarginRight = 0;
+            this.btnAltaEdicion_Producto.IconRightVisible = true;
+            this.btnAltaEdicion_Producto.IconRightZoom = 0D;
+            this.btnAltaEdicion_Producto.IconVisible = true;
+            this.btnAltaEdicion_Producto.IconZoom = 90D;
+            this.btnAltaEdicion_Producto.IsTab = false;
+            this.btnAltaEdicion_Producto.Location = new System.Drawing.Point(0, 0);
+            this.btnAltaEdicion_Producto.Margin = new System.Windows.Forms.Padding(12);
+            this.btnAltaEdicion_Producto.Name = "btnAltaEdicion_Producto";
+            this.btnAltaEdicion_Producto.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnAltaEdicion_Producto.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnAltaEdicion_Producto.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAltaEdicion_Producto.selected = false;
+            this.btnAltaEdicion_Producto.Size = new System.Drawing.Size(288, 117);
+            this.btnAltaEdicion_Producto.TabIndex = 2;
+            this.btnAltaEdicion_Producto.Text = "Alta/Edición";
+            this.btnAltaEdicion_Producto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAltaEdicion_Producto.Textcolor = System.Drawing.Color.White;
+            this.btnAltaEdicion_Producto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label1.ForeColor = System.Drawing.Color.Aquamarine;
+            this.label1.Location = new System.Drawing.Point(0, 117);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(842, 44);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Producto";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel7.Controls.Add(this.btnAjustCost_Producto);
+            this.panel7.Controls.Add(this.btnAjustStock_Producto);
+            this.panel7.Controls.Add(this.label3);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel7.Location = new System.Drawing.Point(846, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(6);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(554, 165);
+            this.panel7.TabIndex = 5;
+            // 
+            // btnAjustCost_Producto
+            // 
+            this.btnAjustCost_Producto.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnAjustCost_Producto.BackColor = System.Drawing.Color.Transparent;
+            this.btnAjustCost_Producto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAjustCost_Producto.BorderRadius = 0;
+            this.btnAjustCost_Producto.ButtonText = "Ajustes de costos";
+            this.btnAjustCost_Producto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAjustCost_Producto.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAjustCost_Producto.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnAjustCost_Producto.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAjustCost_Producto.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAjustCost_Producto.Iconimage")));
+            this.btnAjustCost_Producto.Iconimage_right = null;
+            this.btnAjustCost_Producto.Iconimage_right_Selected = null;
+            this.btnAjustCost_Producto.Iconimage_Selected = null;
+            this.btnAjustCost_Producto.IconMarginLeft = 0;
+            this.btnAjustCost_Producto.IconMarginRight = 0;
+            this.btnAjustCost_Producto.IconRightVisible = true;
+            this.btnAjustCost_Producto.IconRightZoom = 0D;
+            this.btnAjustCost_Producto.IconVisible = true;
+            this.btnAjustCost_Producto.IconZoom = 90D;
+            this.btnAjustCost_Producto.IsTab = false;
+            this.btnAjustCost_Producto.Location = new System.Drawing.Point(276, 0);
+            this.btnAjustCost_Producto.Margin = new System.Windows.Forms.Padding(12);
+            this.btnAjustCost_Producto.Name = "btnAjustCost_Producto";
+            this.btnAjustCost_Producto.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnAjustCost_Producto.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnAjustCost_Producto.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAjustCost_Producto.selected = false;
+            this.btnAjustCost_Producto.Size = new System.Drawing.Size(290, 117);
+            this.btnAjustCost_Producto.TabIndex = 3;
+            this.btnAjustCost_Producto.Text = "Ajustes de costos";
+            this.btnAjustCost_Producto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAjustCost_Producto.Textcolor = System.Drawing.Color.White;
+            this.btnAjustCost_Producto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnAjustStock_Producto
+            // 
+            this.btnAjustStock_Producto.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnAjustStock_Producto.BackColor = System.Drawing.Color.Transparent;
+            this.btnAjustStock_Producto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAjustStock_Producto.BorderRadius = 0;
+            this.btnAjustStock_Producto.ButtonText = "Ajustes de Stock";
+            this.btnAjustStock_Producto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAjustStock_Producto.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAjustStock_Producto.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnAjustStock_Producto.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAjustStock_Producto.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAjustStock_Producto.Iconimage")));
+            this.btnAjustStock_Producto.Iconimage_right = null;
+            this.btnAjustStock_Producto.Iconimage_right_Selected = null;
+            this.btnAjustStock_Producto.Iconimage_Selected = null;
+            this.btnAjustStock_Producto.IconMarginLeft = 0;
+            this.btnAjustStock_Producto.IconMarginRight = 0;
+            this.btnAjustStock_Producto.IconRightVisible = true;
+            this.btnAjustStock_Producto.IconRightZoom = 0D;
+            this.btnAjustStock_Producto.IconVisible = true;
+            this.btnAjustStock_Producto.IconZoom = 90D;
+            this.btnAjustStock_Producto.IsTab = false;
+            this.btnAjustStock_Producto.Location = new System.Drawing.Point(0, 0);
+            this.btnAjustStock_Producto.Margin = new System.Windows.Forms.Padding(12);
+            this.btnAjustStock_Producto.Name = "btnAjustStock_Producto";
+            this.btnAjustStock_Producto.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnAjustStock_Producto.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnAjustStock_Producto.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAjustStock_Producto.selected = false;
+            this.btnAjustStock_Producto.Size = new System.Drawing.Size(276, 117);
+            this.btnAjustStock_Producto.TabIndex = 2;
+            this.btnAjustStock_Producto.Text = "Ajustes de Stock";
+            this.btnAjustStock_Producto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAjustStock_Producto.Textcolor = System.Drawing.Color.White;
+            this.btnAjustStock_Producto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // label3
+            // 
+            this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label3.ForeColor = System.Drawing.Color.Aquamarine;
+            this.label3.Location = new System.Drawing.Point(0, 117);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(550, 44);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Ajustes";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel8.Controls.Add(this.btnConsultOut_Producto);
+            this.panel8.Controls.Add(this.btnConsultIngre_Producto);
+            this.panel8.Controls.Add(this.label4);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel8.Location = new System.Drawing.Point(1400, 0);
+            this.panel8.Margin = new System.Windows.Forms.Padding(6);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(556, 165);
+            this.panel8.TabIndex = 6;
+            // 
+            // btnConsultOut_Producto
+            // 
+            this.btnConsultOut_Producto.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnConsultOut_Producto.BackColor = System.Drawing.Color.Transparent;
+            this.btnConsultOut_Producto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConsultOut_Producto.BorderRadius = 0;
+            this.btnConsultOut_Producto.ButtonText = "Consulta de salida";
+            this.btnConsultOut_Producto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConsultOut_Producto.DisabledColor = System.Drawing.Color.Gray;
+            this.btnConsultOut_Producto.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnConsultOut_Producto.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnConsultOut_Producto.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnConsultOut_Producto.Iconimage")));
+            this.btnConsultOut_Producto.Iconimage_right = null;
+            this.btnConsultOut_Producto.Iconimage_right_Selected = null;
+            this.btnConsultOut_Producto.Iconimage_Selected = null;
+            this.btnConsultOut_Producto.IconMarginLeft = 0;
+            this.btnConsultOut_Producto.IconMarginRight = 0;
+            this.btnConsultOut_Producto.IconRightVisible = true;
+            this.btnConsultOut_Producto.IconRightZoom = 0D;
+            this.btnConsultOut_Producto.IconVisible = true;
+            this.btnConsultOut_Producto.IconZoom = 90D;
+            this.btnConsultOut_Producto.IsTab = false;
+            this.btnConsultOut_Producto.Location = new System.Drawing.Point(276, 0);
+            this.btnConsultOut_Producto.Margin = new System.Windows.Forms.Padding(12);
+            this.btnConsultOut_Producto.Name = "btnConsultOut_Producto";
+            this.btnConsultOut_Producto.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnConsultOut_Producto.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnConsultOut_Producto.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnConsultOut_Producto.selected = false;
+            this.btnConsultOut_Producto.Size = new System.Drawing.Size(286, 117);
+            this.btnConsultOut_Producto.TabIndex = 3;
+            this.btnConsultOut_Producto.Text = "Consulta de salida";
+            this.btnConsultOut_Producto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnConsultOut_Producto.Textcolor = System.Drawing.Color.White;
+            this.btnConsultOut_Producto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnConsultIngre_Producto
+            // 
+            this.btnConsultIngre_Producto.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnConsultIngre_Producto.BackColor = System.Drawing.Color.Transparent;
+            this.btnConsultIngre_Producto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConsultIngre_Producto.BorderRadius = 0;
+            this.btnConsultIngre_Producto.ButtonText = "Consulta de ingresos";
+            this.btnConsultIngre_Producto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConsultIngre_Producto.DisabledColor = System.Drawing.Color.Gray;
+            this.btnConsultIngre_Producto.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnConsultIngre_Producto.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnConsultIngre_Producto.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnConsultIngre_Producto.Iconimage")));
+            this.btnConsultIngre_Producto.Iconimage_right = null;
+            this.btnConsultIngre_Producto.Iconimage_right_Selected = null;
+            this.btnConsultIngre_Producto.Iconimage_Selected = null;
+            this.btnConsultIngre_Producto.IconMarginLeft = 0;
+            this.btnConsultIngre_Producto.IconMarginRight = 0;
+            this.btnConsultIngre_Producto.IconRightVisible = true;
+            this.btnConsultIngre_Producto.IconRightZoom = 0D;
+            this.btnConsultIngre_Producto.IconVisible = true;
+            this.btnConsultIngre_Producto.IconZoom = 90D;
+            this.btnConsultIngre_Producto.IsTab = false;
+            this.btnConsultIngre_Producto.Location = new System.Drawing.Point(0, 0);
+            this.btnConsultIngre_Producto.Margin = new System.Windows.Forms.Padding(12);
+            this.btnConsultIngre_Producto.Name = "btnConsultIngre_Producto";
+            this.btnConsultIngre_Producto.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnConsultIngre_Producto.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnConsultIngre_Producto.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnConsultIngre_Producto.selected = false;
+            this.btnConsultIngre_Producto.Size = new System.Drawing.Size(276, 117);
+            this.btnConsultIngre_Producto.TabIndex = 2;
+            this.btnConsultIngre_Producto.Text = "Consulta de ingresos";
+            this.btnConsultIngre_Producto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnConsultIngre_Producto.Textcolor = System.Drawing.Color.White;
+            this.btnConsultIngre_Producto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // label4
+            // 
+            this.label4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label4.ForeColor = System.Drawing.Color.Aquamarine;
+            this.label4.Location = new System.Drawing.Point(0, 117);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(552, 44);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Consultas";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelProductos
+            // 
+            this.panelProductos.BackColor = System.Drawing.Color.DarkCyan;
+            this.panelProductos.Controls.Add(this.panel8);
+            this.panelProductos.Controls.Add(this.panel7);
+            this.panelProductos.Controls.Add(this.panel4);
+            this.panelProductos.Location = new System.Drawing.Point(24, 23);
+            this.panelProductos.Margin = new System.Windows.Forms.Padding(6);
+            this.panelProductos.Name = "panelProductos";
+            this.panelProductos.Size = new System.Drawing.Size(2074, 165);
+            this.panelProductos.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel5.Controls.Add(this.btnSerch_Cliente);
+            this.panel5.Controls.Add(this.btnAlta_Cliente);
+            this.panel5.Controls.Add(this.label6);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(6);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(566, 165);
+            this.panel5.TabIndex = 4;
+            // 
+            // btnSerch_Cliente
+            // 
+            this.btnSerch_Cliente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnSerch_Cliente.BackColor = System.Drawing.Color.Transparent;
+            this.btnSerch_Cliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSerch_Cliente.BorderRadius = 0;
+            this.btnSerch_Cliente.ButtonText = "Buscar Clientes";
+            this.btnSerch_Cliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSerch_Cliente.DisabledColor = System.Drawing.Color.Gray;
+            this.btnSerch_Cliente.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnSerch_Cliente.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnSerch_Cliente.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSerch_Cliente.Iconimage")));
+            this.btnSerch_Cliente.Iconimage_right = null;
+            this.btnSerch_Cliente.Iconimage_right_Selected = null;
+            this.btnSerch_Cliente.Iconimage_Selected = null;
+            this.btnSerch_Cliente.IconMarginLeft = 0;
+            this.btnSerch_Cliente.IconMarginRight = 0;
+            this.btnSerch_Cliente.IconRightVisible = true;
+            this.btnSerch_Cliente.IconRightZoom = 0D;
+            this.btnSerch_Cliente.IconVisible = true;
+            this.btnSerch_Cliente.IconZoom = 90D;
+            this.btnSerch_Cliente.IsTab = false;
+            this.btnSerch_Cliente.Location = new System.Drawing.Point(276, 0);
+            this.btnSerch_Cliente.Margin = new System.Windows.Forms.Padding(12);
+            this.btnSerch_Cliente.Name = "btnSerch_Cliente";
+            this.btnSerch_Cliente.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnSerch_Cliente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnSerch_Cliente.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnSerch_Cliente.selected = false;
+            this.btnSerch_Cliente.Size = new System.Drawing.Size(290, 117);
+            this.btnSerch_Cliente.TabIndex = 3;
+            this.btnSerch_Cliente.Text = "Buscar Clientes";
+            this.btnSerch_Cliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSerch_Cliente.Textcolor = System.Drawing.Color.White;
+            this.btnSerch_Cliente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnAlta_Cliente
+            // 
+            this.btnAlta_Cliente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnAlta_Cliente.BackColor = System.Drawing.Color.Transparent;
+            this.btnAlta_Cliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAlta_Cliente.BorderRadius = 0;
+            this.btnAlta_Cliente.ButtonText = "Dar de Alta";
+            this.btnAlta_Cliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAlta_Cliente.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAlta_Cliente.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnAlta_Cliente.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAlta_Cliente.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAlta_Cliente.Iconimage")));
+            this.btnAlta_Cliente.Iconimage_right = null;
+            this.btnAlta_Cliente.Iconimage_right_Selected = null;
+            this.btnAlta_Cliente.Iconimage_Selected = null;
+            this.btnAlta_Cliente.IconMarginLeft = 0;
+            this.btnAlta_Cliente.IconMarginRight = 0;
+            this.btnAlta_Cliente.IconRightVisible = true;
+            this.btnAlta_Cliente.IconRightZoom = 0D;
+            this.btnAlta_Cliente.IconVisible = true;
+            this.btnAlta_Cliente.IconZoom = 90D;
+            this.btnAlta_Cliente.IsTab = false;
+            this.btnAlta_Cliente.Location = new System.Drawing.Point(0, 0);
+            this.btnAlta_Cliente.Margin = new System.Windows.Forms.Padding(12);
+            this.btnAlta_Cliente.Name = "btnAlta_Cliente";
+            this.btnAlta_Cliente.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnAlta_Cliente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnAlta_Cliente.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAlta_Cliente.selected = false;
+            this.btnAlta_Cliente.Size = new System.Drawing.Size(276, 117);
+            this.btnAlta_Cliente.TabIndex = 2;
+            this.btnAlta_Cliente.Text = "Dar de Alta";
+            this.btnAlta_Cliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAlta_Cliente.Textcolor = System.Drawing.Color.White;
+            this.btnAlta_Cliente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // label6
+            // 
+            this.label6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label6.ForeColor = System.Drawing.Color.Yellow;
+            this.label6.Location = new System.Drawing.Point(0, 117);
+            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(562, 44);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Clientes";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.btnModificar_Cliente);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(566, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(6);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(262, 165);
+            this.panel3.TabIndex = 5;
+            // 
+            // btnModificar_Cliente
+            // 
+            this.btnModificar_Cliente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnModificar_Cliente.BackColor = System.Drawing.Color.Transparent;
+            this.btnModificar_Cliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnModificar_Cliente.BorderRadius = 0;
+            this.btnModificar_Cliente.ButtonText = "Modificar Datos";
+            this.btnModificar_Cliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnModificar_Cliente.DisabledColor = System.Drawing.Color.Gray;
+            this.btnModificar_Cliente.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnModificar_Cliente.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnModificar_Cliente.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnModificar_Cliente.Iconimage")));
+            this.btnModificar_Cliente.Iconimage_right = null;
+            this.btnModificar_Cliente.Iconimage_right_Selected = null;
+            this.btnModificar_Cliente.Iconimage_Selected = null;
+            this.btnModificar_Cliente.IconMarginLeft = 0;
+            this.btnModificar_Cliente.IconMarginRight = 0;
+            this.btnModificar_Cliente.IconRightVisible = true;
+            this.btnModificar_Cliente.IconRightZoom = 0D;
+            this.btnModificar_Cliente.IconVisible = true;
+            this.btnModificar_Cliente.IconZoom = 90D;
+            this.btnModificar_Cliente.IsTab = false;
+            this.btnModificar_Cliente.Location = new System.Drawing.Point(0, 0);
+            this.btnModificar_Cliente.Margin = new System.Windows.Forms.Padding(12);
+            this.btnModificar_Cliente.Name = "btnModificar_Cliente";
+            this.btnModificar_Cliente.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnModificar_Cliente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnModificar_Cliente.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnModificar_Cliente.selected = false;
+            this.btnModificar_Cliente.Size = new System.Drawing.Size(276, 117);
+            this.btnModificar_Cliente.TabIndex = 2;
+            this.btnModificar_Cliente.Text = "Modificar Datos";
+            this.btnModificar_Cliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnModificar_Cliente.Textcolor = System.Drawing.Color.White;
+            this.btnModificar_Cliente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // label5
+            // 
+            this.label5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label5.ForeColor = System.Drawing.Color.Yellow;
+            this.label5.Location = new System.Drawing.Point(0, 117);
+            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(258, 44);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Ajustes";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.btnConsultCompr_Cliente);
+            this.panel2.Controls.Add(this.btnHistorial_Cliente);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(828, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(6);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(568, 165);
+            this.panel2.TabIndex = 6;
+            // 
+            // btnConsultCompr_Cliente
+            // 
+            this.btnConsultCompr_Cliente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnConsultCompr_Cliente.BackColor = System.Drawing.Color.Transparent;
+            this.btnConsultCompr_Cliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConsultCompr_Cliente.BorderRadius = 0;
+            this.btnConsultCompr_Cliente.ButtonText = "Consulta de compra";
+            this.btnConsultCompr_Cliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConsultCompr_Cliente.DisabledColor = System.Drawing.Color.Gray;
+            this.btnConsultCompr_Cliente.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnConsultCompr_Cliente.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnConsultCompr_Cliente.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnConsultCompr_Cliente.Iconimage")));
+            this.btnConsultCompr_Cliente.Iconimage_right = null;
+            this.btnConsultCompr_Cliente.Iconimage_right_Selected = null;
+            this.btnConsultCompr_Cliente.Iconimage_Selected = null;
+            this.btnConsultCompr_Cliente.IconMarginLeft = 0;
+            this.btnConsultCompr_Cliente.IconMarginRight = 0;
+            this.btnConsultCompr_Cliente.IconRightVisible = true;
+            this.btnConsultCompr_Cliente.IconRightZoom = 0D;
+            this.btnConsultCompr_Cliente.IconVisible = true;
+            this.btnConsultCompr_Cliente.IconZoom = 90D;
+            this.btnConsultCompr_Cliente.IsTab = false;
+            this.btnConsultCompr_Cliente.Location = new System.Drawing.Point(276, 0);
+            this.btnConsultCompr_Cliente.Margin = new System.Windows.Forms.Padding(12);
+            this.btnConsultCompr_Cliente.Name = "btnConsultCompr_Cliente";
+            this.btnConsultCompr_Cliente.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnConsultCompr_Cliente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnConsultCompr_Cliente.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnConsultCompr_Cliente.selected = false;
+            this.btnConsultCompr_Cliente.Size = new System.Drawing.Size(290, 117);
+            this.btnConsultCompr_Cliente.TabIndex = 3;
+            this.btnConsultCompr_Cliente.Text = "Consulta de compra";
+            this.btnConsultCompr_Cliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnConsultCompr_Cliente.Textcolor = System.Drawing.Color.White;
+            this.btnConsultCompr_Cliente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnHistorial_Cliente
+            // 
+            this.btnHistorial_Cliente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnHistorial_Cliente.BackColor = System.Drawing.Color.Transparent;
+            this.btnHistorial_Cliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHistorial_Cliente.BorderRadius = 0;
+            this.btnHistorial_Cliente.ButtonText = "Historial de compras";
+            this.btnHistorial_Cliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHistorial_Cliente.DisabledColor = System.Drawing.Color.Gray;
+            this.btnHistorial_Cliente.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnHistorial_Cliente.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnHistorial_Cliente.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnHistorial_Cliente.Iconimage")));
+            this.btnHistorial_Cliente.Iconimage_right = null;
+            this.btnHistorial_Cliente.Iconimage_right_Selected = null;
+            this.btnHistorial_Cliente.Iconimage_Selected = null;
+            this.btnHistorial_Cliente.IconMarginLeft = 0;
+            this.btnHistorial_Cliente.IconMarginRight = 0;
+            this.btnHistorial_Cliente.IconRightVisible = true;
+            this.btnHistorial_Cliente.IconRightZoom = 0D;
+            this.btnHistorial_Cliente.IconVisible = true;
+            this.btnHistorial_Cliente.IconZoom = 90D;
+            this.btnHistorial_Cliente.IsTab = false;
+            this.btnHistorial_Cliente.Location = new System.Drawing.Point(0, 0);
+            this.btnHistorial_Cliente.Margin = new System.Windows.Forms.Padding(12);
+            this.btnHistorial_Cliente.Name = "btnHistorial_Cliente";
+            this.btnHistorial_Cliente.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnHistorial_Cliente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnHistorial_Cliente.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnHistorial_Cliente.selected = false;
+            this.btnHistorial_Cliente.Size = new System.Drawing.Size(276, 117);
+            this.btnHistorial_Cliente.TabIndex = 2;
+            this.btnHistorial_Cliente.Text = "Historial de compras";
+            this.btnHistorial_Cliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnHistorial_Cliente.Textcolor = System.Drawing.Color.White;
+            this.btnHistorial_Cliente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label2.ForeColor = System.Drawing.Color.Yellow;
+            this.label2.Location = new System.Drawing.Point(0, 117);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(564, 44);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Consultas";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelClientes
+            // 
+            this.panelClientes.BackColor = System.Drawing.Color.DarkCyan;
+            this.panelClientes.Controls.Add(this.panel2);
+            this.panelClientes.Controls.Add(this.panel3);
+            this.panelClientes.Controls.Add(this.panel5);
+            this.panelClientes.Location = new System.Drawing.Point(20, 200);
+            this.panelClientes.Margin = new System.Windows.Forms.Padding(6);
+            this.panelClientes.Name = "panelClientes";
+            this.panelClientes.Size = new System.Drawing.Size(1536, 165);
+            this.panelClientes.TabIndex = 1;
+            // 
             // SubMenusItems
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1132, 749);
+            this.ClientSize = new System.Drawing.Size(2264, 1440);
             this.Controls.Add(this.panelAyuda);
             this.Controls.Add(this.panelAdministracion);
             this.Controls.Add(this.panelCaja);
@@ -2254,16 +2343,9 @@
             this.Controls.Add(this.panelCompras);
             this.Controls.Add(this.panelClientes);
             this.Controls.Add(this.panelProductos);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "SubMenusItems";
             this.Text = "Form1";
-            this.panelProductos.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panelClientes.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.panelCompras.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
@@ -2283,14 +2365,19 @@
             this.panel17.ResumeLayout(false);
             this.panelAyuda.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panelProductos.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panelClientes.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        //Paneles con nombres
-        public System.Windows.Forms.Panel panelProductos;
-        public System.Windows.Forms.Panel panelClientes;
         public System.Windows.Forms.Panel panelCompras;
         public System.Windows.Forms.Panel panelVentas;
         public System.Windows.Forms.Panel panelProveedores;
@@ -2299,14 +2386,6 @@
         public System.Windows.Forms.Panel panelCaja;
         public System.Windows.Forms.Panel panelAdministracion;
         public System.Windows.Forms.Panel panelAyuda;
-        
-        // Label
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -2318,15 +2397,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-
-        //Panel
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel11;
@@ -2337,19 +2408,6 @@
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Panel panel18;
-
-        // BunifuFlatButton
-        private Bunifu.Framework.UI.BunifuFlatButton btnAjustCost_Producto;
-        private Bunifu.Framework.UI.BunifuFlatButton btnAjustStock_Producto;        
-        private Bunifu.Framework.UI.BunifuFlatButton btnLotCadu_Producto;
-        private Bunifu.Framework.UI.BunifuFlatButton btnVerifPrice_Producto;
-        public Bunifu.Framework.UI.BunifuFlatButton btnAltaEdicion_Producto;        
-        private Bunifu.Framework.UI.BunifuFlatButton btnConsultOut_Producto;
-        private Bunifu.Framework.UI.BunifuFlatButton btnConsultCompr_Cliente;
-        private Bunifu.Framework.UI.BunifuFlatButton btnHistorial_Cliente;        
-        private Bunifu.Framework.UI.BunifuFlatButton btnModificar_Cliente;        
-        private Bunifu.Framework.UI.BunifuFlatButton btnSerch_Cliente;
-        private Bunifu.Framework.UI.BunifuFlatButton btnAlta_Cliente;
         private Bunifu.Framework.UI.BunifuFlatButton btnConsult_Compras;
         private Bunifu.Framework.UI.BunifuFlatButton btnHistorial_Compras;
         private Bunifu.Framework.UI.BunifuFlatButton btnPagos_Compras;
@@ -2383,6 +2441,31 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton23;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton24;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton22;
+        private System.Windows.Forms.Panel panel4;
+        private Bunifu.Framework.UI.BunifuFlatButton btnLotCadu_Producto;
+        private Bunifu.Framework.UI.BunifuFlatButton btnVerifPrice_Producto;
+        public Bunifu.Framework.UI.BunifuFlatButton btnAltaEdicion_Producto;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel7;
+        private Bunifu.Framework.UI.BunifuFlatButton btnAjustCost_Producto;
+        private Bunifu.Framework.UI.BunifuFlatButton btnAjustStock_Producto;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel8;
+        private Bunifu.Framework.UI.BunifuFlatButton btnConsultOut_Producto;
         public Bunifu.Framework.UI.BunifuFlatButton btnConsultIngre_Producto;
+        private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Panel panelProductos;
+        private System.Windows.Forms.Panel panel5;
+        private Bunifu.Framework.UI.BunifuFlatButton btnSerch_Cliente;
+        private Bunifu.Framework.UI.BunifuFlatButton btnAlta_Cliente;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel3;
+        private Bunifu.Framework.UI.BunifuFlatButton btnModificar_Cliente;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel2;
+        private Bunifu.Framework.UI.BunifuFlatButton btnConsultCompr_Cliente;
+        private Bunifu.Framework.UI.BunifuFlatButton btnHistorial_Cliente;
+        private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Panel panelClientes;
     }
 }

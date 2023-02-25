@@ -18,6 +18,7 @@ namespace PVF
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(mp = new Login());
+
             /*
             LoginForm main = new LoginForm();
             menuPrincipal mp = new menuPrincipal();

@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using BarraHerramientaa;
 
 namespace PVF
 {
@@ -19,6 +20,7 @@ namespace PVF
      * Esta clase es la controla el acceso a los datos del usuario,
      * es la principal.
      * @author: Samuel Burelos Jerónimo
+     * @author: Martin Sanchez Reyes
      * @version: 05/02/2023
      */
     public partial class menuPrincipal : Form
@@ -43,7 +45,42 @@ namespace PVF
             InitializeComponent();//Se inicializan los componentes del proyecto
             InicializarMisComponentes();//Se inicializan los componentes traidos de otra clase/form
             controlAcceso();
+
+            TabPage pd = new TabPage();
+            pd.Text = $"Bienvenido {user1.Nombre}";
+            tabControl.TabPages.Add(pd);
+            var welcome = new Welcome();
+            pd.Controls.Add(welcome);
+            welcome.Dock = DockStyle.Fill;
+            welcome.Show();
+            tabControl.SelectedIndex = 1;
+
+
         }
+
+        //Este metodo permite cambiar el panel de acciones
+        public void menuPanel(UserControl pane)
+        {
+
+            if(panelSubMenu.Controls.GetType() != pane.GetType()) //verificsmos que no exista el panel?
+            {
+
+                panelSubMenu.Controls.Clear();//limpiamos todos los controles de usuarios
+                panelSubMenu.Controls.Add(pane); //agregamos el control de usuario deseado
+            
+            }
+
+            
+        }
+
+        /**Metodo que verifica que no exista un pestana
+         * recibe de parametro el titulo de la pestana
+         */
+        private void tabExistente(string title)
+        {
+            
+        }
+
         private void controlAcceso()
         {
             //Control de acceso
@@ -72,35 +109,11 @@ namespace PVF
         }
         public void InicializarMisComponentes()
         {
-            //Se incializan agrega los subMenus para tenerlos a la mano
-            panelSubMenu.Controls.Add(subMenus.panelProductos);
-            panelSubMenu.Controls.Add(subMenus.panelClientes);
-            panelSubMenu.Controls.Add(subMenus.panelCompras);
-            panelSubMenu.Controls.Add(subMenus.panelVentas);
-            panelSubMenu.Controls.Add(subMenus.panelProveedores);
-            panelSubMenu.Controls.Add(subMenus.panelEmpleados);
-            panelSubMenu.Controls.Add(subMenus.panelReportes);
-            panelSubMenu.Controls.Add(subMenus.panelCaja);
-            panelSubMenu.Controls.Add(subMenus.panelAdministracion);
-            panelSubMenu.Controls.Add(subMenus.panelAyuda);
 
-            //Agrego los metodos al dar click en los botones
-            subMenus.btnAltaEdicion_Producto.Click += new System.EventHandler(this.btnAltaEdicion_Producto_Click);
-            subMenus.btnConsultIngre_Producto.Click += new System.EventHandler(this.btnConsultIngre_Producto_Click);
+            selectedPanelProductos();
 
 
-            //Modifico el dock para que ocupe todo el espacio asignado
-            subMenus.panelClientes.Dock = DockStyle.Fill;
-            subMenus.panelProductos.Dock = DockStyle.Fill;
-            subMenus.panelCompras.Dock = DockStyle.Fill;
-            subMenus.panelVentas.Dock= DockStyle.Fill;
-            subMenus.panelProveedores.Dock= DockStyle.Fill;
-            subMenus.panelEmpleados.Dock= DockStyle.Fill;
-            subMenus.panelReportes.Dock= DockStyle.Fill;
-            subMenus.panelCaja.Dock= DockStyle.Fill;
-            subMenus.panelAdministracion.Dock= DockStyle.Fill;
-            subMenus.panelAyuda.Dock= DockStyle.Fill;
-
+           
             timeMeasure.Start();//Inicia el timer de la Barra de estado
             timer1.Enabled = true;
             labelStatus1.Text = DateTime.Now.ToString("hh:mm tt");//Se agrega el timer al label de la barra
@@ -114,7 +127,6 @@ namespace PVF
                 if (tabControl.TabPages[i].Text.Equals("Consulta de Ingresos"))
                 {
                     tabControl.SelectedIndex = i;
-                    //MessageBox.Show("La pagina ya existe.");
                     return;
                 }
             }
@@ -289,28 +301,25 @@ namespace PVF
          *      Es de tipo Panel y es el que se muestra
          * </param>
          */
-        private void showItemSubmenu(Panel subP)
-        {
-            subMenus.panelProductos.Hide();
-            subMenus.panelClientes.Hide();
-            subMenus.panelCompras.Hide();
-            subMenus.panelVentas.Hide();
-            subMenus.panelProveedores.Hide();
-            subMenus.panelEmpleados.Hide();
-            subMenus.panelReportes.Hide();
-            subMenus.panelCaja.Hide();
-            subMenus.panelAdministracion.Hide();
-            subMenus.panelAyuda.Hide();
-            subP.Show();
-        }
+
         // MENU
         // BunifuFlatButton     btnfuProductos
         //
-        private void btnfuProductos_Click(object sender, EventArgs e)
+
+        //Este metodo permite mostrar el panel productos con todo y los eventos 
+        private void selectedPanelProductos()
         {
             selectMenu(btnfuProductos);
-            showItemSubmenu(subMenus.panelProductos);
-            subMenus.panelProductos.Show();
+            MenuProductos panelProductos = new MenuProductos();
+            //Agrego los metodos al dar click en los botones
+            panelProductos.btnAltaEdicion_Producto.Click += new System.EventHandler(this.btnAltaEdicion_Producto_Click);
+            panelProductos.btnConsultIngre_Producto.Click += new System.EventHandler(this.btnConsultIngre_Producto_Click);
+            menuPanel(panelProductos);
+        }
+
+        private void btnfuProductos_Click(object sender, EventArgs e)
+        {
+            selectedPanelProductos();
         }
         public void btnClose_Click(object sender, EventArgs e)
         {
@@ -320,16 +329,17 @@ namespace PVF
         private void btnAltaEdicion_Producto_Click(object sender, EventArgs e)
         {
             int pageIndex = tabControl.TabCount;
-            for(int i=0; i<tabControl.TabCount;i++)
+            for (int i = 0; i < tabControl.TabCount; i++)
             {
                 if (tabControl.TabPages[i].Text.Equals("Alta/Edición"))
                 {
                     tabControl.SelectedIndex = i;
-                    //MessageBox.Show("La pagina ya existe.");
+
                     return;
                 }
-                
+
             }
+
             atpd = new AltaProductos();
             atpd.bttonClose.Click += new System.EventHandler(btnClose_Click);
             atpd.btnRegistrar.Click += new System.EventHandler(btnRegister_Click);
@@ -350,8 +360,7 @@ namespace PVF
         private void btnfuClientes_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuClientes);
-            showItemSubmenu(subMenus.panelClientes);
-            subMenus.panelClientes.Show();
+            menuPanel(new MenuClientes());
         }
         //
         // BunifuFlatButton     btnfuCompras
@@ -359,8 +368,7 @@ namespace PVF
         private void btnfuCompras_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuCompras);
-            showItemSubmenu(subMenus.panelCompras);
-            subMenus.panelCompras.Show();
+            menuPanel(new MenuCompras());
         }
         //
         // BunifuFlatButton     btnfuVentas
@@ -368,8 +376,7 @@ namespace PVF
         private void btnfuVentas_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuVentas);
-            showItemSubmenu(subMenus.panelVentas);
-            subMenus.panelVentas.Show();
+            menuPanel(new MenuVentas());
         }
         //
         // BunifuFlatButton     btnfuProveedores
@@ -377,8 +384,7 @@ namespace PVF
         private void btnfuProveedores_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuProveedores);
-            showItemSubmenu(subMenus.panelProveedores);
-            subMenus.panelProveedores.Show();
+            menuPanel(new MenuProveedores());
         }
         //
         // BunifuFlatButton     btnfuEmpleados
@@ -386,8 +392,7 @@ namespace PVF
         private void btnfuEmpleados_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuEmpleados);
-            showItemSubmenu(subMenus.panelEmpleados);
-            subMenus.panelEmpleados.Show();
+            menuPanel(new MenuEmpleados());
         }
         //
         // BunifuFlatButton     btnfuCaja
@@ -395,8 +400,7 @@ namespace PVF
         private void btnfuCaja_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuCaja);
-            showItemSubmenu(subMenus.panelCaja);
-            subMenus.panelCaja.Show();
+            menuPanel(new MenuCajas());
         }
         //
         // BunifuFlatButton     btnfuReportes
@@ -404,17 +408,49 @@ namespace PVF
         private void btnfuReportes_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuReportes);
-            showItemSubmenu(subMenus.panelReportes);
-            subMenus.panelReportes.Show();
+            menuPanel(new MenuReportes());
         }
         //
         // BunifuFlatButton     btnfuAdministracion
         //
         private void btnfuAdministracion_Click(object sender, EventArgs e)
         {
-            selectMenu(btnfuAdministracion);
-            showItemSubmenu(subMenus.panelAdministracion);
-            subMenus.panelAdministracion.Show();
+            selectMenu(btnfuAdministracion); //REMARCA LA OPCION SELECCIONADA
+
+            MenuAdministracion pa = new MenuAdministracion(); //INSTANCIAMOS EL MENU
+
+            pa.btnNewUser.Click += (s,m) => { //AGREGAMOS UN EVENTO PARA EL BOTON NEW USER
+                
+                AltaUsuarios au = new AltaUsuarios(); // DENTRO DEL EVENTO INSTANCIAMOS EL PANEL QUE QUEREMOS MOSTRAR
+
+                int pageIndex = tabControl.TabCount;
+                for (int i = 0; i < tabControl.TabCount; i++)
+                {
+                    if (tabControl.TabPages[i].Text.Equals("Alta Usuario"))
+                    {
+                        tabControl.SelectedIndex = i;
+                        //MessageBox.Show("La pagina ya existe.");
+                        return;
+                    }
+
+                }
+
+                au.bttonClose.Click += (btnClose_Click);
+                au.btnRegistrar.Click += (x, d) =>
+                {
+                    MessageBox.Show("Si funciona");
+                };
+
+                TabPage pd = new TabPage();
+                pd.Text = "Alta Usuario";
+                tabControl.TabPages.Add(pd);
+                au.Dock= DockStyle.Fill;
+                pd.Controls.Add(au);
+                tabControl.SelectedIndex = pageIndex;
+            };
+
+
+           menuPanel(pa);//Mostramos el panel con todo xd
         }
         //
         // BunifuFlatButton     btnfuAyuda
@@ -422,8 +458,7 @@ namespace PVF
         private void btnfuAyuda_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuAyuda);
-            showItemSubmenu(subMenus.panelAyuda);
-            subMenus.panelAyuda.Show();
+            menuPanel(new MenuAyuda());
         }
         //
         // BunifuFlatButton     btnfuArchivo

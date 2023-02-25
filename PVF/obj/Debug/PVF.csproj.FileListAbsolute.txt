@@ -136,3 +136,24 @@ D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.csproj.CopyComplete
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.exe
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.pdb
 D:\TECNOLOGICO ITSM\GitHub Repository\PVF\obj\Debug\PVF.Login.resources
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\bin\Debug\PVF.exe.config
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\bin\Debug\PVF.exe
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\bin\Debug\PVF.pdb
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.csproj.AssemblyReference.cache
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.csproj.SuggestedBindingRedirects.cache
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.AltaProductos.resources
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.ConsultaDeIngresos.resources
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.SubMenusItems.resources
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.Login.resources
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.Empleado.resources
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.menuPrincipal.resources
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.Properties.Resources.resources
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.csproj.GenerateResource.cache
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.csproj.CoreCompileInputs.cache
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.csproj.CopyComplete
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.exe
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.pdb
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\bin\Debug\BarraHerramientaa.dll
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\bin\Debug\BarraHerramientaa.pdb
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.AltaUsuarios.resources
+C:\Users\marti\Documents\ITSMacuspana\4to-Semestre\Topicos\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.Welcome.resources

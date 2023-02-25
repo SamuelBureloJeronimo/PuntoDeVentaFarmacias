@@ -31,7 +31,7 @@ namespace PVF
             string pas = txtBoxPass.Text;
             user1 = new Usuario(nam,pas,"Admin");
 
-            if(!user1.Nombre.Equals("Samuel") & !user1.Clave.Equals("123"))
+            if(!user1.Nombre.Equals("") & !user1.Clave.Equals(""))
             {
                 MessageBox.Show("Usuario/Contraseña incorrecta!");
                 return;
