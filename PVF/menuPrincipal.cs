@@ -24,7 +24,7 @@ namespace PVF
      * @author: Samuel Burelos Jerónimo
      * @version: 05/02/2023
      */
-    public partial class menuPrincipal : Form
+    public partial class menuPrincipal : Form 
     {
         //Variables y objetos necesarios
         private Usuario user;

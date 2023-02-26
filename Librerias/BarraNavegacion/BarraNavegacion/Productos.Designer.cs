@@ -339,7 +339,7 @@
             this.btnAltaEdicion_Producto.BackColor = System.Drawing.Color.Transparent;
             this.btnAltaEdicion_Producto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAltaEdicion_Producto.BorderRadius = 0;
-            this.btnAltaEdicion_Producto.ButtonText = "Alta/Edición";
+            this.btnAltaEdicion_Producto.ButtonText = "Registrar";
             this.btnAltaEdicion_Producto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAltaEdicion_Producto.DisabledColor = System.Drawing.Color.Gray;
             this.btnAltaEdicion_Producto.Dock = System.Windows.Forms.DockStyle.Left;
@@ -363,7 +363,7 @@
             this.btnAltaEdicion_Producto.selected = false;
             this.btnAltaEdicion_Producto.Size = new System.Drawing.Size(144, 59);
             this.btnAltaEdicion_Producto.TabIndex = 2;
-            this.btnAltaEdicion_Producto.Text = "Alta/Edición";
+            this.btnAltaEdicion_Producto.Text = "Registrar";
             this.btnAltaEdicion_Producto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAltaEdicion_Producto.Textcolor = System.Drawing.Color.White;
             this.btnAltaEdicion_Producto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
