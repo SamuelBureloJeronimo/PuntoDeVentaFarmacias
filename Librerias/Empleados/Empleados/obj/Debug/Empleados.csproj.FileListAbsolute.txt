@@ -1,0 +1,6 @@
+D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\Empleados\Empleados\bin\Debug\Empleados.dll
+D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\Empleados\Empleados\bin\Debug\Empleados.pdb
+D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\Empleados\Empleados\obj\Debug\Empleados.csproj.AssemblyReference.cache
+D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\Empleados\Empleados\obj\Debug\Empleados.csproj.CoreCompileInputs.cache
+D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\Empleados\Empleados\obj\Debug\Empleados.dll
+D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\Empleados\Empleados\obj\Debug\Empleados.pdb

@@ -184,6 +184,7 @@
             // 
             // panelMenuLateral
             // 
+            this.panelMenuLateral.AutoScroll = true;
             this.panelMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(39)))), ((int)(((byte)(50)))));
             this.panelMenuLateral.Controls.Add(this.btnHelp);
             this.panelMenuLateral.Controls.Add(this.panelSubMenuClientes);
@@ -226,7 +227,7 @@
             this.btnHelp.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnHelp.OnHoverTextColor = System.Drawing.Color.Black;
             this.btnHelp.selected = false;
-            this.btnHelp.Size = new System.Drawing.Size(294, 49);
+            this.btnHelp.Size = new System.Drawing.Size(277, 49);
             this.btnHelp.TabIndex = 10;
             this.btnHelp.Text = "     Ayuda";
             this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -738,7 +739,7 @@
             this.btnHome.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(164)))));
             this.btnHome.OnHoverTextColor = System.Drawing.Color.Gainsboro;
             this.btnHome.selected = false;
-            this.btnHome.Size = new System.Drawing.Size(294, 50);
+            this.btnHome.Size = new System.Drawing.Size(277, 50);
             this.btnHome.TabIndex = 1;
             this.btnHome.Text = "     Home";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -753,7 +754,7 @@
             this.panelImage.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelImage.Location = new System.Drawing.Point(0, 0);
             this.panelImage.Name = "panelImage";
-            this.panelImage.Size = new System.Drawing.Size(294, 184);
+            this.panelImage.Size = new System.Drawing.Size(277, 184);
             this.panelImage.TabIndex = 0;
             // 
             // label1

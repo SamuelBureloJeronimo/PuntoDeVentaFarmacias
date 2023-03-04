@@ -1,15 +1,7 @@
 ﻿using Bunifu.Framework.UI;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
-using System.Drawing.Design;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Inventario;
 using BarraNavegacion;
@@ -29,16 +21,7 @@ namespace PVF
         //Variables y objetos necesarios
         private Usuario user;
 
-        private Productos   productos;
-        private Clientes    client;
-        private Compras     compras;
-        private Ventas      ventas;
-        private Proveedores proveedores;
-        private Empleados   empleados;
-        private Caja            caja;
-        private Reportes        reportes;
-        private Administracion  Administracion;
-        private Ayuda           ayuda;
+        private MenusItem   menus;
 
         private string datetime;
         private Stopwatch timeMeasure;
@@ -87,45 +70,22 @@ namespace PVF
             timeMeasure = new Stopwatch();
             inventario = new InventarioMed();
 
-            productos = new Productos(tabControl, inventario);
-            client = new Clientes();
-            compras = new Compras();
-            ventas = new Ventas();
-            proveedores = new Proveedores();
-            empleados = new Empleados();
-            caja = new Caja();
-            reportes = new Reportes();
-            Administracion = new Administracion();
-            ayuda = new Ayuda();
-
-            //Se incializan agrega los subMenus para tenerlos a la mano
-            panelSubMenu.Controls.Add(productos.panelProductos);
-            panelSubMenu.Controls.Add(client.panelClientes);
-            panelSubMenu.Controls.Add(compras.panelCompras);
-            panelSubMenu.Controls.Add(ventas.panelVentas);
-            panelSubMenu.Controls.Add(proveedores.panelProveedores);
-            panelSubMenu.Controls.Add(empleados.panelEmpleados);
-            panelSubMenu.Controls.Add(caja.panelCaja);
-            panelSubMenu.Controls.Add(reportes.panelReportes);            
-            panelSubMenu.Controls.Add(Administracion.panelAdministracion);
-            panelSubMenu.Controls.Add(ayuda.panelAyuda);
-
-            //Agrego los metodos al dar click en los botones
+            menus = new MenusItem(tabControl, inventario);
+            panelSubMenu.Controls.Add(menus.panelProductos);
+            menus.panelProductos.Show();
+            
             //subMenus.btnAltaEdicion_Producto.Click += new System.EventHandler(this.btnAltaEdicion_Producto_Click);
-            //subMenus.btnConsultIngre_Producto.Click += new System.EventHandler(this.btnConsultIngre_Producto_Click);
-
-
             //Modifico el dock para que ocupe todo el espacio asignado
-            productos.panelProductos.Dock = DockStyle.Fill;
-            client.panelClientes.Dock = DockStyle.Fill;
-            compras.panelCompras.Dock = DockStyle.Fill;
-            ventas.panelVentas.Dock= DockStyle.Fill;
-            proveedores.panelProveedores.Dock= DockStyle.Fill;
-            empleados.panelEmpleados.Dock= DockStyle.Fill;
-            caja.panelCaja.Dock= DockStyle.Fill;
-            reportes.panelReportes.Dock = DockStyle.Fill;
-            Administracion.panelAdministracion.Dock= DockStyle.Fill;
-            ayuda.panelAyuda.Dock= DockStyle.Fill;
+            menus.panelProductos.Dock = DockStyle.Fill;
+            menus.panelClientes.Dock = DockStyle.Fill;
+            menus.panelCompras.Dock = DockStyle.Fill;
+            menus.panelVentas.Dock= DockStyle.Fill;
+            menus.panelProveedores.Dock= DockStyle.Fill;
+            menus.panelEmpleados.Dock= DockStyle.Fill;
+            menus.panelCaja.Dock= DockStyle.Fill;
+            menus.panelReportes.Dock = DockStyle.Fill;
+            menus.panelAdministracion.Dock= DockStyle.Fill;
+            menus.panelAyuda.Dock= DockStyle.Fill;
 
             timeMeasure.Start();//Inicia el timer de la Barra de estado
             timer1.Enabled = true;
@@ -235,16 +195,8 @@ namespace PVF
          */
         private void showItemSubmenu(Panel subP)
         {
-            productos.panelProductos.Hide();
-            client.panelClientes.Hide();
-            compras.panelCompras.Hide();
-            ventas.panelVentas.Hide();
-            proveedores.panelProveedores.Hide();
-            empleados.panelEmpleados.Hide();
-            reportes.panelReportes.Hide();
-            caja.panelCaja.Hide();
-            Administracion.panelAdministracion.Hide();
-            ayuda.panelAyuda.Hide();
+            panelSubMenu.Controls.Clear();
+            panelSubMenu.Controls.Add(subP);
             subP.Show();
         }
         // MENU
@@ -253,8 +205,7 @@ namespace PVF
         private void btnfuProductos_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuProductos);
-            showItemSubmenu(productos.panelProductos);
-            productos.panelProductos.Show();
+            showItemSubmenu(menus.panelProductos);
         }
         //
         // BunifuFlatButton     btnfuClientes
@@ -262,8 +213,7 @@ namespace PVF
         private void btnfuClientes_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuClientes);
-            showItemSubmenu(client.panelClientes);
-            client.panelClientes.Show();
+            showItemSubmenu(menus.panelClientes);
         }
         //
         // BunifuFlatButton     btnfuCompras
@@ -271,8 +221,7 @@ namespace PVF
         private void btnfuCompras_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuCompras);
-            showItemSubmenu(compras.panelCompras);
-            compras.panelCompras.Show();
+            showItemSubmenu(menus.panelCompras);
         }
         //
         // BunifuFlatButton     btnfuVentas
@@ -280,8 +229,7 @@ namespace PVF
         private void btnfuVentas_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuVentas);
-            showItemSubmenu(ventas.panelVentas);
-            ventas.panelVentas.Show();
+            showItemSubmenu(menus.panelVentas);
         }
         //
         // BunifuFlatButton     btnfuProveedores
@@ -289,8 +237,7 @@ namespace PVF
         private void btnfuProveedores_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuProveedores);
-            showItemSubmenu(proveedores.panelProveedores);
-            proveedores.panelProveedores.Show();
+            showItemSubmenu(menus.panelProveedores);
         }
         //
         // BunifuFlatButton     btnfuEmpleados
@@ -298,8 +245,7 @@ namespace PVF
         private void btnfuEmpleados_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuEmpleados);
-            showItemSubmenu(empleados.panelEmpleados);
-            empleados.panelEmpleados.Show();
+            showItemSubmenu(menus.panelEmpleados);
         }
         //
         // BunifuFlatButton     btnfuCaja
@@ -307,8 +253,7 @@ namespace PVF
         private void btnfuCaja_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuCaja);
-            showItemSubmenu(caja.panelCaja);
-            caja.panelCaja.Show();
+            showItemSubmenu(menus.panelCaja);
         }
         //
         // BunifuFlatButton     btnfuReportes
@@ -316,8 +261,7 @@ namespace PVF
         private void btnfuReportes_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuReportes);
-            showItemSubmenu(reportes.panelReportes);
-            reportes.panelReportes.Show();
+            showItemSubmenu(menus.panelReportes);
         }
         //
         // BunifuFlatButton     btnfuAdministracion
@@ -325,8 +269,7 @@ namespace PVF
         private void btnfuAdministracion_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuAdministracion);
-            showItemSubmenu(Administracion.panelAdministracion);
-            Administracion.panelAdministracion.Show();
+            showItemSubmenu(menus.panelAdministracion);
         }
         //
         // BunifuFlatButton     btnfuAyuda
@@ -334,8 +277,7 @@ namespace PVF
         private void btnfuAyuda_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuAyuda);
-            showItemSubmenu(ayuda.panelAyuda);
-            ayuda.panelAyuda.Show();
+            showItemSubmenu(menus.panelAyuda);
         }
         //
         // BunifuFlatButton     btnfuArchivo

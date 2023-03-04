@@ -32,7 +32,6 @@ D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\Barr
 D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Caja.resources
 D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Compras.resources
 D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Empleados.resources
-D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Productos.resources
 D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Clientes.resources
 D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Productos_AltaEdicion.resources
 D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Productos_ConsultaIngresos.resources
@@ -44,3 +43,4 @@ D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\Barr
 D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.csproj.CopyComplete
 D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.dll
 D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.pdb
+D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.MenusItem.resources

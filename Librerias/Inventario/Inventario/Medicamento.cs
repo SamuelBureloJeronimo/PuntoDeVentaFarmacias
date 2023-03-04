@@ -12,7 +12,7 @@ namespace Inventario
         private string codigo, nombre, tipo, caducidad, urlIMG;
         private double presioCompra, precioVenta, iva;
         private int cantidad;
-        public Medicamento(string codigo, string nombre, double pC, double pV, string tipo, int cantidad, double iva, string caducidad, string urlIMG)
+        public void registrar(string codigo, string nombre, double pC, double pV, string tipo, int cantidad, double iva, string caducidad, string urlIMG)
         {
             this.codigo = codigo;
             this.nombre = nombre;

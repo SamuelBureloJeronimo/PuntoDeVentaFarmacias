@@ -74,11 +74,11 @@
     <Compile Include="Empleados.Designer.cs">
       <DependentUpon>Empleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Productos.cs">
+    <Compile Include="MenusItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Productos.Designer.cs">
-      <DependentUpon>Productos.cs</DependentUpon>
+    <Compile Include="MenusItem.Designer.cs">
+      <DependentUpon>MenusItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Productos_AltaEdicion.cs">
       <SubType>UserControl</SubType>
@@ -141,8 +141,8 @@
     <EmbeddedResource Include="Empleados.resx">
       <DependentUpon>Empleados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Productos.resx">
-      <DependentUpon>Productos.cs</DependentUpon>
+    <EmbeddedResource Include="MenusItem.resx">
+      <DependentUpon>MenusItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>

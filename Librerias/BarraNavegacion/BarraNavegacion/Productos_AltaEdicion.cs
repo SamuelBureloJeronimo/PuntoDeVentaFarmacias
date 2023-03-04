@@ -1,17 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Inventario;
 
 namespace BarraNavegacion
 {
-    public partial class Productos_AltaEdicion : UserControl
+    public partial class Productos_AltaEdicion: UserControl
     {
         private string FileName;
         private TabControl tabControl;
@@ -22,7 +16,6 @@ namespace BarraNavegacion
             this.tabControl = tabControl;
             InitializeComponent();
         }
-
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             if (boxCodigo.Text.Equals("") || boxName.Text.Equals("") || boxPrecioCompra.Text.Equals("") || boxPrecioVenta.Text.Equals(""))

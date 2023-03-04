@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Inventario;
 using ControlUsuario;
 
 namespace PVF
@@ -35,7 +27,7 @@ namespace PVF
         }
         public void IniciarSesion(Usuario usu)
         {
-            if (!usu.Nombre.Equals("Samuel") & !usu.Clave.Equals("123"))
+            if (!usu.Nombre.Equals("") & !usu.Clave.Equals(""))
             {
                 MessageBox.Show("Usuario/Contraseña incorrecta!");
                 return;
