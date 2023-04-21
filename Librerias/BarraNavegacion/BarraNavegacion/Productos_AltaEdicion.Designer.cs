@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Productos_AltaEdicion));
-            this.panelForm = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -65,8 +64,6 @@
             this.ControlPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.bttonClose = new Bunifu.Framework.UI.BunifuImageButton();
-            this.panelForm.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -79,19 +76,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.ControlPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bttonClose)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panelForm
-            // 
-            this.panelForm.AutoScroll = true;
-            this.panelForm.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.panelForm.Controls.Add(this.panel1);
-            this.panelForm.Controls.Add(this.ControlPanel);
-            this.panelForm.Location = new System.Drawing.Point(29, 16);
-            this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(875, 436);
-            this.panelForm.TabIndex = 3;
             // 
             // panel1
             // 
@@ -126,10 +111,11 @@
             this.panel1.Controls.Add(this.lblName);
             this.panel1.Controls.Add(this.boxName);
             this.panel1.Controls.Add(this.boxCodigo);
-            this.panel1.Location = new System.Drawing.Point(3, 43);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 40);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(878, 503);
+            this.panel1.Size = new System.Drawing.Size(834, 508);
             this.panel1.TabIndex = 30;
             // 
             // bunifuCustomLabel2
@@ -662,11 +648,10 @@
             this.ControlPanel.BackColor = System.Drawing.Color.Black;
             this.ControlPanel.Controls.Add(this.label1);
             this.ControlPanel.Controls.Add(this.pictureBox10);
-            this.ControlPanel.Controls.Add(this.bttonClose);
             this.ControlPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.ControlPanel.Location = new System.Drawing.Point(0, 0);
             this.ControlPanel.Name = "ControlPanel";
-            this.ControlPanel.Size = new System.Drawing.Size(881, 40);
+            this.ControlPanel.Size = new System.Drawing.Size(834, 40);
             this.ControlPanel.TabIndex = 2;
             // 
             // label1
@@ -692,29 +677,16 @@
             this.pictureBox10.TabIndex = 1;
             this.pictureBox10.TabStop = false;
             // 
-            // bttonClose
-            // 
-            this.bttonClose.BackColor = System.Drawing.Color.Transparent;
-            this.bttonClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.bttonClose.Image = ((System.Drawing.Image)(resources.GetObject("bttonClose.Image")));
-            this.bttonClose.ImageActive = null;
-            this.bttonClose.Location = new System.Drawing.Point(837, 0);
-            this.bttonClose.Name = "bttonClose";
-            this.bttonClose.Size = new System.Drawing.Size(44, 40);
-            this.bttonClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bttonClose.TabIndex = 0;
-            this.bttonClose.TabStop = false;
-            this.bttonClose.Zoom = 10;
-            this.bttonClose.Click += new System.EventHandler(this.bttonClose_Click);
-            // 
             // Productos_AltaEdicion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panelForm);
+            this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.ControlPanel);
             this.Name = "Productos_AltaEdicion";
-            this.Size = new System.Drawing.Size(919, 474);
-            this.panelForm.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(834, 474);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -728,14 +700,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ControlPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bttonClose)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        public System.Windows.Forms.Panel panelForm;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
@@ -771,6 +740,5 @@
         private System.Windows.Forms.Panel ControlPanel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox10;
-        public Bunifu.Framework.UI.BunifuImageButton bttonClose;
     }
 }

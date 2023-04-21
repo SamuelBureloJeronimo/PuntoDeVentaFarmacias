@@ -1,21 +1,22 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
-using Inventario;
+using Empleados;
 
 namespace BarraNavegacion
 {
     public partial class Productos_AltaEdicion: UserControl
     {
         private string FileName;
-        private TabControl tabControl;
-        InventarioMed inv;
-        public Productos_AltaEdicion(TabControl tabControl, InventarioMed inv)
+        private Usuario user { get; set; }
+        public Productos_AltaEdicion(Usuario user)
         {
-            this.inv= inv;
-            this.tabControl = tabControl;
+            this.user = user;
             InitializeComponent();
         }
+
+        [Obsolete]
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             if (boxCodigo.Text.Equals("") || boxName.Text.Equals("") || boxPrecioCompra.Text.Equals("") || boxPrecioVenta.Text.Equals(""))
@@ -34,12 +35,26 @@ namespace BarraNavegacion
             double precioV = Convert.ToDouble(boxPrecioVenta.Text);
             string tipo = downBoxTipo.selectedValue;
             int cantidad = Int32.Parse(boxCantidad.Text);
-            double iva = Convert.ToDouble(boxIva.Text);
+            int iva = Int32.Parse(boxIva.Text);
             string fechCadu = fechCaducidad.Value.ToLongDateString();
-            string url = FileName;
-            inv.Registrar(codigo, nombre, precioC, precioV, tipo, cantidad, iva, fechCadu, url);
-            MessageBox.Show("Se registro correctamente.");
+            byte[] imageBytes = System.IO.File.ReadAllBytes(@FileName);
 
+            MySqlCommand command = new MySqlCommand("INSERT INTO productos (clv, nombre, precioComp, precioVent, tipo, cantidad, ivaPorc, caducidad, img) VALUES (@value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8, @value9)", user.connection);
+            command.Parameters.AddWithValue("@value1", codigo);
+            command.Parameters.AddWithValue("@value2", nombre);
+            command.Parameters.AddWithValue("@value3", precioC);
+            command.Parameters.AddWithValue("@value4", precioV);
+            command.Parameters.AddWithValue("@value5", tipo);
+            command.Parameters.AddWithValue("@value6", cantidad);
+            command.Parameters.AddWithValue("@value7", iva);
+            command.Parameters.AddWithValue("@value8", fechCadu);
+            // Agregar parámetros al objeto MySqlCommand
+            MySqlParameter param = new MySqlParameter("@image", MySqlDbType.LongBlob);
+            param.Value = imageBytes;
+            command.Parameters.Add("@value9", param);
+            command.ExecuteNonQuery();
+
+            MessageBox.Show("Se registro correctamente.");
             boxCodigo.Text = string.Empty;
             boxName.Text = string.Empty;
             boxPrecioCompra.Text = string.Empty;
@@ -192,11 +207,6 @@ namespace BarraNavegacion
         {
             pictureBox1.Image = null;
             FileName = string.Empty;
-        }
-
-        private void bttonClose_Click(object sender, EventArgs e)
-        {
-            tabControl.TabPages.Remove(tabControl.TabPages[tabControl.SelectedIndex]);
         }
     }
 }

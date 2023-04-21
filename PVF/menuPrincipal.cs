@@ -3,10 +3,8 @@ using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
-using Inventario;
 using BarraNavegacion;
-using ControlUsuario;
-
+using Empleados;
 
 namespace PVF
 {
@@ -19,21 +17,19 @@ namespace PVF
     public partial class menuPrincipal : Form 
     {
         //Variables y objetos necesarios
-        private Usuario user;
+        public Usuario user { get; set; }
 
         private MenusItem   menus;
 
         private string datetime;
         private Stopwatch timeMeasure;
-        private InventarioMed inventario;
 
         /**
          *  Contructor de la clase menuPrincipal
-         *  <param name="user1">Es un objeto tipo Usuario que contiene nombre, clave y tipo</param>
          */
-        public menuPrincipal(Usuario user1)
+        public menuPrincipal(Usuario user)
         {
-            user = user1;
+            this.user = user;
             InitializeComponent();//Se inicializan los componentes del proyecto
             InicializarMisComponentes();//Se inicializan los componentes traidos de otra clase/form
             controlAcceso();
@@ -41,23 +37,19 @@ namespace PVF
         private void controlAcceso()
         {
             //Control de acceso
-            switch (user.Tipo)
+            switch (user.tipo)
             {
-                case "Empleado":
-                    Empleado empl = new Empleado();
-                    empl.Show();
-                    break;
                 case "Gerente":
-                    MessageBox.Show("Bienvenido Gerenete " + user.Nombre + ".\nUltima vez conectado: " + datetime, "¡Bienvenido Gerente!", MessageBoxButtons.OK);
+                    MessageBox.Show("Bienvenido Gerenete " + user.nmbrP + ".\nUltima vez conectado: " + datetime, "¡Bienvenido Gerente!", MessageBoxButtons.OK);
                     btnfuProveedores.Visible = false;
                     btnfuEmpleados.Visible = false;
                     btnfuAdministracion.Visible = false;
-                    label2.Text = "     " + user.Nombre + " [Gerente]";
+                    label2.Text = "     " + user.nmbrP + " ["+user.tipo+"]";
                     this.Show();
                     break;
                 case "Admin":
-                    MessageBox.Show("Bienvenido Administrador " + user.Nombre + ".\nUltima vez conectado: " + datetime, "¡Bienvenido Administrador!", MessageBoxButtons.OK);
-                    label2.Text = "     " + user.Nombre + " [Administrador]";
+                    MessageBox.Show("Bienvenido Administrador " + user.nmbrP + ".\nUltima vez conectado: " + datetime, "¡Bienvenido Administrador!", MessageBoxButtons.OK);
+                    label2.Text = "     " + user.nmbrP + " [" + user.tipo + "]";
                     this.Show();
                     break;
                 default:
@@ -68,24 +60,22 @@ namespace PVF
         {
             datetime = DateTime.Now.ToString("hh:mm tt");
             timeMeasure = new Stopwatch();
-            inventario = new InventarioMed();
 
-            menus = new MenusItem(tabControl, inventario);
+            menus = new MenusItem(user, panelBody);
             panelSubMenu.Controls.Add(menus.panelProductos);
             menus.panelProductos.Show();
-            
-            //subMenus.btnAltaEdicion_Producto.Click += new System.EventHandler(this.btnAltaEdicion_Producto_Click);
+
             //Modifico el dock para que ocupe todo el espacio asignado
             menus.panelProductos.Dock = DockStyle.Fill;
             menus.panelClientes.Dock = DockStyle.Fill;
             menus.panelCompras.Dock = DockStyle.Fill;
-            menus.panelVentas.Dock= DockStyle.Fill;
-            menus.panelProveedores.Dock= DockStyle.Fill;
-            menus.panelEmpleados.Dock= DockStyle.Fill;
-            menus.panelCaja.Dock= DockStyle.Fill;
+            menus.panelVentas.Dock = DockStyle.Fill;
+            menus.panelProveedores.Dock = DockStyle.Fill;
+            menus.panelEmpleados.Dock = DockStyle.Fill;
+            menus.panelCaja.Dock = DockStyle.Fill;
             menus.panelReportes.Dock = DockStyle.Fill;
-            menus.panelAdministracion.Dock= DockStyle.Fill;
-            menus.panelAyuda.Dock= DockStyle.Fill;
+            menus.panelAdministracion.Dock = DockStyle.Fill;
+            menus.panelAyuda.Dock = DockStyle.Fill;
 
             timeMeasure.Start();//Inicia el timer de la Barra de estado
             timer1.Enabled = true;
@@ -101,6 +91,7 @@ namespace PVF
         {
             if (MessageBox.Show("¿Estas seguro que deseas salir?", "¡Alerta!", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
+                user.connection.Close();
                 Application.Exit();
             }
         }
@@ -132,6 +123,7 @@ namespace PVF
         private void bttonMin_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
+            this.Width = 1050;
             bttonMax.Visible = true;
             bttonMin.Visible = false;
         }

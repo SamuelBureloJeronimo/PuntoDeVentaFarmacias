@@ -1,6 +1,0 @@
-D:\TECNOLOGICO ITSM\GitHub Repository\Librerias\ControlUsuario\ControlUsuario\bin\Debug\ControlUsuario.dll
-D:\TECNOLOGICO ITSM\GitHub Repository\Librerias\ControlUsuario\ControlUsuario\bin\Debug\ControlUsuario.pdb
-D:\TECNOLOGICO ITSM\GitHub Repository\Librerias\ControlUsuario\ControlUsuario\obj\Debug\ControlUsuario.csproj.AssemblyReference.cache
-D:\TECNOLOGICO ITSM\GitHub Repository\Librerias\ControlUsuario\ControlUsuario\obj\Debug\ControlUsuario.csproj.CoreCompileInputs.cache
-D:\TECNOLOGICO ITSM\GitHub Repository\Librerias\ControlUsuario\ControlUsuario\obj\Debug\ControlUsuario.dll
-D:\TECNOLOGICO ITSM\GitHub Repository\Librerias\ControlUsuario\ControlUsuario\obj\Debug\ControlUsuario.pdb

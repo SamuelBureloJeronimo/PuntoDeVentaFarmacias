@@ -1,50 +1,54 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Collections;
-using Inventario;
+using MySql.Data.MySqlClient;
+using System.Data;
+using Empleados;
 
 namespace BarraNavegacion
 {
     public partial class Productos_ConsultaIngresos : UserControl
     {
-        private TabControl tabControl;
-        private ArrayList ListMedicamentos;
-        public Productos_ConsultaIngresos(TabControl tabControl)
+        private Usuario user { get; set; }
+        public Productos_ConsultaIngresos(Usuario user)
         {
-            this.tabControl = tabControl;
+            this.user = user;
             InitializeComponent();
         }
-        public ArrayList list{ get { return this.ListMedicamentos; } set { this.ListMedicamentos = value; } }
         public void loadTable()
         {
             bdMedic.Rows.Clear();
-            bdMedic.Columns[8].DefaultCellStyle.ForeColor = Color.Red;
-            bdMedic.Columns[9].DefaultCellStyle.ForeColor = Color.Green;
-            for (int i = 0; i < ListMedicamentos.Count; i++)
+            MySqlCommand command = new MySqlCommand("SELECT * FROM productos", user.connection);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            int i=0;
+            foreach (DataRow row in table.Rows)
             {
                 bdMedic.Rows.Add();
-                Medicamento md = (Medicamento)ListMedicamentos[i];
+                double precComp = Double.Parse(row["precioComp"].ToString());
+                double precVent = Double.Parse(row["precioVent"].ToString());
+                int cantidad = int.Parse(row["cantidad"].ToString());
 
-                double inversion = md.PrecioCompra * md.Cantidad;
-                double ganancias = md.PrecioVenta * md.Cantidad;
+                double inversion = precComp * cantidad;
+                double ganancias = precVent * cantidad;
 
-                bdMedic[0, i].Value = md.Codigo;
-                bdMedic[1, i].Value = md.Nombre;
-                bdMedic[2, i].Value = md.PrecioCompra.ToString();
-                bdMedic[3, i].Value = md.PrecioVenta.ToString();
-                bdMedic[4, i].Value = md.Tipo;
-                bdMedic[5, i].Value = md.Cantidad.ToString();
-                bdMedic[6, i].Value = (md.Iva * 100).ToString();
-                bdMedic[7, i].Value = md.Caducidad;
+                bdMedic[0, i].Value = row["clv"].ToString();
+                bdMedic[1, i].Value = row["nombre"].ToString();
+                bdMedic[2, i].Value = precComp.ToString();
+                bdMedic[3, i].Value = precVent.ToString();
+                bdMedic[4, i].Value = row["tipo"].ToString();
+                bdMedic[5, i].Value = cantidad.ToString();
+                bdMedic[6, i].Value = row["ivaPorc"]+"%";
+                bdMedic[7, i].Value = row["caducidad"].ToString();
                 bdMedic[8, i].Value = inversion.ToString();
                 bdMedic[9, i].Value = ganancias.ToString();
+                bdMedic.Columns[8].DefaultCellStyle.ForeColor = Color.Red;
+                bdMedic.Columns[9].DefaultCellStyle.ForeColor = Color.Green;
+                i++;
             }
-        }
-        private void bttonClose_Click(object sender, EventArgs e)
-        {
-            tabControl.TabPages.Remove(tabControl.TabPages[tabControl.SelectedIndex]);
-            //tabControl.TabPages.Clear();
+            if(i<1)
+                Console.WriteLine("No se encontro nada en la Tabla producto.");
         }
     }
 }

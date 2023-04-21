@@ -44,3 +44,31 @@ D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\Barr
 D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.dll
 D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.pdb
 D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.MenusItem.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.MenusItem.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\bin\Debug\BarraNavegacion.dll
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\bin\Debug\BarraNavegacion.pdb
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.csproj.AssemblyReference.cache
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Administracion.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Ayuda.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Caja.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Compras.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Empleados.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Clientes.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Productos_AltaEdicion.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Productos_ConsultaIngresos.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Proveedores.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Reportes.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Ventas.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.csproj.GenerateResource.cache
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.csproj.CoreCompileInputs.cache
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.csproj.CopyComplete
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.dll
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.pdb
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\bin\Debug\MySql.Data.dll
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Productos_VerificarPrecios.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Administracion_CreateNewUser.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Properties.Resources.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\bin\Debug\Empleados.dll
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\bin\Debug\Empleados.pdb
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Empleados_DarAlta.resources

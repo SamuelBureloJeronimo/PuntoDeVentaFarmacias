@@ -40,7 +40,7 @@
             this.bttonMin = new Bunifu.Framework.UI.BunifuImageButton();
             this.bttonClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.tabControl = new System.Windows.Forms.TabControl();
+            this.panelBody = new System.Windows.Forms.Panel();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.labelStatus1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -191,7 +191,7 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.tabControl);
+            this.panel6.Controls.Add(this.panelBody);
             this.panel6.Controls.Add(this.statusStrip);
             this.panel6.Controls.Add(this.panel3);
             this.panel6.Controls.Add(this.panel5);
@@ -204,14 +204,15 @@
             this.panel6.Size = new System.Drawing.Size(1108, 691);
             this.panel6.TabIndex = 16;
             // 
-            // tabControl
+            // panelBody
             // 
-            this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl.Location = new System.Drawing.Point(349, 153);
-            this.tabControl.Name = "tabControl";
-            this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(757, 514);
-            this.tabControl.TabIndex = 0;
+            this.panelBody.BackColor = System.Drawing.Color.Silver;
+            this.panelBody.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBody.Location = new System.Drawing.Point(349, 153);
+            this.panelBody.Name = "panelBody";
+            this.panelBody.Size = new System.Drawing.Size(757, 514);
+            this.panelBody.TabIndex = 17;
             // 
             // statusStrip
             // 
@@ -995,7 +996,7 @@
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
         private System.Windows.Forms.ToolStripStatusLabel labelStatus1;
         private System.Windows.Forms.Timer timer1;
-        public System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.Panel panelBody;
     }
 }
 

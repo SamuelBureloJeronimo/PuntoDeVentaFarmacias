@@ -162,3 +162,24 @@ D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.csproj.CoreC
 D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.csproj.CopyComplete
 D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.exe
 D:\TECNOLOGICO ITSM\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.pdb
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\bin\Debug\PVF.exe.config
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\bin\Debug\PVF.exe
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\bin\Debug\PVF.pdb
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\bin\Debug\BarraNavegacion.dll
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\bin\Debug\MySql.Data.dll
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\bin\Debug\BarraNavegacion.pdb
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.csproj.AssemblyReference.cache
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.csproj.SuggestedBindingRedirects.cache
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.CatalogoProductos.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.Login.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.menuPrincipal.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.Properties.Resources.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.csproj.GenerateResource.cache
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.csproj.CoreCompileInputs.cache
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.csproj.CopyComplete
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.exe
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.pdb
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\bin\Debug\Empleados.dll
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\bin\Debug\Empleados.pdb
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.I_Empleado.resources

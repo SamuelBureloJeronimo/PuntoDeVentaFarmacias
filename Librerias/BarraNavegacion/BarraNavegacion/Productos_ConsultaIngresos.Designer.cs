@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Productos_ConsultaIngresos));
-            this.panelForm = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.bdMedic = new System.Windows.Forms.DataGridView();
             this.Código = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,36 +43,10 @@
             this.ControlPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.bttonClose = new Bunifu.Framework.UI.BunifuImageButton();
-            this.panelForm.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bdMedic)).BeginInit();
             this.ControlPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bttonClose)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panelForm
-            // 
-            this.panelForm.AutoScroll = true;
-            this.panelForm.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.panelForm.Controls.Add(this.panel1);
-            this.panelForm.Controls.Add(this.ControlPanel);
-            this.panelForm.Location = new System.Drawing.Point(24, 15);
-            this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(1069, 436);
-            this.panelForm.TabIndex = 4;
-            // 
-            // panel1
-            // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.bdMedic);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 40);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1069, 396);
-            this.panel1.TabIndex = 30;
             // 
             // bdMedic
             // 
@@ -92,10 +64,10 @@
             this.inversion,
             this.gananciasEstimadas});
             this.bdMedic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bdMedic.Location = new System.Drawing.Point(0, 0);
+            this.bdMedic.Location = new System.Drawing.Point(0, 40);
             this.bdMedic.Name = "bdMedic";
             this.bdMedic.ReadOnly = true;
-            this.bdMedic.Size = new System.Drawing.Size(1069, 396);
+            this.bdMedic.Size = new System.Drawing.Size(1106, 425);
             this.bdMedic.TabIndex = 0;
             // 
             // Código
@@ -165,11 +137,10 @@
             this.ControlPanel.BackColor = System.Drawing.Color.Black;
             this.ControlPanel.Controls.Add(this.label1);
             this.ControlPanel.Controls.Add(this.pictureBox10);
-            this.ControlPanel.Controls.Add(this.bttonClose);
             this.ControlPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.ControlPanel.Location = new System.Drawing.Point(0, 0);
             this.ControlPanel.Name = "ControlPanel";
-            this.ControlPanel.Size = new System.Drawing.Size(1069, 40);
+            this.ControlPanel.Size = new System.Drawing.Size(1106, 40);
             this.ControlPanel.TabIndex = 2;
             // 
             // label1
@@ -195,42 +166,23 @@
             this.pictureBox10.TabIndex = 1;
             this.pictureBox10.TabStop = false;
             // 
-            // bttonClose
-            // 
-            this.bttonClose.BackColor = System.Drawing.Color.Transparent;
-            this.bttonClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.bttonClose.Image = ((System.Drawing.Image)(resources.GetObject("bttonClose.Image")));
-            this.bttonClose.ImageActive = null;
-            this.bttonClose.Location = new System.Drawing.Point(1025, 0);
-            this.bttonClose.Name = "bttonClose";
-            this.bttonClose.Size = new System.Drawing.Size(44, 40);
-            this.bttonClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bttonClose.TabIndex = 0;
-            this.bttonClose.TabStop = false;
-            this.bttonClose.Zoom = 10;
-            this.bttonClose.Click += new System.EventHandler(this.bttonClose_Click);
-            // 
             // Productos_ConsultaIngresos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panelForm);
+            this.AutoScroll = true;
+            this.Controls.Add(this.bdMedic);
+            this.Controls.Add(this.ControlPanel);
             this.Name = "Productos_ConsultaIngresos";
             this.Size = new System.Drawing.Size(1106, 465);
-            this.panelForm.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bdMedic)).EndInit();
             this.ControlPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bttonClose)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        public System.Windows.Forms.Panel panelForm;
-        private System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.DataGridView bdMedic;
         private System.Windows.Forms.DataGridViewTextBoxColumn Código;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
@@ -245,6 +197,5 @@
         private System.Windows.Forms.Panel ControlPanel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox10;
-        public Bunifu.Framework.UI.BunifuImageButton bttonClose;
     }
 }

@@ -87,7 +87,7 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton7 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton8 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnDarAlta = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label14 = new System.Windows.Forms.Label();
             this.panelCaja = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
@@ -112,7 +112,7 @@
             this.bunifuFlatButton25 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton23 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton24 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton19 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.CreateNewUser = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label16 = new System.Windows.Forms.Label();
             this.panelAyuda = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
@@ -149,6 +149,7 @@
             // 
             // panelProductos
             // 
+            this.panelProductos.AutoScroll = true;
             this.panelProductos.BackColor = System.Drawing.Color.DarkCyan;
             this.panelProductos.Controls.Add(this.panel8);
             this.panelProductos.Controls.Add(this.panel7);
@@ -430,6 +431,7 @@
             this.btnVerifPrice_Producto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnVerifPrice_Producto.Textcolor = System.Drawing.Color.White;
             this.btnVerifPrice_Producto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerifPrice_Producto.Click += new System.EventHandler(this.btnVerifPrice_Producto_Click);
             // 
             // btnAltaEdicion_Producto
             // 
@@ -1380,7 +1382,7 @@
             this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel15.Controls.Add(this.bunifuFlatButton6);
             this.panel15.Controls.Add(this.bunifuFlatButton7);
-            this.panel15.Controls.Add(this.bunifuFlatButton8);
+            this.panel15.Controls.Add(this.btnDarAlta);
             this.panel15.Controls.Add(this.label14);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel15.Location = new System.Drawing.Point(0, 0);
@@ -1458,40 +1460,41 @@
             this.bunifuFlatButton7.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton7.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // bunifuFlatButton8
+            // btnDarAlta
             // 
-            this.bunifuFlatButton8.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bunifuFlatButton8.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton8.BorderRadius = 0;
-            this.bunifuFlatButton8.ButtonText = "Dar de Alta";
-            this.bunifuFlatButton8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton8.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bunifuFlatButton8.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton8.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton8.Iconimage")));
-            this.bunifuFlatButton8.Iconimage_right = null;
-            this.bunifuFlatButton8.Iconimage_right_Selected = null;
-            this.bunifuFlatButton8.Iconimage_Selected = null;
-            this.bunifuFlatButton8.IconMarginLeft = 0;
-            this.bunifuFlatButton8.IconMarginRight = 0;
-            this.bunifuFlatButton8.IconRightVisible = true;
-            this.bunifuFlatButton8.IconRightZoom = 0D;
-            this.bunifuFlatButton8.IconVisible = true;
-            this.bunifuFlatButton8.IconZoom = 90D;
-            this.bunifuFlatButton8.IsTab = false;
-            this.bunifuFlatButton8.Location = new System.Drawing.Point(0, 0);
-            this.bunifuFlatButton8.Name = "bunifuFlatButton8";
-            this.bunifuFlatButton8.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton8.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton8.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton8.selected = false;
-            this.bunifuFlatButton8.Size = new System.Drawing.Size(138, 59);
-            this.bunifuFlatButton8.TabIndex = 2;
-            this.bunifuFlatButton8.Text = "Dar de Alta";
-            this.bunifuFlatButton8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton8.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton8.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDarAlta.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnDarAlta.BackColor = System.Drawing.Color.Transparent;
+            this.btnDarAlta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDarAlta.BorderRadius = 0;
+            this.btnDarAlta.ButtonText = "Dar de Alta";
+            this.btnDarAlta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDarAlta.DisabledColor = System.Drawing.Color.Gray;
+            this.btnDarAlta.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnDarAlta.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnDarAlta.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDarAlta.Iconimage")));
+            this.btnDarAlta.Iconimage_right = null;
+            this.btnDarAlta.Iconimage_right_Selected = null;
+            this.btnDarAlta.Iconimage_Selected = null;
+            this.btnDarAlta.IconMarginLeft = 0;
+            this.btnDarAlta.IconMarginRight = 0;
+            this.btnDarAlta.IconRightVisible = true;
+            this.btnDarAlta.IconRightZoom = 0D;
+            this.btnDarAlta.IconVisible = true;
+            this.btnDarAlta.IconZoom = 90D;
+            this.btnDarAlta.IsTab = false;
+            this.btnDarAlta.Location = new System.Drawing.Point(0, 0);
+            this.btnDarAlta.Name = "btnDarAlta";
+            this.btnDarAlta.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnDarAlta.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnDarAlta.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnDarAlta.selected = false;
+            this.btnDarAlta.Size = new System.Drawing.Size(138, 59);
+            this.btnDarAlta.TabIndex = 2;
+            this.btnDarAlta.Text = "Dar de Alta";
+            this.btnDarAlta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDarAlta.Textcolor = System.Drawing.Color.White;
+            this.btnDarAlta.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDarAlta.Click += new System.EventHandler(this.btnDarAlta_Click_1);
             // 
             // label14
             // 
@@ -2014,7 +2017,7 @@
             this.panel17.Controls.Add(this.bunifuFlatButton25);
             this.panel17.Controls.Add(this.bunifuFlatButton23);
             this.panel17.Controls.Add(this.bunifuFlatButton24);
-            this.panel17.Controls.Add(this.bunifuFlatButton19);
+            this.panel17.Controls.Add(this.CreateNewUser);
             this.panel17.Controls.Add(this.label16);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel17.Location = new System.Drawing.Point(0, 0);
@@ -2127,41 +2130,42 @@
             this.bunifuFlatButton24.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton24.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // bunifuFlatButton19
+            // CreateNewUser
             // 
-            this.bunifuFlatButton19.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bunifuFlatButton19.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.bunifuFlatButton19.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton19.BorderRadius = 0;
-            this.bunifuFlatButton19.ButtonText = "Subir nuevo usuario";
-            this.bunifuFlatButton19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton19.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton19.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bunifuFlatButton19.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton19.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton19.Iconimage")));
-            this.bunifuFlatButton19.Iconimage_right = null;
-            this.bunifuFlatButton19.Iconimage_right_Selected = null;
-            this.bunifuFlatButton19.Iconimage_Selected = null;
-            this.bunifuFlatButton19.IconMarginLeft = 0;
-            this.bunifuFlatButton19.IconMarginRight = 0;
-            this.bunifuFlatButton19.IconRightVisible = true;
-            this.bunifuFlatButton19.IconRightZoom = 0D;
-            this.bunifuFlatButton19.IconVisible = true;
-            this.bunifuFlatButton19.IconZoom = 90D;
-            this.bunifuFlatButton19.IsTab = false;
-            this.bunifuFlatButton19.Location = new System.Drawing.Point(0, 0);
-            this.bunifuFlatButton19.Name = "bunifuFlatButton19";
-            this.bunifuFlatButton19.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton19.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton19.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton19.selected = false;
-            this.bunifuFlatButton19.Size = new System.Drawing.Size(148, 59);
-            this.bunifuFlatButton19.TabIndex = 5;
-            this.bunifuFlatButton19.Text = "Subir nuevo usuario";
-            this.bunifuFlatButton19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton19.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton19.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateNewUser.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.CreateNewUser.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.CreateNewUser.BackColor = System.Drawing.Color.Transparent;
+            this.CreateNewUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.CreateNewUser.BorderRadius = 0;
+            this.CreateNewUser.ButtonText = "Subir nuevo usuario";
+            this.CreateNewUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CreateNewUser.DisabledColor = System.Drawing.Color.Gray;
+            this.CreateNewUser.Dock = System.Windows.Forms.DockStyle.Left;
+            this.CreateNewUser.Iconcolor = System.Drawing.Color.Transparent;
+            this.CreateNewUser.Iconimage = ((System.Drawing.Image)(resources.GetObject("CreateNewUser.Iconimage")));
+            this.CreateNewUser.Iconimage_right = null;
+            this.CreateNewUser.Iconimage_right_Selected = null;
+            this.CreateNewUser.Iconimage_Selected = null;
+            this.CreateNewUser.IconMarginLeft = 0;
+            this.CreateNewUser.IconMarginRight = 0;
+            this.CreateNewUser.IconRightVisible = true;
+            this.CreateNewUser.IconRightZoom = 0D;
+            this.CreateNewUser.IconVisible = true;
+            this.CreateNewUser.IconZoom = 90D;
+            this.CreateNewUser.IsTab = false;
+            this.CreateNewUser.Location = new System.Drawing.Point(0, 0);
+            this.CreateNewUser.Name = "CreateNewUser";
+            this.CreateNewUser.Normalcolor = System.Drawing.Color.Transparent;
+            this.CreateNewUser.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.CreateNewUser.OnHoverTextColor = System.Drawing.Color.White;
+            this.CreateNewUser.selected = false;
+            this.CreateNewUser.Size = new System.Drawing.Size(148, 59);
+            this.CreateNewUser.TabIndex = 5;
+            this.CreateNewUser.Text = "Subir nuevo usuario";
+            this.CreateNewUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CreateNewUser.Textcolor = System.Drawing.Color.White;
+            this.CreateNewUser.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateNewUser.Click += new System.EventHandler(this.CreateNewUser_Click);
             // 
             // label16
             // 
@@ -2348,7 +2352,7 @@
         private System.Windows.Forms.Panel panel15;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton6;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton7;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton8;
+        private Bunifu.Framework.UI.BunifuFlatButton btnDarAlta;
         private System.Windows.Forms.Label label14;
         public System.Windows.Forms.Panel panelCaja;
         private System.Windows.Forms.Panel panel16;
@@ -2373,7 +2377,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton25;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton23;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton24;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton19;
+        private Bunifu.Framework.UI.BunifuFlatButton CreateNewUser;
         private System.Windows.Forms.Label label16;
         public System.Windows.Forms.Panel panelAyuda;
         private System.Windows.Forms.Panel panel18;

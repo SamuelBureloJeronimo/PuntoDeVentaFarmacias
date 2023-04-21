@@ -43,14 +43,14 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>C:\Users\SpartanLuck 117\source\repos\SIGEPV\SIGEPV\lib\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
-    <Reference Include="ControlUsuario">
-      <HintPath>..\Librerias\ControlUsuario\ControlUsuario\bin\Debug\ControlUsuario.dll</HintPath>
-    </Reference>
-    <Reference Include="Inventario, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Librerias\Inventario\Inventario\bin\Debug\Inventario.dll</HintPath>
+    <Reference Include="Empleados">
+      <HintPath>..\Librerias\Empleados\Empleados\bin\Debug\Empleados.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Librerias\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
@@ -77,11 +77,11 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empleado.cs">
+    <Compile Include="I_Empleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empleado.Designer.cs">
-      <DependentUpon>Empleado.cs</DependentUpon>
+    <Compile Include="I_Empleado.Designer.cs">
+      <DependentUpon>I_Empleado.cs</DependentUpon>
     </Compile>
     <Compile Include="menuPrincipal.cs">
       <SubType>Form</SubType>
@@ -97,8 +97,8 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empleado.resx">
-      <DependentUpon>Empleado.cs</DependentUpon>
+    <EmbeddedResource Include="I_Empleado.resx">
+      <DependentUpon>I_Empleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menuPrincipal.resx">
       <DependentUpon>menuPrincipal.cs</DependentUpon>

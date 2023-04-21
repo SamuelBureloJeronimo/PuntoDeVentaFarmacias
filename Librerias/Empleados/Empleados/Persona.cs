@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.ConstrainedExecution;
 using System.Security.AccessControl;
@@ -24,20 +26,48 @@ namespace Empleados
          * - telf // Telefono
          * - correo // Correo electronico
          */
-        protected string RFC, nmbr, apPat, apMat, fchNc, crr;
-        protected int Estad, mun, cln, calle, CP, telf;
-        // Setters y Getters
-        public string rfc { get { return this.RFC; } set { this.RFC = value; } }
-        public string nom { get { return this.nmbr; } set { this.nmbr = value; } }
-        public string apP { get { return this.apPat; } set { this.apPat = value; } }
-        public string apM { get { return this.apMat; } set { this.apMat = value; } }
-        public string fechNac { get { return this.fchNc; } set { this.fchNc = value; } }
-        public string correo { get { return this.crr; } set { this.crr = value; } }
-        public int NoEstad { get { return this.Estad; } set { this.Estad = value; } }
-        public int NoMun { get { return this.mun; } set { this.mun = value; } }
-        public int NoCln { get { return this.cln; } set { this.cln = value; } }
-        public int NoCalle { get { return this.cln; } set { this.cln = value; } }
-        public int NoCP { get { return this.CP; } set { this.CP = value; } }
-        public int NoTel { get { return this.telf; } set { this.telf = value; } }
+        public string RFC { get; set; }
+        public string nmbrP { get; set; }
+        public string apPat { get; set; }
+        public string apMat { get; set; }
+        public string fchNc { get; set; }
+        public string crr { get; set; }
+        public string estCivil { get; set; }
+        public int Estad { get; set; }
+        public int mun { get; set; }
+        public int cln { get; set; }
+        public int calle { get; set; }
+        public int CP { get; set; }
+        public int telf { get; set; }
+        public Boolean registrarPer(MySqlConnection connection)
+        {
+            MySqlCommand command = new MySqlCommand("INSERT INTO mytable (rfc, nombre, app, apm) VALUES (@value1, @value2, @value3, @value4)", connection);
+            command.Parameters.AddWithValue("@value1", "valor1");
+            command.Parameters.AddWithValue("@value2", 123);
+            command.Parameters.AddWithValue("@value3", DateTime.Now);
+            command.Parameters.AddWithValue("@value4", DateTime.Now);
+            command.ExecuteNonQuery();
+            return true;
+        }
+        public void requestPersona(String clvPer, MySqlConnection connection)
+        {
+            MySqlCommand command = new MySqlCommand("SELECT * FROM personas", connection);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            foreach (DataRow row in table.Rows)
+            {
+                string requestClvDPer = row["rfc"].ToString();
+
+                if (clvPer.Equals(requestClvDPer))
+                {
+                    this.RFC = requestClvDPer;
+                    this.nmbrP = row["nombre"].ToString();
+                    Console.WriteLine("¡Persona encontrada!");
+                    return;
+                }
+            }
+            Console.WriteLine("No se encontro ninguna persona con RFC: " + clvPer);
+        }
     }
 }

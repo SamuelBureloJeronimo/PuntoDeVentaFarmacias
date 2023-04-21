@@ -33,10 +33,14 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>C:\Users\SpartanLuck 117\source\repos\SIGEPV\SIGEPV\lib\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
-    <Reference Include="Inventario">
-      <HintPath>..\..\Inventario\Inventario\bin\Debug\Inventario.dll</HintPath>
+    <Reference Include="Empleados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Empleados\Empleados\bin\Debug\Empleados.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
@@ -56,6 +60,12 @@
     <Compile Include="Administracion.Designer.cs">
       <DependentUpon>Administracion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Administracion_CreateNewUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Administracion_CreateNewUser.Designer.cs">
+      <DependentUpon>Administracion_CreateNewUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ayuda.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -73,6 +83,12 @@
     </Compile>
     <Compile Include="Empleados.Designer.cs">
       <DependentUpon>Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados_DarAlta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Empleados_DarAlta.Designer.cs">
+      <DependentUpon>Empleados_DarAlta.cs</DependentUpon>
     </Compile>
     <Compile Include="MenusItem.cs">
       <SubType>UserControl</SubType>
@@ -92,6 +108,12 @@
     <Compile Include="Productos_ConsultaIngresos.Designer.cs">
       <DependentUpon>Productos_ConsultaIngresos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Productos_VerificarPrecios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Productos_VerificarPrecios.Designer.cs">
+      <DependentUpon>Productos_VerificarPrecios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Clientes.cs">
       <SubType>UserControl</SubType>
@@ -104,6 +126,11 @@
     </Compile>
     <Compile Include="Compras.Designer.cs">
       <DependentUpon>Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Proveedores.cs">
       <SubType>UserControl</SubType>
@@ -129,6 +156,9 @@
     <EmbeddedResource Include="Administracion.resx">
       <DependentUpon>Administracion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Administracion_CreateNewUser.resx">
+      <DependentUpon>Administracion_CreateNewUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ayuda.resx">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +171,9 @@
     <EmbeddedResource Include="Empleados.resx">
       <DependentUpon>Empleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Empleados_DarAlta.resx">
+      <DependentUpon>Empleados_DarAlta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenusItem.resx">
       <DependentUpon>MenusItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +185,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Productos_ConsultaIngresos.resx">
       <DependentUpon>Productos_ConsultaIngresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos_VerificarPrecios.resx">
+      <DependentUpon>Productos_VerificarPrecios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Proveedores.resx">
       <DependentUpon>Proveedores.cs</DependentUpon>
