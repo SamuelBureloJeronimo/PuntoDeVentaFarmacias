@@ -4,14 +4,13 @@ using System.Drawing;
 using System.Windows.Forms;
 using Bunifu.Framework.UI;
 using Empleados;
-using Microsoft.VisualBasic;
-using MySql.Data.MySqlClient;
 
 namespace BarraNavegacion
 {
     public partial class Administracion_CreateNewUser : UserControl
     {
         private Usuario user { get; set; }
+        String messege;
         public Administracion_CreateNewUser(Usuario user)
         {
             this.user = user;
@@ -28,12 +27,9 @@ namespace BarraNavegacion
                 tb = sender as BunifuMaterialTextbox;
                 DG.Rows.Clear();
 
-                MySqlCommand command = new MySqlCommand("SELECT * FROM empleados", user.connection);
-                MySqlDataAdapter adapter = new MySqlDataAdapter(command);
-                DataTable table = new DataTable();
-                adapter.Fill(table);
+                DataSet table = user.connBD.requestTable("empleados"); 
                 int i = 0;
-                foreach (DataRow row in table.Rows)
+                foreach (DataRow row in table.Tables[0].Rows)
                 {
                     String clvE = row["clvE"].ToString();
                     if (clvE.IndexOf(tb.Text, StringComparison.OrdinalIgnoreCase) >= 0)
@@ -52,12 +48,9 @@ namespace BarraNavegacion
         }
         public String buscarNombre(String clv)
         {
-            MySqlCommand command = new MySqlCommand("SELECT * FROM personas", user.connection);
-            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
+            DataSet table = user.connBD.requestTable("personas");
 
-            foreach (DataRow row in table.Rows)
+            foreach (DataRow row in table.Tables[0].Rows)
             {
                 String clvE = row["rfc"].ToString();
                 if (clvE.IndexOf(clv, StringComparison.OrdinalIgnoreCase) >= 0)
@@ -72,6 +65,24 @@ namespace BarraNavegacion
             int rowIndex = cell.RowIndex;
             uploadUser.Visible= true;
             uploadUser.Text = DG[1, rowIndex].Value.ToString();
+        }
+
+        private void uploadUser_Click(object sender, EventArgs e)
+        {
+            DataGridViewCell cell = DG.CurrentCell;
+            int rowIndex = cell.RowIndex;
+            uploadUser.Visible = true;
+            string rfc = DG[0, rowIndex].Value.ToString();
+
+            MessageInput m = new MessageInput(user, rfc);
+            m.ShowDialog();
+        }
+        private void message_Click(object sender, EventArgs e)
+        {
+            if(sender is Button)
+            {
+                Button btn = (Button) sender;
+            }
         }
     }
 }

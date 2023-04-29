@@ -27,19 +27,13 @@ namespace BarraNavegacion
 
         public void showEst()
         {
-            MySqlCommand command = new MySqlCommand("SELECT * FROM estados", user.connection);
-            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            foreach (DataRow row in table.Rows)
+            DataSet table = user.connBD.requestTable("estados");
+            foreach (DataRow row in table.Tables[0].Rows)
             {
                 downBoxEst.AddItem(row["nombre"].ToString());
             }
-            command = new MySqlCommand("SELECT * FROM departamentos", user.connection);
-            adapter = new MySqlDataAdapter(command);
-            table = new DataTable();
-            adapter.Fill(table);
-            foreach (DataRow row in table.Rows)
+            table = user.connBD.requestTable("departamentos");
+            foreach (DataRow row in table.Tables[0].Rows)
             {
                 downBoxDep.AddItem(row["nombDep"].ToString());
             }
@@ -58,11 +52,8 @@ namespace BarraNavegacion
             downBoxCol.AddItem("");
             lblCol.Visible = true;
             downBoxCol.Visible = true;
-            MySqlCommand command = new MySqlCommand("SELECT * FROM municipios", user.connection);
-            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            foreach (DataRow row in table.Rows)
+            DataSet table = user.connBD.requestTable("municipios");
+            foreach (DataRow row in table.Tables[0].Rows)
             {
                 if (row["Nombre"].ToString().Equals(downBoxMun.selectedValue))
                 {
@@ -70,11 +61,8 @@ namespace BarraNavegacion
                     break;
                 }
             }
-            command = new MySqlCommand("SELECT * FROM colonias", user.connection);
-            adapter = new MySqlDataAdapter(command);
-            table = new DataTable();
-            adapter.Fill(table);
-            foreach (DataRow row in table.Rows)
+            table = user.connBD.requestTable("colonias");
+            foreach (DataRow row in table.Tables[0].Rows)
             {
                 if (Int32.Parse(row["clvMun"].ToString()) == nMun)
                 {
@@ -95,11 +83,8 @@ namespace BarraNavegacion
             downBoxCalle.AddItem("");
             lblCalle.Visible = true;
             downBoxCalle.Visible = true;
-            MySqlCommand command = new MySqlCommand("SELECT * FROM colonias", user.connection);
-            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            foreach (DataRow row in table.Rows)
+            DataSet table = user.connBD.requestTable("colonias");
+            foreach (DataRow row in table.Tables[0].Rows)
             {
                 if (row["Nombre"].ToString().Equals(downBoxCol.selectedValue))
                 {
@@ -107,11 +92,8 @@ namespace BarraNavegacion
                     break;
                 }
             }
-            command = new MySqlCommand("SELECT * FROM calles", user.connection);
-            adapter = new MySqlDataAdapter(command);
-            table = new DataTable();
-            adapter.Fill(table);
-            foreach (DataRow row in table.Rows)
+            table = user.connBD.requestTable("calles");
+            foreach (DataRow row in table.Tables[0].Rows)
             {
                 if (Int32.Parse(row["clvCol"].ToString()) == nCol)
                 {
@@ -134,11 +116,8 @@ namespace BarraNavegacion
 
         private void downBoxDep_onItemSelected(object sender, EventArgs e)
         {
-            MySqlCommand command = new MySqlCommand("SELECT * FROM departamentos", user.connection);
-            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            foreach (DataRow row in table.Rows)
+            DataSet table = user.connBD.requestTable("departamentos");
+            foreach (DataRow row in table.Tables[0].Rows)
             {
                 if (row["nombDep"].ToString().Equals(downBoxDep.selectedValue))
                 {
@@ -150,11 +129,8 @@ namespace BarraNavegacion
 
         private void downBoxCalle_onItemSelected(object sender, EventArgs e)
         {
-            MySqlCommand command = new MySqlCommand("SELECT * FROM calles", user.connection);
-            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            foreach (DataRow row in table.Rows)
+            DataSet table = user.connBD.requestTable("calles");
+            foreach (DataRow row in table.Tables[0].Rows)
             {
                 if (row["Nombre"].ToString().Equals(downBoxCalle.selectedValue))
                 {
@@ -177,22 +153,12 @@ namespace BarraNavegacion
             string fechContr = DateTime.Now.ToString();
             byte[] imageBytes = System.IO.File.ReadAllBytes(@FileName);
 
-            MySqlCommand command = new MySqlCommand("INSERT INTO personas (rfc, nombre, app, apm, clvCalle) VALUES (@value1, @value2, @value3, @value4, @value5)", user.connection);
-            command.Parameters.AddWithValue("@value1", rfc);
-            command.Parameters.AddWithValue("@value2", nombre);
-            command.Parameters.AddWithValue("@value3", apPat);
-            command.Parameters.AddWithValue("@value4", apMat);
-            command.Parameters.AddWithValue("@value5", clvCalle);
-            command.ExecuteNonQuery();
-
-            command = new MySqlCommand("INSERT INTO empleados (clvE, horario, fechContr, clvDep, salario) VALUES (@value1, @value2, @value3, @value4, @value5)", user.connection);
-            command.Parameters.AddWithValue("@value1", rfc);
-            command.Parameters.AddWithValue("@value2", horario);
-            command.Parameters.AddWithValue("@value3", fechContr);
-            command.Parameters.AddWithValue("@value4", clvDep);
-            command.Parameters.AddWithValue("@value5", salario);
-            command.ExecuteNonQuery();
-            MessageBox.Show("Se registro correctamente.");
+            Object[,] insertPers = { { "rfc","nombre","app","apm","clvCalle" }, { rfc,nombre,apPat,apMat,clvCalle } };
+            Object[,] insertEmpl = { { "clvE", "horario", "fechContr", "clvDep", "salario" }, { rfc, horario, fechContr, clvDep, salario } };
+            
+            user.connBD.insertInto(insertPers, "personas");
+            user.connBD.insertInto(insertEmpl, "empleados");
+            MessageBox.Show("Persona registrada");
         }
 
         
@@ -201,7 +167,7 @@ namespace BarraNavegacion
         {
             if (downBoxEst.selectedIndex == 0)
             {
-                lblMun.Visible= false;
+                lblMun.Visible = false;
                 downBoxMun.Visible = false;
                 lblCol.Visible = false;
                 downBoxCol.Visible = false;
@@ -212,12 +178,9 @@ namespace BarraNavegacion
             downBoxMun.Clear();
             downBoxMun.AddItem("");
             lblMun.Visible = true;
-            downBoxMun.Visible= true;
-            MySqlCommand command = new MySqlCommand("SELECT * FROM estados", user.connection);
-            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            foreach (DataRow row in table.Rows)
+            downBoxMun.Visible = true;
+            DataSet table = user.connBD.requestTable("estados");
+            foreach (DataRow row in table.Tables[0].Rows)
             {
                 if (row["Nombre"].ToString().Equals(downBoxEst.selectedValue))
                 {
@@ -225,11 +188,8 @@ namespace BarraNavegacion
                     break;
                 }
             }
-            command = new MySqlCommand("SELECT * FROM municipios", user.connection);
-            adapter = new MySqlDataAdapter(command);
-            table = new DataTable();
-            adapter.Fill(table);
-            foreach (DataRow row in table.Rows)
+            table = user.connBD.requestTable("municipios");
+            foreach (DataRow row in table.Tables[0].Rows)
             {
                 if (Int32.Parse(row["clvEst"].ToString()) == nEst)
                 {

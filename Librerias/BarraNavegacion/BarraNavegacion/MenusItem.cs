@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using Empleados;
 
 namespace BarraNavegacion
 {
@@ -12,19 +11,11 @@ namespace BarraNavegacion
         private Empleados_DarAlta darAltaEmpl;
         private Administracion_CreateNewUser AD_CNU;
 
-        private Usuario user { get; set; }
         private Panel pn;
 
-        public MenusItem(Usuario user, Panel pn)
+        public MenusItem(ContextBoundObject context)
         {
             this.pn= pn;
-            this.user= user;
-            pdAE = new Productos_AltaEdicion(user);
-            CI = new Productos_ConsultaIngresos(user);
-            VP = new Productos_VerificarPrecios(user);
-            AD_CNU = new Administracion_CreateNewUser(user);
-            AD_CNU = new Administracion_CreateNewUser(user);
-            darAltaEmpl = new Empleados_DarAlta(user);
             InitializeComponent();
         }
         // ------------------------------------------------------------------------------------------------------------------------------ //

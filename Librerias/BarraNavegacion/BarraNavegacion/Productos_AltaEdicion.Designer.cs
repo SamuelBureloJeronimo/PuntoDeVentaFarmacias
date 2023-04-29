@@ -112,10 +112,10 @@
             this.panel1.Controls.Add(this.boxName);
             this.panel1.Controls.Add(this.boxCodigo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 40);
+            this.panel1.Location = new System.Drawing.Point(0, 89);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(834, 508);
+            this.panel1.Size = new System.Drawing.Size(1908, 1179);
             this.panel1.TabIndex = 30;
             // 
             // bunifuCustomLabel2
@@ -125,9 +125,10 @@
             this.bunifuCustomLabel2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Maroon;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(9, 158);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(21, 352);
+            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(15, 15);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(30, 31);
             this.bunifuCustomLabel2.TabIndex = 64;
             this.bunifuCustomLabel2.Text = "$";
             // 
@@ -138,9 +139,10 @@
             this.bunifuCustomLabel1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(267, 158);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(623, 352);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(15, 15);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(30, 31);
             this.bunifuCustomLabel1.TabIndex = 63;
             this.bunifuCustomLabel1.Text = "$";
             // 
@@ -156,13 +158,13 @@
         "Farmacos",
         "Con reseta",
         "Inyecciones"};
-            this.downBoxTipo.Location = new System.Drawing.Point(19, 256);
-            this.downBoxTipo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.downBoxTipo.Location = new System.Drawing.Point(44, 571);
+            this.downBoxTipo.Margin = new System.Windows.Forms.Padding(9, 11, 9, 11);
             this.downBoxTipo.Name = "downBoxTipo";
             this.downBoxTipo.NomalColor = System.Drawing.Color.Teal;
             this.downBoxTipo.onHoverColor = System.Drawing.Color.Teal;
             this.downBoxTipo.selectedIndex = 0;
-            this.downBoxTipo.Size = new System.Drawing.Size(188, 33);
+            this.downBoxTipo.Size = new System.Drawing.Size(439, 74);
             this.downBoxTipo.TabIndex = 34;
             // 
             // fechCaducidad
@@ -172,9 +174,10 @@
             this.fechCaducidad.ForeColor = System.Drawing.Color.White;
             this.fechCaducidad.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.fechCaducidad.FormatCustom = null;
-            this.fechCaducidad.Location = new System.Drawing.Point(278, 360);
+            this.fechCaducidad.Location = new System.Drawing.Point(649, 803);
+            this.fechCaducidad.Margin = new System.Windows.Forms.Padding(16, 16, 16, 16);
             this.fechCaducidad.Name = "fechCaducidad";
-            this.fechCaducidad.Size = new System.Drawing.Size(255, 36);
+            this.fechCaducidad.Size = new System.Drawing.Size(595, 80);
             this.fechCaducidad.TabIndex = 37;
             this.fechCaducidad.Value = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
             // 
@@ -199,14 +202,15 @@
             this.btnRegistrar.IconVisible = true;
             this.btnRegistrar.IconZoom = 90D;
             this.btnRegistrar.IsTab = false;
-            this.btnRegistrar.Location = new System.Drawing.Point(331, 431);
+            this.btnRegistrar.Location = new System.Drawing.Point(772, 961);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(16, 16, 16, 16);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Normalcolor = System.Drawing.Color.DarkSlateGray;
             this.btnRegistrar.OnHovercolor = System.Drawing.Color.MediumSpringGreen;
             this.btnRegistrar.OnHoverTextColor = System.Drawing.Color.Black;
-            this.btnRegistrar.Padding = new System.Windows.Forms.Padding(5);
+            this.btnRegistrar.Padding = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.btnRegistrar.selected = false;
-            this.btnRegistrar.Size = new System.Drawing.Size(144, 38);
+            this.btnRegistrar.Size = new System.Drawing.Size(336, 85);
             this.btnRegistrar.TabIndex = 41;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -217,9 +221,10 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(531, 29);
+            this.pictureBox9.Location = new System.Drawing.Point(1239, 65);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(48, 51);
+            this.pictureBox9.Size = new System.Drawing.Size(112, 114);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 59;
             this.pictureBox9.TabStop = false;
@@ -227,9 +232,10 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(531, 132);
+            this.pictureBox8.Location = new System.Drawing.Point(1239, 294);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(48, 51);
+            this.pictureBox8.Size = new System.Drawing.Size(112, 114);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 58;
             this.pictureBox8.TabStop = false;
@@ -237,9 +243,10 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(531, 238);
+            this.pictureBox7.Location = new System.Drawing.Point(1239, 531);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(48, 51);
+            this.pictureBox7.Size = new System.Drawing.Size(112, 114);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 57;
             this.pictureBox7.TabStop = false;
@@ -247,9 +254,10 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(531, 351);
+            this.pictureBox6.Location = new System.Drawing.Point(1239, 783);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(48, 51);
+            this.pictureBox6.Size = new System.Drawing.Size(112, 114);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 56;
             this.pictureBox6.TabStop = false;
@@ -257,9 +265,10 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(205, 342);
+            this.pictureBox5.Location = new System.Drawing.Point(478, 763);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(48, 51);
+            this.pictureBox5.Size = new System.Drawing.Size(112, 114);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 55;
             this.pictureBox5.TabStop = false;
@@ -267,9 +276,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(205, 238);
+            this.pictureBox4.Location = new System.Drawing.Point(478, 531);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 51);
+            this.pictureBox4.Size = new System.Drawing.Size(112, 114);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 54;
             this.pictureBox4.TabStop = false;
@@ -277,9 +287,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(205, 132);
+            this.pictureBox3.Location = new System.Drawing.Point(478, 294);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 51);
+            this.pictureBox3.Size = new System.Drawing.Size(112, 114);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 53;
             this.pictureBox3.TabStop = false;
@@ -287,9 +298,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(205, 38);
+            this.pictureBox2.Location = new System.Drawing.Point(478, 85);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 42);
+            this.pictureBox2.Size = new System.Drawing.Size(112, 94);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 52;
             this.pictureBox2.TabStop = false;
@@ -306,10 +318,10 @@
             this.boxPrecioCompra.LineIdleColor = System.Drawing.Color.DarkSlateGray;
             this.boxPrecioCompra.LineMouseHoverColor = System.Drawing.Color.Aquamarine;
             this.boxPrecioCompra.LineThickness = 3;
-            this.boxPrecioCompra.Location = new System.Drawing.Point(19, 150);
-            this.boxPrecioCompra.Margin = new System.Windows.Forms.Padding(4);
+            this.boxPrecioCompra.Location = new System.Drawing.Point(44, 335);
+            this.boxPrecioCompra.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
             this.boxPrecioCompra.Name = "boxPrecioCompra";
-            this.boxPrecioCompra.Size = new System.Drawing.Size(188, 33);
+            this.boxPrecioCompra.Size = new System.Drawing.Size(439, 91);
             this.boxPrecioCompra.TabIndex = 32;
             this.boxPrecioCompra.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.boxPrecioCompra.Enter += new System.EventHandler(this.boxPrecioCompra_Enter);
@@ -327,10 +339,10 @@
             this.boxIva.LineIdleColor = System.Drawing.Color.DarkSlateGray;
             this.boxIva.LineMouseHoverColor = System.Drawing.Color.Aquamarine;
             this.boxIva.LineThickness = 3;
-            this.boxIva.Location = new System.Drawing.Point(19, 360);
-            this.boxIva.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.boxIva.Location = new System.Drawing.Point(44, 803);
+            this.boxIva.Margin = new System.Windows.Forms.Padding(12, 9, 12, 9);
             this.boxIva.Name = "boxIva";
-            this.boxIva.Size = new System.Drawing.Size(188, 33);
+            this.boxIva.Size = new System.Drawing.Size(439, 91);
             this.boxIva.TabIndex = 36;
             this.boxIva.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.boxIva.Enter += new System.EventHandler(this.boxIva_Enter);
@@ -357,14 +369,15 @@
             this.btnLimpiarBoxs.IconVisible = true;
             this.btnLimpiarBoxs.IconZoom = 90D;
             this.btnLimpiarBoxs.IsTab = false;
-            this.btnLimpiarBoxs.Location = new System.Drawing.Point(19, 431);
+            this.btnLimpiarBoxs.Location = new System.Drawing.Point(44, 961);
+            this.btnLimpiarBoxs.Margin = new System.Windows.Forms.Padding(16, 16, 16, 16);
             this.btnLimpiarBoxs.Name = "btnLimpiarBoxs";
             this.btnLimpiarBoxs.Normalcolor = System.Drawing.Color.White;
             this.btnLimpiarBoxs.OnHovercolor = System.Drawing.Color.Cyan;
             this.btnLimpiarBoxs.OnHoverTextColor = System.Drawing.Color.Black;
-            this.btnLimpiarBoxs.Padding = new System.Windows.Forms.Padding(5);
+            this.btnLimpiarBoxs.Padding = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.btnLimpiarBoxs.selected = false;
-            this.btnLimpiarBoxs.Size = new System.Drawing.Size(191, 38);
+            this.btnLimpiarBoxs.Size = new System.Drawing.Size(446, 85);
             this.btnLimpiarBoxs.TabIndex = 40;
             this.btnLimpiarBoxs.Text = "Limpiar campos";
             this.btnLimpiarBoxs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -393,13 +406,14 @@
             this.btnEliminarIMG.IconVisible = true;
             this.btnEliminarIMG.IconZoom = 90D;
             this.btnEliminarIMG.IsTab = false;
-            this.btnEliminarIMG.Location = new System.Drawing.Point(662, 245);
+            this.btnEliminarIMG.Location = new System.Drawing.Point(1545, 547);
+            this.btnEliminarIMG.Margin = new System.Windows.Forms.Padding(16, 16, 16, 16);
             this.btnEliminarIMG.Name = "btnEliminarIMG";
             this.btnEliminarIMG.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnEliminarIMG.OnHovercolor = System.Drawing.Color.Maroon;
             this.btnEliminarIMG.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEliminarIMG.selected = false;
-            this.btnEliminarIMG.Size = new System.Drawing.Size(116, 32);
+            this.btnEliminarIMG.Size = new System.Drawing.Size(271, 71);
             this.btnEliminarIMG.TabIndex = 39;
             this.btnEliminarIMG.Text = "Eliminar";
             this.btnEliminarIMG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -428,13 +442,14 @@
             this.btnAgregarIMG.IconVisible = true;
             this.btnAgregarIMG.IconZoom = 90D;
             this.btnAgregarIMG.IsTab = false;
-            this.btnAgregarIMG.Location = new System.Drawing.Point(636, 203);
+            this.btnAgregarIMG.Location = new System.Drawing.Point(1484, 453);
+            this.btnAgregarIMG.Margin = new System.Windows.Forms.Padding(16, 16, 16, 16);
             this.btnAgregarIMG.Name = "btnAgregarIMG";
             this.btnAgregarIMG.Normalcolor = System.Drawing.Color.Green;
             this.btnAgregarIMG.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnAgregarIMG.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAgregarIMG.selected = false;
-            this.btnAgregarIMG.Size = new System.Drawing.Size(165, 36);
+            this.btnAgregarIMG.Size = new System.Drawing.Size(385, 80);
             this.btnAgregarIMG.TabIndex = 38;
             this.btnAgregarIMG.Text = "Agregar imagen";
             this.btnAgregarIMG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -448,9 +463,10 @@
             this.lblCaducidad.BackColor = System.Drawing.Color.Transparent;
             this.lblCaducidad.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.lblCaducidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCaducidad.Location = new System.Drawing.Point(275, 340);
+            this.lblCaducidad.Location = new System.Drawing.Point(642, 758);
+            this.lblCaducidad.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblCaducidad.Name = "lblCaducidad";
-            this.lblCaducidad.Size = new System.Drawing.Size(75, 15);
+            this.lblCaducidad.Size = new System.Drawing.Size(153, 31);
             this.lblCaducidad.TabIndex = 45;
             this.lblCaducidad.Text = "Caducidad";
             this.lblCaducidad.Visible = false;
@@ -459,9 +475,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(606, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(1414, 25);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(220, 179);
+            this.pictureBox1.Size = new System.Drawing.Size(508, 394);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
@@ -472,9 +489,10 @@
             this.lblIVA.BackColor = System.Drawing.Color.Transparent;
             this.lblIVA.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.lblIVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIVA.Location = new System.Drawing.Point(16, 340);
+            this.lblIVA.Location = new System.Drawing.Point(37, 758);
+            this.lblIVA.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblIVA.Name = "lblIVA";
-            this.lblIVA.Size = new System.Drawing.Size(53, 15);
+            this.lblIVA.Size = new System.Drawing.Size(114, 31);
             this.lblIVA.TabIndex = 43;
             this.lblIVA.Text = "IVA (%)";
             this.lblIVA.Visible = false;
@@ -485,9 +503,10 @@
             this.lblPrecioCompra.BackColor = System.Drawing.Color.Transparent;
             this.lblPrecioCompra.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.lblPrecioCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioCompra.Location = new System.Drawing.Point(16, 130);
+            this.lblPrecioCompra.Location = new System.Drawing.Point(37, 290);
+            this.lblPrecioCompra.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblPrecioCompra.Name = "lblPrecioCompra";
-            this.lblPrecioCompra.Size = new System.Drawing.Size(143, 15);
+            this.lblPrecioCompra.Size = new System.Drawing.Size(289, 31);
             this.lblPrecioCompra.TabIndex = 41;
             this.lblPrecioCompra.Text = "Precio de compra c/u";
             this.lblPrecioCompra.Visible = false;
@@ -498,9 +517,10 @@
             this.lblPrecioVenta.BackColor = System.Drawing.Color.Transparent;
             this.lblPrecioVenta.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.lblPrecioVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioVenta.Location = new System.Drawing.Point(275, 130);
+            this.lblPrecioVenta.Location = new System.Drawing.Point(642, 290);
+            this.lblPrecioVenta.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblPrecioVenta.Name = "lblPrecioVenta";
-            this.lblPrecioVenta.Size = new System.Drawing.Size(129, 15);
+            this.lblPrecioVenta.Size = new System.Drawing.Size(265, 31);
             this.lblPrecioVenta.TabIndex = 40;
             this.lblPrecioVenta.Text = "Precio de venta c/u";
             this.lblPrecioVenta.Visible = false;
@@ -517,10 +537,10 @@
             this.boxPrecioVenta.LineIdleColor = System.Drawing.Color.DarkSlateGray;
             this.boxPrecioVenta.LineMouseHoverColor = System.Drawing.Color.Aquamarine;
             this.boxPrecioVenta.LineThickness = 3;
-            this.boxPrecioVenta.Location = new System.Drawing.Point(278, 150);
-            this.boxPrecioVenta.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.boxPrecioVenta.Location = new System.Drawing.Point(649, 335);
+            this.boxPrecioVenta.Margin = new System.Windows.Forms.Padding(12, 9, 12, 9);
             this.boxPrecioVenta.Name = "boxPrecioVenta";
-            this.boxPrecioVenta.Size = new System.Drawing.Size(255, 33);
+            this.boxPrecioVenta.Size = new System.Drawing.Size(595, 91);
             this.boxPrecioVenta.TabIndex = 33;
             this.boxPrecioVenta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.boxPrecioVenta.Enter += new System.EventHandler(this.boxPrecioVenta_Enter);
@@ -532,9 +552,10 @@
             this.lblCantidad.BackColor = System.Drawing.Color.Transparent;
             this.lblCantidad.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidad.Location = new System.Drawing.Point(275, 236);
+            this.lblCantidad.Location = new System.Drawing.Point(642, 526);
+            this.lblCantidad.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(131, 15);
+            this.lblCantidad.Size = new System.Drawing.Size(265, 31);
             this.lblCantidad.TabIndex = 37;
             this.lblCantidad.Text = "Cantidad de compa";
             this.lblCantidad.Visible = false;
@@ -551,10 +572,10 @@
             this.boxCantidad.LineIdleColor = System.Drawing.Color.DarkSlateGray;
             this.boxCantidad.LineMouseHoverColor = System.Drawing.Color.Aquamarine;
             this.boxCantidad.LineThickness = 3;
-            this.boxCantidad.Location = new System.Drawing.Point(278, 256);
-            this.boxCantidad.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.boxCantidad.Location = new System.Drawing.Point(649, 571);
+            this.boxCantidad.Margin = new System.Windows.Forms.Padding(12, 9, 12, 9);
             this.boxCantidad.Name = "boxCantidad";
-            this.boxCantidad.Size = new System.Drawing.Size(255, 33);
+            this.boxCantidad.Size = new System.Drawing.Size(595, 91);
             this.boxCantidad.TabIndex = 35;
             this.boxCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.boxCantidad.Enter += new System.EventHandler(this.boxCantidad_Enter);
@@ -566,9 +587,10 @@
             this.lblTipo.BackColor = System.Drawing.Color.Transparent;
             this.lblTipo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipo.Location = new System.Drawing.Point(16, 236);
+            this.lblTipo.Location = new System.Drawing.Point(37, 526);
+            this.lblTipo.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(35, 15);
+            this.lblTipo.Size = new System.Drawing.Size(71, 31);
             this.lblTipo.TabIndex = 35;
             this.lblTipo.Text = "Tipo";
             this.lblTipo.Visible = false;
@@ -580,9 +602,10 @@
             this.lblCodigo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.lblCodigo.Location = new System.Drawing.Point(16, 27);
+            this.lblCodigo.Location = new System.Drawing.Point(37, 60);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(136, 15);
+            this.lblCodigo.Size = new System.Drawing.Size(275, 31);
             this.lblCodigo.TabIndex = 33;
             this.lblCodigo.Text = "Código del producto";
             this.lblCodigo.Visible = false;
@@ -593,9 +616,10 @@
             this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(275, 27);
+            this.lblName.Location = new System.Drawing.Point(642, 60);
+            this.lblName.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(142, 15);
+            this.lblName.Size = new System.Drawing.Size(285, 31);
             this.lblName.TabIndex = 32;
             this.lblName.Text = "Nombre del producto";
             this.lblName.Visible = false;
@@ -612,10 +636,10 @@
             this.boxName.LineIdleColor = System.Drawing.Color.DarkSlateGray;
             this.boxName.LineMouseHoverColor = System.Drawing.Color.Aquamarine;
             this.boxName.LineThickness = 3;
-            this.boxName.Location = new System.Drawing.Point(278, 47);
-            this.boxName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.boxName.Location = new System.Drawing.Point(649, 105);
+            this.boxName.Margin = new System.Windows.Forms.Padding(12, 9, 12, 9);
             this.boxName.Name = "boxName";
-            this.boxName.Size = new System.Drawing.Size(255, 33);
+            this.boxName.Size = new System.Drawing.Size(595, 91);
             this.boxName.TabIndex = 31;
             this.boxName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.boxName.Enter += new System.EventHandler(this.boxName_Enter);
@@ -633,10 +657,10 @@
             this.boxCodigo.LineIdleColor = System.Drawing.Color.DarkSlateGray;
             this.boxCodigo.LineMouseHoverColor = System.Drawing.Color.Aquamarine;
             this.boxCodigo.LineThickness = 3;
-            this.boxCodigo.Location = new System.Drawing.Point(19, 47);
-            this.boxCodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.boxCodigo.Location = new System.Drawing.Point(44, 105);
+            this.boxCodigo.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
             this.boxCodigo.Name = "boxCodigo";
-            this.boxCodigo.Size = new System.Drawing.Size(188, 33);
+            this.boxCodigo.Size = new System.Drawing.Size(439, 91);
             this.boxCodigo.TabIndex = 30;
             this.boxCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.boxCodigo.Enter += new System.EventHandler(this.boxCodigo_Enter);
@@ -650,8 +674,9 @@
             this.ControlPanel.Controls.Add(this.pictureBox10);
             this.ControlPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.ControlPanel.Location = new System.Drawing.Point(0, 0);
+            this.ControlPanel.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.ControlPanel.Name = "ControlPanel";
-            this.ControlPanel.Size = new System.Drawing.Size(834, 40);
+            this.ControlPanel.Size = new System.Drawing.Size(1908, 89);
             this.ControlPanel.TabIndex = 2;
             // 
             // label1
@@ -659,9 +684,10 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(54, 0);
+            this.label1.Location = new System.Drawing.Point(126, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 40);
+            this.label1.Size = new System.Drawing.Size(429, 89);
             this.label1.TabIndex = 2;
             this.label1.Text = "Alta de productos";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -671,22 +697,24 @@
             this.pictureBox10.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(54, 40);
+            this.pictureBox10.Size = new System.Drawing.Size(126, 89);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 1;
             this.pictureBox10.TabStop = false;
             // 
             // Productos_AltaEdicion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ControlPanel);
+            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.Name = "Productos_AltaEdicion";
-            this.Size = new System.Drawing.Size(834, 474);
+            this.Size = new System.Drawing.Size(1908, 1196);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();

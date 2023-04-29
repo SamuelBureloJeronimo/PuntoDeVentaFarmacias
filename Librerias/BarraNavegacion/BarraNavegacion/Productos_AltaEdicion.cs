@@ -31,28 +31,18 @@ namespace BarraNavegacion
             }
             string codigo = boxCodigo.Text;
             string nombre = boxName.Text;
-            double precioC = Convert.ToDouble(boxPrecioCompra.Text);
-            double precioV = Convert.ToDouble(boxPrecioVenta.Text);
+            double precioC = double.Parse(boxPrecioCompra.Text);
+            double precioV = double.Parse(boxPrecioVenta.Text);
             string tipo = downBoxTipo.selectedValue;
             int cantidad = Int32.Parse(boxCantidad.Text);
             int iva = Int32.Parse(boxIva.Text);
             string fechCadu = fechCaducidad.Value.ToLongDateString();
             byte[] imageBytes = System.IO.File.ReadAllBytes(@FileName);
 
-            MySqlCommand command = new MySqlCommand("INSERT INTO productos (clv, nombre, precioComp, precioVent, tipo, cantidad, ivaPorc, caducidad, img) VALUES (@value1, @value2, @value3, @value4, @value5, @value6, @value7, @value8, @value9)", user.connection);
-            command.Parameters.AddWithValue("@value1", codigo);
-            command.Parameters.AddWithValue("@value2", nombre);
-            command.Parameters.AddWithValue("@value3", precioC);
-            command.Parameters.AddWithValue("@value4", precioV);
-            command.Parameters.AddWithValue("@value5", tipo);
-            command.Parameters.AddWithValue("@value6", cantidad);
-            command.Parameters.AddWithValue("@value7", iva);
-            command.Parameters.AddWithValue("@value8", fechCadu);
-            // Agregar parámetros al objeto MySqlCommand
-            MySqlParameter param = new MySqlParameter("@image", MySqlDbType.LongBlob);
-            param.Value = imageBytes;
-            command.Parameters.Add("@value9", param);
-            command.ExecuteNonQuery();
+            object[,] insert = { { "clv", "nombre", "precioComp", "precioVent", "tipo", "cantidad", "ivaPorc", "caducidad", "img" },
+                              { codigo, nombre, precioC, precioV, tipo, cantidad, iva, fechCadu, imageBytes } };
+
+            user.connBD.insertInto(insert, "productos");
 
             MessageBox.Show("Se registro correctamente.");
             boxCodigo.Text = string.Empty;
