@@ -21,40 +21,18 @@ namespace PVF.src.Views.NavegationBar.Administration
         {
             if (collection is Register)
                 return;
-            removeAllCollection();
+            panel.Controls.Clear();
             Register register = new Register();
             collection = register;
-            register.Dock = DockStyle.Fill;
             panel.Controls.Add(register);
-        }
-        private void removeAllCollection()
-        {
-            if (collection is Register)
-            {
-                Register reg = (Register)collection;
-                panel.Controls.Remove(reg);
-                reg.Dispose();
-                Console.WriteLine("Es register");
-                return;
-            }
-            if (collection is IncomeInquiries)
-            {
-                IncomeInquiries inquiries = (IncomeInquiries)collection;
-                panel.Controls.Remove(inquiries);
-                inquiries.Dispose();
-                Console.WriteLine("Es Inquiries");
-                return;
-            }
         }
 
         private void btnConsultIngre_Producto_Click(object sender, EventArgs e)
         {
             if (collection is IncomeInquiries)
                 return;
-            removeAllCollection();
             IncomeInquiries inquiries = new IncomeInquiries();
             collection = inquiries;
-            inquiries.Dock = DockStyle.Fill;
             panel.Controls.Add(inquiries);
         }
     }
