@@ -96,6 +96,12 @@
     <Compile Include="MenusItem.Designer.cs">
       <DependentUpon>MenusItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="MessageInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageInput.Designer.cs">
+      <DependentUpon>MessageInput.cs</DependentUpon>
+    </Compile>
     <Compile Include="Productos_AltaEdicion.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -179,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageInput.resx">
+      <DependentUpon>MessageInput.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Productos_AltaEdicion.resx">
       <DependentUpon>Productos_AltaEdicion.cs</DependentUpon>

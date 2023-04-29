@@ -171,7 +171,6 @@ D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\bin\Debug\MySql.Data.dll
 D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\bin\Debug\BarraNavegacion.pdb
 D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.csproj.AssemblyReference.cache
 D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.csproj.SuggestedBindingRedirects.cache
-D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.CatalogoProductos.resources
 D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.Login.resources
 D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.menuPrincipal.resources
 D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.Properties.Resources.resources
@@ -183,3 +182,35 @@ D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.pdb
 D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\bin\Debug\Empleados.dll
 D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\bin\Debug\Empleados.pdb
 D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.I_Empleado.resources
+C:\Users\marti\Desktop\Proyect PVF\PVF\bin\Debug\PVF.exe.config
+C:\Users\marti\Desktop\Proyect PVF\PVF\bin\Debug\PVF.exe
+C:\Users\marti\Desktop\Proyect PVF\PVF\bin\Debug\PVF.pdb
+C:\Users\marti\Desktop\Proyect PVF\PVF\bin\Debug\Empleados.dll
+C:\Users\marti\Desktop\Proyect PVF\PVF\bin\Debug\MySql.Data.dll
+C:\Users\marti\Desktop\Proyect PVF\PVF\bin\Debug\BarraNavegacion.pdb
+C:\Users\marti\Desktop\Proyect PVF\PVF\bin\Debug\Empleados.pdb
+C:\Users\marti\Desktop\Proyect PVF\PVF\obj\Debug\PVF.csproj.AssemblyReference.cache
+C:\Users\marti\Desktop\Proyect PVF\PVF\obj\Debug\PVF.csproj.SuggestedBindingRedirects.cache
+C:\Users\marti\Desktop\Proyect PVF\PVF\obj\Debug\PVF.CatalogoProductos.resources
+C:\Users\marti\Desktop\Proyect PVF\PVF\obj\Debug\PVF.Login.resources
+C:\Users\marti\Desktop\Proyect PVF\PVF\obj\Debug\PVF.I_Empleado.resources
+C:\Users\marti\Desktop\Proyect PVF\PVF\obj\Debug\PVF.menuPrincipal.resources
+C:\Users\marti\Desktop\Proyect PVF\PVF\obj\Debug\PVF.Properties.Resources.resources
+C:\Users\marti\Desktop\Proyect PVF\PVF\obj\Debug\PVF.csproj.GenerateResource.cache
+C:\Users\marti\Desktop\Proyect PVF\PVF\obj\Debug\PVF.csproj.CoreCompileInputs.cache
+C:\Users\marti\Desktop\Proyect PVF\PVF\obj\Debug\PVF.csproj.CopyComplete
+C:\Users\marti\Desktop\Proyect PVF\PVF\obj\Debug\PVF.exe
+C:\Users\marti\Desktop\Proyect PVF\PVF\obj\Debug\PVF.pdb
+C:\Users\marti\Desktop\Proyect PVF\PVF\bin\Debug\BarraNavegacion.dll
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.src.Views.NavegationBar.Administration.navbarAdministration.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.src.Views.NavegationBar.Clients.navbarClients.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.src.Views.NavegationBar.Employees.navbarEmployees.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.src.Views.NavegationBar.Fund.navbarFunds.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.src.Views.NavegationBar.Help.navbarHelp.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.src.Views.NavegationBar.Administration.navbarProducts.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.src.Views.NavegationBar.Providers.navbarProviders.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.src.Views.NavegationBar.Reports.navbarReports.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.src.Views.NavegationBar.Sales.navbarSales.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.src.Views.NavegationBar.Shopping.navbarShopping.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.src.Views.NavegationBar.Products.Buttons.Register.resources
+D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.src.Views.NavegationBar.Products.Buttons_Click.IncomeInquiries.resources

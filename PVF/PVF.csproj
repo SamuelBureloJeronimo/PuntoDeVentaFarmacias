@@ -43,9 +43,6 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>C:\Users\SpartanLuck 117\source\repos\SIGEPV\SIGEPV\lib\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
-    <Reference Include="Empleados">
-      <HintPath>..\Librerias\Empleados\Empleados\bin\Debug\Empleados.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -65,42 +62,136 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CatalogoProductos.cs">
+    <Compile Include="src\Controllers\PersonaController.cs" />
+    <Compile Include="src\Controllers\UserController.cs" />
+    <Compile Include="src\Libraries\DB_Connector.cs" />
+    <Compile Include="src\Views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CatalogoProductos.Designer.cs">
-      <DependentUpon>CatalogoProductos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="src\Views\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="I_Empleado.cs">
+    <Compile Include="src\Views\I_Empleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="I_Empleado.Designer.cs">
+    <Compile Include="src\Views\I_Empleado.Designer.cs">
       <DependentUpon>I_Empleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="menuPrincipal.cs">
+    <Compile Include="src\Views\NavegationBar\Administration\navbarAdministration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Administration\navbarAdministration.Designer.cs">
+      <DependentUpon>navbarAdministration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Clients\navbarClients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Clients\navbarClients.Designer.cs">
+      <DependentUpon>navbarClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Employees\navbarEmployees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Employees\navbarEmployees.Designer.cs">
+      <DependentUpon>navbarEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Funds\navbarFunds.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Funds\navbarFunds.Designer.cs">
+      <DependentUpon>navbarFunds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Help\navbarHelp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Help\navbarHelp.Designer.cs">
+      <DependentUpon>navbarHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Products\Buttons_Click\IncomeInquiries.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Products\Buttons_Click\IncomeInquiries.Designer.cs">
+      <DependentUpon>IncomeInquiries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Products\Buttons_Click\Register.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Products\Buttons_Click\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Products\navbarProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Products\navbarProducts.Designer.cs">
+      <DependentUpon>navbarProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Views\menuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="menuPrincipal.Designer.cs">
+    <Compile Include="src\Views\menuPrincipal.Designer.cs">
       <DependentUpon>menuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Models\DepartamentoModel.cs" />
+    <Compile Include="src\Models\EmpleadoModel.cs" />
+    <Compile Include="src\Models\PersonaModel.cs" />
+    <Compile Include="src\Models\UserModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CatalogoProductos.resx">
-      <DependentUpon>CatalogoProductos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <Compile Include="src\Views\NavegationBar\Providers\navbarProviders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Providers\navbarProviders.Designer.cs">
+      <DependentUpon>navbarProviders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Reports\navbarReports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Reports\navbarReports.Designer.cs">
+      <DependentUpon>navbarReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Sales\navbarSales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Sales\navbarSales.Designer.cs">
+      <DependentUpon>navbarSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Shopping\navbarShopping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Shopping\navbarShopping.Designer.cs">
+      <DependentUpon>navbarShopping.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="src\Views\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="I_Empleado.resx">
+    <EmbeddedResource Include="src\Views\I_Empleado.resx">
       <DependentUpon>I_Empleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="menuPrincipal.resx">
+    <EmbeddedResource Include="src\Views\NavegationBar\Administration\navbarAdministration.resx">
+      <DependentUpon>navbarAdministration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Views\NavegationBar\Clients\navbarClients.resx">
+      <DependentUpon>navbarClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Views\NavegationBar\Employees\navbarEmployees.resx">
+      <DependentUpon>navbarEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Views\NavegationBar\Funds\navbarFunds.resx">
+      <DependentUpon>navbarFunds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Views\NavegationBar\Help\navbarHelp.resx">
+      <DependentUpon>navbarHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Views\NavegationBar\Products\Buttons_Click\IncomeInquiries.resx">
+      <DependentUpon>IncomeInquiries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Views\NavegationBar\Products\Buttons_Click\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Views\NavegationBar\Products\navbarProducts.resx">
+      <DependentUpon>navbarProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Views\menuPrincipal.resx">
       <DependentUpon>menuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -113,6 +204,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="src\Views\NavegationBar\Providers\navbarProviders.resx">
+      <DependentUpon>navbarProviders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Views\NavegationBar\Reports\navbarReports.resx">
+      <DependentUpon>navbarReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Views\NavegationBar\Sales\navbarSales.resx">
+      <DependentUpon>navbarSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Views\NavegationBar\Shopping\navbarShopping.resx">
+      <DependentUpon>navbarShopping.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -126,5 +229,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 using System.Data;
 using Empleados;
 
@@ -18,12 +17,10 @@ namespace BarraNavegacion
         public void loadTable()
         {
             bdMedic.Rows.Clear();
-            MySqlCommand command = new MySqlCommand("SELECT * FROM productos", user.connection);
-            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            int i=0;
-            foreach (DataRow row in table.Rows)
+            DataSet ds = user.connBD.requestTable("productos");
+
+            int i = 0;
+            foreach (DataRow row in ds.Tables[0].Rows)
             {
                 bdMedic.Rows.Add();
                 double precComp = Double.Parse(row["precioComp"].ToString());
@@ -39,7 +36,7 @@ namespace BarraNavegacion
                 bdMedic[3, i].Value = precVent.ToString();
                 bdMedic[4, i].Value = row["tipo"].ToString();
                 bdMedic[5, i].Value = cantidad.ToString();
-                bdMedic[6, i].Value = row["ivaPorc"]+"%";
+                bdMedic[6, i].Value = row["ivaPorc"] + "%";
                 bdMedic[7, i].Value = row["caducidad"].ToString();
                 bdMedic[8, i].Value = inversion.ToString();
                 bdMedic[9, i].Value = ganancias.ToString();
@@ -47,7 +44,7 @@ namespace BarraNavegacion
                 bdMedic.Columns[9].DefaultCellStyle.ForeColor = Color.Green;
                 i++;
             }
-            if(i<1)
+            if (i < 1)
                 Console.WriteLine("No se encontro nada en la Tabla producto.");
         }
     }

@@ -72,3 +72,32 @@ D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNav
 D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\bin\Debug\Empleados.dll
 D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\bin\Debug\Empleados.pdb
 D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Empleados_DarAlta.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\bin\Debug\BarraNavegacion.dll
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\bin\Debug\BarraNavegacion.pdb
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\bin\Debug\Empleados.dll
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\bin\Debug\MySql.Data.dll
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\bin\Debug\Empleados.pdb
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.csproj.AssemblyReference.cache
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Administracion.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Administracion_CreateNewUser.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Ayuda.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Caja.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Compras.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Empleados.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Empleados_DarAlta.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.MenusItem.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Clientes.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.MessageInput.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Productos_AltaEdicion.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Productos_ConsultaIngresos.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Productos_VerificarPrecios.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Properties.Resources.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Proveedores.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Reportes.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.Ventas.resources
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.csproj.GenerateResource.cache
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.csproj.CoreCompileInputs.cache
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.csproj.CopyComplete
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.dll
+C:\Users\marti\Desktop\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.pdb
+D:\CodeProyects\GitHub Repository\Proyect PVF\Librerias\BarraNavegacion\BarraNavegacion\obj\Debug\BarraNavegacion.MessageInput.resources
