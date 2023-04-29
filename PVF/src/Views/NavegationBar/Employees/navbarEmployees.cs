@@ -1,20 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PVF.src.Controllers;
+using PVF.src.Views.NavegationBar.Employees.Buttons_Click;
+using System;
 using System.Windows.Forms;
 
 namespace PVF.src.Views.NavegationBar.Employees
 {
     public partial class navbarEmployees : UserControl
     {
-        public navbarEmployees()
+        ResourseController rc;
+        public navbarEmployees(ResourseController rc)
         {
+            this.rc = rc;
             InitializeComponent();
+        }
+
+        private void btnDarAlta_Click(object sender, EventArgs e)
+        {
+            rc.add(new uploadNewEmployee());
         }
     }
 }

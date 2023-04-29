@@ -246,3 +246,5 @@ D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.csproj
 D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.csproj.CopyComplete
 D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.exe
 D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.pdb
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.src.Views.NavegationBar.Administration.Buttons_Click.uploadNewUser.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.src.Views.NavegationBar.Employees.Buttons_Click.uploadNewEmployee.resources

@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Data;
+using System.Xml;
 
 namespace PVF.Libraries
 {
@@ -71,6 +72,19 @@ namespace PVF.Libraries
             adapter.Dispose();
             closeConnection();
 
+            return table;
+        }
+        public DataSet requestTableWhere(String nameT, String nColum, String nFila)
+        {
+            openConnection();
+            //Obtengo la consulta con un objeto de la clase MySQL Client
+            MySqlDataAdapter adapter = new MySqlDataAdapter("SELECT * FROM " + nameT+" where "+nColum+"='"+nFila+"'", connection);
+            DataSet table = new DataSet(); //Creo un DataSet para asignarle la tabla consultada
+            adapter.Fill(table); //Linea para darle la tabla obtenida
+
+            //Libera los recursos no administrativos
+            adapter.Dispose();
+            closeConnection();
             return table;
         }
         /// <summary>

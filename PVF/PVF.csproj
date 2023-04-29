@@ -62,10 +62,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\Controllers\PersonaController.cs" />
+    <Compile Include="src\Controllers\DepartamentController.cs" />
+    <Compile Include="src\Controllers\PeopleController.cs" />
     <Compile Include="src\Controllers\ResourseController.cs" />
+    <Compile Include="src\Controllers\StateController.cs" />
     <Compile Include="src\Controllers\UserController.cs" />
     <Compile Include="src\Libraries\DB_Connector.cs" />
+    <Compile Include="src\Models\StateModel.cs" />
     <Compile Include="src\Views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +81,12 @@
     <Compile Include="src\Views\I_Empleado.Designer.cs">
       <DependentUpon>I_Empleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Views\NavegationBar\Administration\Buttons_Click\uploadNewUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Administration\Buttons_Click\uploadNewUser.Designer.cs">
+      <DependentUpon>uploadNewUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Views\NavegationBar\Administration\navbarAdministration.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -89,6 +98,12 @@
     </Compile>
     <Compile Include="src\Views\NavegationBar\Clients\navbarClients.Designer.cs">
       <DependentUpon>navbarClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Employees\Buttons_Click\uploadNewEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Views\NavegationBar\Employees\Buttons_Click\uploadNewEmployee.Designer.cs">
+      <DependentUpon>uploadNewEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="src\Views\NavegationBar\Employees\navbarEmployees.cs">
       <SubType>UserControl</SubType>
@@ -132,9 +147,9 @@
     <Compile Include="src\Views\menuPrincipal.Designer.cs">
       <DependentUpon>menuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\Models\DepartamentoModel.cs" />
-    <Compile Include="src\Models\EmpleadoModel.cs" />
-    <Compile Include="src\Models\PersonaModel.cs" />
+    <Compile Include="src\Models\DepartamentModel.cs" />
+    <Compile Include="src\Models\EmployeeModel.cs" />
+    <Compile Include="src\Models\PeopleModel.cs" />
     <Compile Include="src\Models\UserModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -162,17 +177,26 @@
     <Compile Include="src\Views\NavegationBar\Shopping\navbarShopping.Designer.cs">
       <DependentUpon>navbarShopping.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Views\RJComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <EmbeddedResource Include="src\Views\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Views\I_Empleado.resx">
       <DependentUpon>I_Empleado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\Views\NavegationBar\Administration\Buttons_Click\uploadNewUser.resx">
+      <DependentUpon>uploadNewUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Views\NavegationBar\Administration\navbarAdministration.resx">
       <DependentUpon>navbarAdministration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Views\NavegationBar\Clients\navbarClients.resx">
       <DependentUpon>navbarClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Views\NavegationBar\Employees\Buttons_Click\uploadNewEmployee.resx">
+      <DependentUpon>uploadNewEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Views\NavegationBar\Employees\navbarEmployees.resx">
       <DependentUpon>navbarEmployees.cs</DependentUpon>

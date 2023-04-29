@@ -205,6 +205,7 @@
             this.CreateNewUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CreateNewUser.Textcolor = System.Drawing.Color.White;
             this.CreateNewUser.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateNewUser.Click += new System.EventHandler(this.CreateNewUser_Click);
             // 
             // label16
             // 

@@ -10,7 +10,6 @@ using PVF.src.Views.NavegationBar.Reports;
 using PVF.src.Views.NavegationBar.Sales;
 using PVF.src.Views.NavegationBar.Shopping;
 using System;
-using System.Collections;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -24,17 +23,17 @@ namespace PVF
      */
     public partial class menuPrincipal : Form 
     {
-        private readonly ResourseController collection;
+        private readonly ResourseController rc;
         /**
          *  Contructor de la clase menuPrincipal
          */
         public menuPrincipal()
         {
             InitializeComponent();
+            this.rc = new ResourseController(panelBody);
 
             selectMenu(btnfuProductos);
-            this.collection = new ResourseController(panelBody);
-            showItemSubmenu(new navbarProducts(collection));
+            showItemSubmenu(new navbarProducts(rc));
         }
 
         // BunifuFlatButton     bttonClose
@@ -150,7 +149,7 @@ namespace PVF
         private void btnfuProductos_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuProductos);
-            showItemSubmenu(new navbarProducts(collection));
+            showItemSubmenu(new navbarProducts(rc));
         }
         //
         // BunifuFlatButton     btnfuClientes
@@ -190,7 +189,7 @@ namespace PVF
         private void btnfuEmpleados_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuEmpleados);
-            showItemSubmenu(new navbarEmployees());
+            showItemSubmenu(new navbarEmployees(rc));
         }
         //
         // BunifuFlatButton     btnfuCaja
@@ -214,7 +213,7 @@ namespace PVF
         private void btnfuAdministracion_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuAdministracion);
-            showItemSubmenu(new navbarAdministration());
+            showItemSubmenu(new navbarAdministration(rc));
         }
         //
         // BunifuFlatButton     btnfuAyuda
