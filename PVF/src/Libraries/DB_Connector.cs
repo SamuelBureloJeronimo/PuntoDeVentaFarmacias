@@ -8,28 +8,11 @@ namespace PVF.Libraries
     {
         private MySqlConnection connection;
 
-        private String server;
-        private String port;
-        private String userID;
-        private String password;
-        private String nameDB;
-
-        /// <summary>
-        /// Constructor de clase.
-        /// </summary>
-        /// <param server="param1">Ip del servidor a conectar.</param>
-        /// <param port="param2">Puerto usado por el servidor para la conexion.</param>
-        /// <param userID="param3">Usuario para acceder a la Base de Datos.</param>
-        /// <param password="param4">Password para acceder a la Base de Datos.</param>
-        /// <param nameDB="param5">Nombre de la Base de Datos a usar.</param>
-        public DB_Connector(String server, String port, String userID, String password, String nameDB)
-        {
-            this.server = server;
-            this.port = port;
-            this.userID = userID;
-            this.password = password;
-            this.nameDB = nameDB;
-        }
+        private String server= "localhost";
+        private String port= "3306";
+        private String userID = "root";
+        private String password = "";
+        private String nameDB = "pvf";
 
         /// <summary>
         /// Metodo que apertura la conexión a la base de datos con los datos de la clase.
@@ -46,7 +29,6 @@ namespace PVF.Libraries
             {
                 //abre la conexion
                 connection.Open();
-                connection.Close();
                 Console.WriteLine("Conexion establecida correctamente.");
                 return true;
             }

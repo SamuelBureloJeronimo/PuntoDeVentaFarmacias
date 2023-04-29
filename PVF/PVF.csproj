@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\Controllers\PersonaController.cs" />
+    <Compile Include="src\Controllers\ResourseController.cs" />
     <Compile Include="src\Controllers\UserController.cs" />
     <Compile Include="src\Libraries\DB_Connector.cs" />
     <Compile Include="src\Views\Login.cs">

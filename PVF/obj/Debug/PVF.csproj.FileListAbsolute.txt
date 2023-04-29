@@ -214,3 +214,35 @@ D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.src.Views.Navega
 D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.src.Views.NavegationBar.Shopping.navbarShopping.resources
 D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.src.Views.NavegationBar.Products.Buttons.Register.resources
 D:\CodeProyects\GitHub Repository\Proyect PVF\PVF\obj\Debug\PVF.src.Views.NavegationBar.Products.Buttons_Click.IncomeInquiries.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\bin\Debug\PVF.exe.config
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\bin\Debug\PVF.exe
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\bin\Debug\PVF.pdb
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\bin\Debug\BarraNavegacion.dll
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\bin\Debug\MySql.Data.dll
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\bin\Debug\Empleados.dll
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\bin\Debug\BarraNavegacion.pdb
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\bin\Debug\Empleados.pdb
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.csproj.AssemblyReference.cache
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.csproj.SuggestedBindingRedirects.cache
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.Login.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.I_Empleado.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.src.Views.NavegationBar.Administration.navbarAdministration.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.src.Views.NavegationBar.Clients.navbarClients.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.src.Views.NavegationBar.Employees.navbarEmployees.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.src.Views.NavegationBar.Fund.navbarFunds.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.src.Views.NavegationBar.Help.navbarHelp.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.src.Views.NavegationBar.Products.Buttons_Click.IncomeInquiries.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.src.Views.NavegationBar.Products.Buttons.Register.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.src.Views.NavegationBar.Administration.navbarProducts.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.menuPrincipal.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.Properties.Resources.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.src.Views.NavegationBar.Providers.navbarProviders.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.src.Views.NavegationBar.Reports.navbarReports.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.src.Views.NavegationBar.Sales.navbarSales.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.src.Views.NavegationBar.Shopping.navbarShopping.resources
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.csproj.GenerateResource.cache
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.csproj.CoreCompileInputs.cache
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.csproj.CopyComplete
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.exe
+D:\CodeProyects\GitHub Repository\PuntoDeVentaFarmacias\PVF\obj\Debug\PVF.pdb

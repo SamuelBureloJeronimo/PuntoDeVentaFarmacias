@@ -249,6 +249,7 @@
             this.btnRegistrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegistrar.Textcolor = System.Drawing.Color.White;
             this.btnRegistrar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // pictureBox9
             // 
@@ -403,6 +404,7 @@
             this.btnLimpiarBoxs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLimpiarBoxs.Textcolor = System.Drawing.Color.Black;
             this.btnLimpiarBoxs.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarBoxs.Click += new System.EventHandler(this.btnLimpiarBoxs_Click);
             // 
             // btnEliminarIMG
             // 
@@ -473,6 +475,7 @@
             this.btnAgregarIMG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAgregarIMG.Textcolor = System.Drawing.Color.White;
             this.btnAgregarIMG.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarIMG.Click += new System.EventHandler(this.btnAgregarIMG_Click);
             // 
             // lblCaducidad
             // 
@@ -485,7 +488,6 @@
             this.lblCaducidad.Size = new System.Drawing.Size(75, 15);
             this.lblCaducidad.TabIndex = 45;
             this.lblCaducidad.Text = "Caducidad";
-            this.lblCaducidad.Visible = false;
             // 
             // pictureBox1
             // 
@@ -599,7 +601,6 @@
             this.lblTipo.Size = new System.Drawing.Size(35, 15);
             this.lblTipo.TabIndex = 35;
             this.lblTipo.Text = "Tipo";
-            this.lblTipo.Visible = false;
             // 
             // lblCodigo
             // 

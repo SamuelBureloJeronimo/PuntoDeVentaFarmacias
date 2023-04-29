@@ -1,4 +1,5 @@
 ﻿using Bunifu.Framework.UI;
+using PVF.src.Controllers;
 using PVF.src.Views.NavegationBar.Administration;
 using PVF.src.Views.NavegationBar.Clients;
 using PVF.src.Views.NavegationBar.Employees;
@@ -9,6 +10,7 @@ using PVF.src.Views.NavegationBar.Reports;
 using PVF.src.Views.NavegationBar.Sales;
 using PVF.src.Views.NavegationBar.Shopping;
 using System;
+using System.Collections;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -22,14 +24,17 @@ namespace PVF
      */
     public partial class menuPrincipal : Form 
     {
+        private readonly ResourseController collection;
         /**
          *  Contructor de la clase menuPrincipal
          */
         public menuPrincipal()
         {
             InitializeComponent();
+
             selectMenu(btnfuProductos);
-            showItemSubmenu(new navbarProducts(panelBody));
+            this.collection = new ResourseController(panelBody);
+            showItemSubmenu(new navbarProducts(collection));
         }
 
         // BunifuFlatButton     bttonClose
@@ -145,7 +150,7 @@ namespace PVF
         private void btnfuProductos_Click(object sender, EventArgs e)
         {
             selectMenu(btnfuProductos);
-            showItemSubmenu(new navbarProducts(panelBody));
+            showItemSubmenu(new navbarProducts(collection));
         }
         //
         // BunifuFlatButton     btnfuClientes
